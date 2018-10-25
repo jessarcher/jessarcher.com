@@ -7,7 +7,7 @@
         <title>Jess Archer</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
-    <body>
+    <body class="bg-grey-lighter">
         @yield('body')
     </body>
 </html>
