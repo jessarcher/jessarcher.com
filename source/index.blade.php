@@ -12,7 +12,11 @@
 
         <div class="text-grey-darkest text-xl font-semibold mb-2"> Jess Archer</div>
 
-        <div class="text-grey-dark font-normal">Web Application Developer</div>
+        <div class="text-grey-dark mb-4">Web Application Developer</div>
+
+        <div class="text-grey-dark text-sm">
+            <i class="text-grey fas fa-map-marker-alt"></i> Brisbane, Australia
+        </div>
     </div>
 </div>
 
