@@ -8,6 +8,7 @@
         "watch": "npm run local -- --watch"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.4.1",
         "browser-sync": "^2.23.6",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",

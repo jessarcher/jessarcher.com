@@ -111,3 +111,8 @@ $pn-font-path: '../fonts/vendor/proxima-nova';
   font-weight: 600;
   font-style: italic;
 }
+
+$fa-font-path: '../fonts/vendor/fontawesome';
+
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';

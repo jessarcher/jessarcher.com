@@ -19,4 +19,5 @@ mix.js('source/_assets/js/main.js', 'js')
         postCss: [ tailwindcss('./tailwind.js') ],
     }).version();
 
-mix.copy('./node_modules/font-proxima-nova-scss/fonts/', 'source/assets/build/fonts/vendor/proxima-nova/');
+mix.copy('./node_modules/font-proxima-nova-scss/fonts/', 'source/assets/build/fonts/vendor/proxima-nova/')
+    .copy('./node_modules/@fortawesome/fontawesome-free/webfonts/', 'source/assets/build/fonts/vendor/fontawesome/')
