@@ -60,3 +60,54 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+$pn-font-path: '../fonts/vendor/proxima-nova';
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("#{$pn-font-path}/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url("#{$pn-font-path}/ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$pn-font-path}/ProximaNova-Regular.woff") format("woff"),
+    url("#{$pn-font-path}/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("#{$pn-font-path}/ProximaNova-RegularIt.eot");
+  src: local("Proxima Nova Regular Italic"), local("ProximaNova-RegularIt"),
+    url("#{$pn-font-path}/ProximaNova-RegularIt.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$pn-font-path}/ProximaNova-RegularIt.woff") format("woff"),
+    url("#{$pn-font-path}/ProximaNova-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("#{$pn-font-path}/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"),
+    url("#{$pn-font-path}/ProximaNova-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$pn-font-path}/ProximaNova-Semibold.woff") format("woff"),
+    url("#{$pn-font-path}/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("#{$pn-font-path}/ProximaNova-SemiboldIt.eot");
+  src: local("Proxima Nova Semibold Italic"), local("ProximaNova-SemiboldIt"),
+    url("#{$pn-font-path}/ProximaNova-SemiboldIt.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$pn-font-path}/ProximaNova-SemiboldIt.woff") format("woff"),
+    url("#{$pn-font-path}/ProximaNova-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}

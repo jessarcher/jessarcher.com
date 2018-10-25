@@ -2,7 +2,7 @@
 
 @section('body')
 
-<div class="flex items-center justify-center h-screen">
+<div class="font-sans flex items-center justify-center h-screen">
     <div class="text-center">
         <img
             src="assets/images/jessarcher.png"
@@ -12,7 +12,7 @@
 
         <div class="text-grey-darkest text-xl font-semibold mb-2"> Jess Archer</div>
 
-        <div class="text-grey-dark font-medium">Web Application Developer</div>
+        <div class="text-grey-dark font-normal">Web Application Developer</div>
     </div>
 </div>
 
