@@ -126,6 +126,7 @@
             </div>
             <div class="flex items-center justify-center">
                 <button
+                    type="submit"
                     class="
                         bg-blue
                         text-white
@@ -137,7 +138,6 @@
                         focus:outline-none
                         focus:shadow-outline
                     "
-                    type="button"
                 >
                     Send Message
                 </button>
