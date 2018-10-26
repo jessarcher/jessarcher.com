@@ -14,8 +14,14 @@
 
         <div class="text-grey-dark mb-4">Web Application Developer</div>
 
-        <div class="text-grey-dark text-sm">
+        <div class="text-grey-dark text-sm mb-6">
             <i class="text-grey fas fa-map-marker-alt"></i> Brisbane, Australia
+        </div>
+
+        <div>
+            <a href="https://github.com/jessarcher"><i class="text-grey-light hover:text-grey fab fa-github-square fa-2x"></i></a>
+            <a href="https://twitter.com/jessarchercodes"><i class="text-grey-light hover:text-grey fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/jessarcher/"><i class="text-grey-light hover:text-grey fab fa-linkedin fa-2x"></i></a>
         </div>
     </div>
 </div>
