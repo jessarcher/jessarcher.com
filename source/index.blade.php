@@ -5,7 +5,7 @@
 <div class="flex items-center justify-center h-screen">
     <div class="text-center">
         <img
-            src="assets/images/jessarcher.png"
+            src="/assets/images/jessarcher.png"
             alt="Jess Archer"
             height="125"
             width="125"
