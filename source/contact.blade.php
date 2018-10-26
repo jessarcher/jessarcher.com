@@ -5,13 +5,15 @@
 <div class="flex items-center justify-center min-h-screen">
     <div class="w-full max-w-sm">
         <form class="text-center bg-white shadow rounded px-8 pt-6 pb-8 m-4" method="POST" netlify>
-            <img
-                src="/assets/images/jessarcher.png"
-                alt="Jess Archer"
-                height="125"
-                width="125"
-                class="border-white border-4 rounded-full shadow-md mb-2"
-            ><br>
+            <a href="/">
+                <img
+                    src="/assets/images/jessarcher.png"
+                    alt="Jess Archer"
+                    height="125"
+                    width="125"
+                    class="border-white border-4 rounded-full shadow-md mb-2"
+                >
+            </a>
 
             <h2 class="mb-4 font-semibold text-grey-darkest">Contact Me</h2>
 
