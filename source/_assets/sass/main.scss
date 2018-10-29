@@ -117,3 +117,52 @@ $fa-font-path: '../fonts/vendor/fontawesome';
 @import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 @import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+/*
+ * Buttons
+ */
+
+.btn {
+    @apply
+        font-semibold
+        inline-block
+        no-underline
+        px-4
+        py-2
+        rounded;
+    &:focus {
+        @apply
+            outline-none
+            shadow-outline;
+    }
+}
+
+.btn-sm {
+    @apply
+        px-3
+        py-1;
+}
+
+.btn-blue {
+    @apply
+        bg-blue
+        text-white;
+
+    &:hover {
+        @apply bg-blue-dark;
+    }
+}
+
+.btn-outline-blue {
+    @apply
+        bg-white
+        border
+        border-blue
+        text-blue;
+    &:hover {
+        @apply
+            bg-blue
+            border-transparent
+            text-white;
+    }
+}

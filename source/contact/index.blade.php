@@ -122,20 +122,7 @@
                         Back
                     </a>
 
-                    <button
-                        type="submit"
-                        class="
-                            bg-blue
-                            text-white
-                            font-semibold
-                            py-2
-                            px-4
-                            rounded
-                            hover:bg-blue-dark
-                            focus:outline-none
-                            focus:shadow-outline
-                        "
-                    >
+                    <button type="submit" class="btn btn-blue">
                         Send Message
                     </button>
                 </div>
