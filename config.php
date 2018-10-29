@@ -4,5 +4,7 @@ return [
     'name' => 'Jess Archer',
     'baseUrl' => '',
     'production' => false,
-    'collections' => [],
+    'collections' => [
+        'posts',
+    ],
 ];
