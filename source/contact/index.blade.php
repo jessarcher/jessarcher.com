@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
+@section('title', 'Contact Jess Archer')
+
 @section('body')
 
 <div class="flex items-center justify-center min-h-screen">

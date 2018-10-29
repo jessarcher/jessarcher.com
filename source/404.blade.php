@@ -3,6 +3,8 @@ permalink: 404.html
 ---
 @extends('_layouts.master')
 
+@section('title', 'Not Found')
+
 @section('body')
 
 <div class="flex items-center justify-center h-screen">
