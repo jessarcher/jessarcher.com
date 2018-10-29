@@ -4,13 +4,7 @@
 
 <div class="flex items-center justify-center h-screen">
     <div class="text-center">
-        <img
-            src="/assets/images/jessarcher.png"
-            alt="Jess Archer"
-            height="125"
-            width="125"
-            class="border-white border-4 rounded-full shadow-md mb-4"
-        >
+        @logo
 
         <div class="text-grey-darkest text-xl font-semibold mb-2"> Jess Archer</div>
 
@@ -41,9 +35,9 @@
         >Contact Me</a>
 
         <div>
-            <a href="https://github.com/jessarcher"><i class="text-grey-light hover:text-grey fab fa-github-square fa-2x"></i></a>
-            <a href="https://twitter.com/jessarchercodes"><i class="text-grey-light hover:text-grey fab fa-twitter-square fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/jessarcher/"><i class="text-grey-light hover:text-grey fab fa-linkedin fa-2x"></i></a>
+            @socialIcon(['icon' => 'fa-github-square', 'link' => 'https://github.com/jessarcher'])
+            @socialIcon(['icon' => 'fa-twitter-square', 'link' => 'https://twitter.com/jessarchercodes'])
+            @socialIcon(['icon' => 'fa-linkedin', 'link' => 'https://www.linkedin.com/in/jessarcher/'])
         </div>
     </div>
 </div>

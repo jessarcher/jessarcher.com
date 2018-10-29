@@ -6,13 +6,7 @@
     <div class="w-full max-w-sm">
         <form class="text-center bg-white shadow rounded px-8 pt-6 pb-8 m-4" method="POST" action="/contact/thanks" netlify>
             <a href="/">
-                <img
-                    src="/assets/images/jessarcher.png"
-                    alt="Jess Archer"
-                    height="125"
-                    width="125"
-                    class="border-white border-4 rounded-full shadow-md mb-2"
-                >
+                @logo
             </a>
 
             <h2 class="mb-4 font-semibold text-grey-darkest">Contact Me</h2>
