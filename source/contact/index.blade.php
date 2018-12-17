@@ -6,7 +6,9 @@
 
 <div class="flex items-center justify-center min-h-screen">
     <div class="w-full max-w-sm">
-        <form class="text-center bg-white shadow rounded px-8 pt-6 pb-8 m-4" method="POST" action="/contact/thanks" netlify>
+        <form class="text-center bg-white shadow rounded px-8 pt-6 pb-8 m-4" method="POST" action="/contact/thanks" netlify netlify-honeypot="firstname">
+            <input class="hidden" name="firstname" type="hidden">
+
             <a href="/">
                 @logo
             </a>
