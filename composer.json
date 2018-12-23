@@ -1,6 +1,6 @@
 {
     "require": {
         "php": "^7",
-        "tightenco/jigsaw": "^1.2"
+        "tightenco/jigsaw": "^1.3"
     }
 }
