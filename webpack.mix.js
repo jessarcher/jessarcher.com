@@ -51,11 +51,14 @@ if (mix.inProduction()) {
 }
 
 mix.js('source/_assets/js/main.js', 'js')
+    .sourceMaps()
     .sass('source/_assets/sass/main.scss', 'css')
+    .sourceMaps()
     .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.js') ],
-    }).version();
+    })
+    .version();
 
 mix.copy('./node_modules/font-proxima-nova-scss/fonts/', 'source/assets/build/fonts/vendor/proxima-nova/')
     .copy('./node_modules/@fortawesome/fontawesome-free/webfonts/', 'source/assets/build/fonts/vendor/fontawesome/')
