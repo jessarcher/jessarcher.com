@@ -526,6 +526,7 @@ module.exports = {
     '5': '1.25rem',
     '6': '1.5rem',
     '8': '2rem',
+    '9': '2.25rem',
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
@@ -605,6 +606,7 @@ module.exports = {
     '4xl': '90rem',
     '5xl': '100rem',
     'full': '100%',
+    'none': 'none',
   },
 
 
@@ -652,6 +654,7 @@ module.exports = {
     '4': '1rem',
     '5': '1.25rem',
     '6': '1.5rem',
+    '7': '1.75rem',
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
@@ -687,7 +690,9 @@ module.exports = {
     '4': '1rem',
     '5': '1.25rem',
     '6': '1.5rem',
+    '7': '1.75rem',
     '8': '2rem',
+    '9': '2.25rem',
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
@@ -869,9 +874,9 @@ module.exports = {
     backgroundSize: ['responsive'],
     borderCollapse: [],
     borderColors: ['responsive', 'hover', 'focus'],
-    borderRadius: ['responsive'],
+    borderRadius: ['responsive', 'focus'],
     borderStyle: ['responsive'],
-    borderWidths: ['responsive'],
+    borderWidths: ['responsive', 'active', 'focus'],
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
@@ -887,6 +892,8 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
+    objectFit: false,
+    objectPosition: false,
     opacity: ['responsive'],
     outline: ['focus'],
     overflow: ['responsive'],
@@ -907,7 +914,7 @@ module.exports = {
     verticalAlign: ['responsive'],
     visibility: ['responsive'],
     whitespace: ['responsive'],
-    width: ['responsive'],
+    width: ['responsive', 'focus'],
     zIndex: ['responsive'],
   },
 
@@ -931,6 +938,18 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
+    function({ addUtilities }) {
+        const newUtilities = {
+          '.transition-fast': {
+            transition: 'all .2s ease-out',
+          },
+          '.transition': {
+            transition: 'all .5s ease-out',
+          },
+        }
+
+        addUtilities(newUtilities)
+      }
   ],
 
 
