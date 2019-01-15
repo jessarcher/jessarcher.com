@@ -20,6 +20,10 @@ return [
     },
 
     'excerpt' => function ($page, $length = 255) {
+        if (! empty($excerpt = $page->description)) {
+            return $excerpt;
+        }
+
         $cleaned = strip_tags(
             preg_replace(['/<pre>[\w\W]*?<\/pre>/', '/<h\d>[\w\W]*?<\/h\d>/'], '', $page->getContent()),
             '<code>'
