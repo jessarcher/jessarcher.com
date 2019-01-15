@@ -1,7 +1,7 @@
 <footer class="mt-4">
     <div class="border-t py-10">
         <div class="flex-auto w-full container max-w-xl mx-auto pt-6 pb-5">
-            <div class="sm:flex">
+            <div class="sm:flex px-6">
 
                 <img src="/assets/images/jess.jpg"
                     alt="Jess Archer speaking at a conference"
