@@ -1,13 +1,9 @@
-@extends('_layouts.master')
+@extends('_layouts.app', ['footer' => false])
 
-@section('body')
+@section('main')
 
-<div class="flex items-center justify-center h-screen">
+<div class="flex items-center justify-center">
     <div class="text-center">
-        <a href="/">
-            @logo
-        </a>
-
         <div class="text-grey-darkest text-xl font-semibold mb-4">Thanks for contacting me!</div>
 
         <a

@@ -1,16 +1,33 @@
-@extends('_layouts.master')
+@extends('_layouts.app')
 
-@section('title', "{$page->title} - {$page->name}")
+@push('meta')
+    <meta property="og:title" content="{{ $page->title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+    <meta property="og:description" content="{!! $page->excerpt(200) !!}" />
+@endpush
 
-@section('body')
+@section('main')
+    @if ($page->cover_image)
+        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+    @endif
 
-@logo
+    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-<div>
-    <h1>{{ $page->title }}</h1>
-    <p>{{ date('F j, Y', $page->date) }}</p>
+    <p class="text-grey-darker text-xl md:mt-0">{{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
 
-    @yield('content')
-</div>
+    @if ($page->categories)
+        @foreach ($page->categories as $i => $category)
+            <a
+                href="{{ '/blog/categories/' . $category }}"
+                title="View posts in {{ $category }}"
+                class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                >{{ $category }}</a>
+            @endforeach
+        @endif
+
+        <div v-pre>
+            @yield('content')
+        </div>
 
 @endsection

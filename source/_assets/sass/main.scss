@@ -1,49 +1,10 @@
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/preflight";
- */
 @tailwind preflight;
-
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
 @tailwind components;
 
-/**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
+@import '~highlight.js/styles/atom-one-dark.css';
 
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
+@import 'base';
+
 @tailwind utilities;
 
 /**
@@ -143,25 +104,27 @@ $fa-font-path: '../fonts/vendor/fontawesome';
         py-1;
 }
 
-.btn-blue {
+.btn-grey {
     @apply
-        bg-blue
+        bg-grey-darkest
         text-white;
 
     &:hover {
-        @apply bg-blue-dark;
+        @apply
+            bg-black
+            text-white;
     }
 }
 
-.btn-outline-blue {
+.btn-outline-grey {
     @apply
         bg-white
         border
-        border-blue
-        text-blue;
+        border-grey-dark
+        text-grey-darker;
     &:hover {
         @apply
-            bg-blue
+            bg-grey-darker
             border-transparent
             text-white;
     }

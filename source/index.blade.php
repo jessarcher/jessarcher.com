@@ -14,9 +14,14 @@
             <i class="text-grey fas fa-map-marker-alt"></i> Brisbane, Australia
         </div>
 
-        <a href="/contact" class="btn btn-sm btn-outline-blue mb-8">
+        <a href="/contact" class="btn btn-sm btn-grey mb-4">
             Contact Me
         </a>
+
+        <div class="mb-8">
+            <a href="/blog" class="font-normal text-grey-dark mx-2">Blog</a>
+            <a href="/about" class="font-normal text-grey-dark mx-2">About</a>
+        </div>
 
         <div>
             @socialIcon(['icon' => 'fa-github-square', 'link' => 'https://github.com/jessarcher'])
