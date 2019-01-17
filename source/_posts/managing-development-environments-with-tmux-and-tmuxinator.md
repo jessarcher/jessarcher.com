@@ -90,8 +90,8 @@ windows:
 I hope the options are self-explanatory. The key for me is the `windows` array
 where I can define all of the windows and processes I require.
 
-Now whenever I want to start working on that project, I can simply type (with
-the help of an alias):
+Now whenever I want to start working on that project, I can simply type ([with
+the help of an alias](https://github.com/tmuxinator/tmuxinator#shorthand)):
 
 ```sh
 $ mux start lister
