@@ -1,4 +1,4 @@
-<form method="POST" name="contact" action="{{ $action }}" netlify netlify-honeypot="email">
+<form method="POST" name="contact" action="{{ $action }}" netlify netlify-honeypot="mobile">
     <div class="text-left">
         <div class="mb-4">
             <label class="block text-grey-dark text-sm font-bold mb-2" for="name">
@@ -51,11 +51,11 @@
 
         <div class="hidden">
             <label>Don’t fill this out if you're human:</label>
-            <input type="text" name="email">
+            <input type="text" name="mobile">
         </div>
 
         <div class="mb-4">
-            <label class="block text-grey-dark text-sm font-bold mb-2" for="email2">
+            <label class="block text-grey-dark text-sm font-bold mb-2" for="email">
                 Email Address
             </label>
             <input
@@ -72,8 +72,8 @@
                     focus:outline-none
                     focus:shadow-outline
                 "
-                id="email2"
-                name="email2"
+                id="email"
+                name="email"
                 type="email"
                 placeholder="Email"
             >
