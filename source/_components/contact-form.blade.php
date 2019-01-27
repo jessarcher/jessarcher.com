@@ -1,5 +1,6 @@
-<form method="POST" action="{{ $action }}" netlify netlify-honeypot="firstname">
+<form method="POST" name="contact" action="{{ $action }}" netlify netlify-honeypot="name">
     <div class="hidden">
+        <label>Don’t fill this out if you're human:</label>
         <input type="text" name="name">
     </div>
 
