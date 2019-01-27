@@ -1,12 +1,7 @@
-<form method="POST" name="contact" action="{{ $action }}" netlify netlify-honeypot="name">
-    <div class="hidden">
-        <label>Don’t fill this out if you're human:</label>
-        <input type="text" name="name">
-    </div>
-
+<form method="POST" name="contact" action="{{ $action }}" netlify netlify-honeypot="email">
     <div class="text-left">
         <div class="mb-4">
-            <label class="block text-grey-dark text-sm font-bold mb-2" for="sender">
+            <label class="block text-grey-dark text-sm font-bold mb-2" for="name">
                 Your Name
             </label>
             <input
@@ -23,8 +18,8 @@
                     focus:outline-none
                     focus:shadow-outline
                 "
-                id="sender"
-                name="sender"
+                id="name"
+                name="name"
                 type="text"
                 placeholder="Name"
             >
@@ -53,8 +48,14 @@
                 placeholder="Phone"
             >
         </div>
+
+        <div class="hidden">
+            <label>Don’t fill this out if you're human:</label>
+            <input type="text" name="email">
+        </div>
+
         <div class="mb-4">
-            <label class="block text-grey-dark text-sm font-bold mb-2" for="email">
+            <label class="block text-grey-dark text-sm font-bold mb-2" for="email2">
                 Email Address
             </label>
             <input
@@ -71,8 +72,8 @@
                     focus:outline-none
                     focus:shadow-outline
                 "
-                id="email"
-                name="email"
+                id="email2"
+                name="email2"
                 type="email"
                 placeholder="Email"
             >
