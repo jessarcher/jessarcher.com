@@ -100,6 +100,7 @@ $fa-font-path: '../fonts/vendor/fontawesome';
 
 .btn-sm {
     @apply
+        border-b-0
         px-3
         py-1;
 }
