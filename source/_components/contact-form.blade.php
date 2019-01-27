@@ -1,9 +1,11 @@
 <form method="POST" action="{{ $action }}" netlify netlify-honeypot="firstname">
-    <input class="hidden" name="firstname" type="hidden">
+    <div class="hidden">
+        <input type="text" name="name">
+    </div>
 
     <div class="text-left">
         <div class="mb-4">
-            <label class="block text-grey-dark text-sm font-bold mb-2" for="name">
+            <label class="block text-grey-dark text-sm font-bold mb-2" for="sender">
                 Your Name
             </label>
             <input
@@ -20,8 +22,8 @@
                     focus:outline-none
                     focus:shadow-outline
                 "
-                id="name"
-                name="name"
+                id="sender"
+                name="sender"
                 type="text"
                 placeholder="Name"
             >
