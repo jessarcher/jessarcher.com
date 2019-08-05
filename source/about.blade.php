@@ -12,7 +12,7 @@
     <div class="md:flex md:flex-row-reverse">
         <img src="/assets/images/jess.jpg"
             alt="Jess Archer speaking at a conference"
-            class="block shadow-inner h-64 w-64 rounded-full md:ml-10 my-6 mx-auto"
+            class="flex-no-shrink block shadow-inner h-64 w-64 rounded-full md:ml-10 my-6 mx-auto"
             style="filter: grayscale(100%)"
         >
 
