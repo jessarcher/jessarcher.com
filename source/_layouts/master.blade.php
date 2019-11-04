@@ -20,7 +20,15 @@
         @stack('meta')
 
         @if ($page->production)
-            <!-- Insert analytics code here -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151431096-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-151431096-1');
+            </script>
         @endif
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
