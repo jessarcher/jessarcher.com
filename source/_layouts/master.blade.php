@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="font-sans leading-normal text-grey-darker bg-grey-lighter min-h-screen">
+    <body class="font-sans leading-normal text-grey-darkest bg-grey-lighter min-h-screen">
         <div id="app">
             @yield('body')
         </div>

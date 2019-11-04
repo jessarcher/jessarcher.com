@@ -22,12 +22,12 @@
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
                 class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-                >{{ $category }}</a>
-            @endforeach
-        @endif
+            >{{ $category }}</a>
+        @endforeach
+    @endif
 
-        <div v-pre>
-            @yield('content')
-        </div>
+    <div v-pre class="text-lg">
+        @yield('content')
+    </div>
 
 @endsection
