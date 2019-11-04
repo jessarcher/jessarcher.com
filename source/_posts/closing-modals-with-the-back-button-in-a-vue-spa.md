@@ -36,8 +36,8 @@ improvement.
 
 My first implementation of this used routes for each modal dialog and the steps
 within them, but I quickly discovered that having history entries and separate
-URLs for each step was quite clunky, especially they depended on having state
-being passed into and between them.
+URLs for each step was quite clunky, especially when they depended on having
+state passed into and between them.
 
 The solution that worked out best for me uses Vue Router ["Navigation
 Guards"](https://router.vuejs.org/guide/advanced/navigation-guards.html), which
