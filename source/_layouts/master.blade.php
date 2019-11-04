@@ -9,6 +9,7 @@
         <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/logo.png"/>
         <meta property="og:description" content="{{ $page->siteDescription }}" />
 
         <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
