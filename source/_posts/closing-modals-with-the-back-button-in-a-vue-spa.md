@@ -1,0 +1,131 @@
+---
+extends: _layouts.post
+title: Closing Modals with the Back Button in a Vue SPA
+date: 2019-11-02
+description: 
+section: content
+author: Jess Archer
+---
+
+I recently gave my first conference talk, titled "The Laravel Developer's Guide
+to Vue SPAs" at Laracon AU. I shared a variety of different solutions and
+techniques that I discovered while building [GiftyDuck](https://giftyduck.com)
+&mdash; a social wish list and gift reminder service, built with a Vue SPA front
+end and Laravel back end.
+
+One of the most popular tips I had was something I called "Modal Back Router
+Hack" because it was easier to give a silly name and demo it straight away,
+rather than try to explain it.
+
+## Demo
+
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/grRhJsn0wB0" frameborder="0" allowfullscreen></iframe></div>
+
+When the modal dialog is opened, pressing the back button closes the dialog,
+instead of navigating to the previous page in the browser history (which is
+probably a completely different page). In a multi-step modal window, the back
+button can even go to the previous step.
+
+This might not seem like a huge deal on a desktop app, but on a mobile, where
+a modal dialog like this will often be displayed full-screen, and with phones
+having back buttons and back gestures, I believe it's far more frustrating for
+the back button to not close the modal.
+
+## Using Vue Router "Navigation Guards"
+
+My first implementation of this used routes for each modal dialog and the steps
+within them, but I quickly discovered that having history entries and separate
+URLs for each step was quite clunky, especially they depended on having state
+being passed into and between them.
+
+The solution that worked out best for me uses Vue Router ["Navigation
+Guards"](https://router.vuejs.org/guide/advanced/navigation-guards.html), which
+are a bit like route middleware in Laravel.
+
+Keep in mind that you you will need to register the navigation guard each time
+your modal dialog opens. My modal dialogs are instantiated each time they're
+opened, and destroyed when they're closed, so I'm using Vue component [lifecycle
+hooks](https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks). If
+you're using `v-show` then you will probably want to add a watcher to the piece
+of state controlling it.
+
+```
+export default {
+  created() {
+    // This will be called when the component is instantiated
+
+    this.$once('hook:destroyed', () => {
+      // This will be called when the component is destroyed.
+      // It has access to anything defined in the scope of our "created" method.
+    })
+  },
+
+  destroyed() {
+    // This is the same as the 'destroyed' hook registered above, except it does
+    // not have access to anything defined locally within our 'created' hook.
+  },
+}
+```
+
+The navigation guard is registered by calling `$router.beforeEach()` and passing
+a closure. This closure will be called before any navigation takes place, such
+as clicking on a router link, or pressing the browser back button. In my modals
+I don't have any router links, so the browser back button is the only route
+navigation possible. The navigation guard is free to do whatever it wants, and
+then can decide whether or not the navigation will continue by using the
+`next()` callback that Vue Router passes to us.
+
+```js
+this.$router.beforeEach((to, from, next) => {
+  // Do stuff
+
+  // Then
+  next() // move on to the next hook in the pipeline. If no hooks are left, the navigation is confirmed.
+  next(false) // abort the current navigation.
+  next('/') // redirect to a different location.
+})
+```
+
+In my case, the navigation guard is calling a `back()` method on my modal
+component, which determines which step we are on, and either goes back to the
+previous step, or closes the modal.
+
+Because I don't want to ever go to the previous route while my modal is open,
+I always pass `false` to the `next()` callback.
+
+The `beforeEach()` method returns an "unregister" function, which we can call
+when we want to remove our navigation guard. We need to make sure that we do
+this once the modal is closed, otherwise the navigation guard will continue to
+intercept and prevent all route changes.
+
+All together, our modal component might look something like this:
+
+```js
+export default {
+  created() {
+    const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+      this.back()
+
+      next(false)
+    })
+
+    this.$once('hook:destroyed', () => {
+      unregisterRouterGuard()
+    })
+  },
+
+  methods: {
+    back() {
+      // Go to the previous step, or close the modal
+    }
+  },
+}
+```
+
+I think this is a pretty big user experience improvement and I think it would be
+cool to see more modal dialogs implementing this behaviour.
+
+On the topic of modals, don't forget to handle focus management properly! In my
+talk, I mentioned
+[vue-focus-lock](https://github.com/theKashey/vue-focus-lock/). Be sure to check
+out the "WHY" section.
