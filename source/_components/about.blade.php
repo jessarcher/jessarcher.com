@@ -5,7 +5,7 @@
 
                 <img src="/assets/images/jess.jpg"
                     alt="Jess Archer speaking at a conference"
-                    class="flex rounded-full h-32 w-32 bg-contain my-6 mx-auto sm:mr-6 shadow-inner"
+                    class="flex-no-shrink rounded-full h-32 w-32 bg-contain my-6 mx-auto sm:mr-6 shadow-inner"
                     style="filter: grayscale(100%)"
                 >
 
