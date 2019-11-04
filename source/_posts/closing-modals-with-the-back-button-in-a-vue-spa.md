@@ -13,23 +13,24 @@ techniques that I discovered while building [GiftyDuck](https://giftyduck.com)
 &mdash; a social wish list and gift reminder service, built with a Vue SPA front
 end and Laravel back end.
 
-One of the most popular tips I had was something I called "Modal Back Router
-Hack" because it was easier to give a silly name and demo it straight away,
+One of the most popular tips I shared is something I call the "Modal Back Router
+Hack", because it's easier to give a ~~silly~~ catchy name and demo it,
 rather than try to explain it.
 
 ## Demo
 
-<div class="embed-container"><iframe src="https://www.youtube.com/embed/grRhJsn0wB0" frameborder="0" allowfullscreen></iframe></div>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/hSW6D4F8OMU" frameborder="0" allowfullscreen></iframe></div>
 
-When the modal dialog is opened, pressing the back button closes the dialog,
-instead of navigating to the previous page in the browser history (which is
-probably a completely different page). In a multi-step modal window, the back
-button can even go to the previous step.
+When the modal dialog is open, pressing the back button closes it. On
+a multi-step modal dialog, the back button can even navigate backwards through
+the steps!
 
-This might not seem like a huge deal on a desktop app, but on a mobile, where
-a modal dialog like this will often be displayed full-screen, and with phones
-having back buttons and back gestures, I believe it's far more frustrating for
-the back button to not close the modal.
+On most web apps, pressing the back button while a modal dialog is open will
+navigate to the previous page, rather than closing the modal. This can be very
+frustrating! It might not seem like a huge deal on a desktop app, but on
+a mobile, where a modal like this will often be full-screen, and with phones
+having back buttons and back gestures, I believe it's a huge user experience
+improvement.
 
 ## Using Vue Router "Navigation Guards"
 
@@ -129,3 +130,9 @@ On the topic of modals, don't forget to handle focus management properly! In my
 talk, I mentioned
 [vue-focus-lock](https://github.com/theKashey/vue-focus-lock/). Be sure to check
 out the "WHY" section.
+
+The full talk will be posted on the [Laracon AU YouTube
+channel](https://www.youtube.com/channel/UCYGmktKAAJWnqGGaH9DcTqw) sometime
+before the end of the year, so be sure to subscribe to the channel and [follow
+me on Twitter](https://twitter.com/jessarchercodes) to be notified when it's
+available!
