@@ -1,0 +1,1355 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>The Laravel Developer's Guide to Vue SPAs</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+
+        <link rel="stylesheet" href="lib/font/roboto/roboto-v20-latin.css">
+        <link rel="stylesheet" href="lib/font/fira-code/fira-code-v7-latin-regular.css">
+
+        <link rel="stylesheet" href="lib/css/tailwind.min.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+        <style>
+        .font-mono,
+        code {
+            font-family: 'Fira Code';
+        }
+
+        .hljs {
+            text-align: left;
+            line-height: 1.6;
+            background: none;
+            display: inline-block;
+        }
+        .hljs-ln-numbers {
+            display: none;
+        }
+        .text-7xl {
+            font-size: 6rem;
+        }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+
+    <body class="bg-gray-900 text-gray-200 font-sans leading-tight">
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1 class="mt-20 text-7xl font-bold text-indigo-200">
+                        The Laravel Developer's Guide to Vue SPAs
+                    </h1>
+
+                    <div class="mt-20 inline-flex items-center">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-16 mx-auto fill-current text-gray-400"
+                            viewBox="0 0 52.916665 35.079674"
+                        >
+                            <g transform="translate(245.19674,-28.474866)" id="layer1">
+                                <g transform="matrix(2.8329152,0,0,2.8329152,449.42487,-116.49008)" id="g5002">
+                                    <g id="g194" transform="matrix(0.35277777,0,0,-0.35277777,-237.98986,51.171687)">
+                                        <path d="m 0,0 18.371,-32.385 c 1.181,-1.426 3.343,-2.716 4.941,-2.716 h 9.208 l -17.782,31.584 -0.11,0.005 C 13.716,-1.812 11.035,0 9.141,0 Z" style="fill-rule:nonzero;stroke:none" id="path196" />
+                                    </g>
+                                        <g id="g198" transform="matrix(0.35277777,0,0,-0.35277777,-242.96614,63.554503)">
+                                        <path d="m 0,0 h 4.505 c 9.101,0 16.61,6.984 17.693,16 L 11.363,35.101 V 18.252 c 0,-3.877 -3.072,-7.02 -6.858,-7.02 H -6.323 Z" style="fill-rule:nonzero;stroke:none" id="path200" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <p class="ml-4 text-5xl uppercase font-medium text-gray-400">
+                            Jess Archer
+                        </p>
+                    </div>
+                </section>
+
+                <section data-background-image="assets/jess-laracon-au-2018.jpg" data-background-size="contain">
+                </section>
+
+                <section data-background-image="assets/first-tweet.jpg">
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">The BaseCode Podcast</h1>
+
+                    <div class="mt-10 inline-block p-10 rounded-lg shadow-xl bg-gray-100">
+                        <img class="max-w-3xl mx-auto" src="assets/basecode-podcast.png">
+                        <code class="mt-4 block text-3xl text-orange-600">basecodefieldguide.com/podcast</code>
+                    </div>
+                </section>
+
+                <section data-background-image="assets/jess-laracon-us-2019.jpg" data-background-size="contain">
+                </section>
+
+                <section data-background-image="assets/giftyduck-bg.jpg">
+                    <div class="inline-block">
+                        <svg class="h-40 mx-auto" viewBox="0 0 626 136" fill="none" style="-webkit-filter: drop-shadow(0px 0px 60px #000); filter: drop-shadow(0px 0px 60px #000);" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M30.9521 54.4022H102.39V68.5474H30.9521V54.4022ZM30.9521 78.5027H102.39V92.6479H30.9521V78.5027ZM30.9521 102.57H102.39V116.715H30.9521V102.57ZM69.4241 8.84915C72.1769 6.06703 77.011 6.06703 79.7638 8.84915C82.6509 11.7318 82.6509 16.391 79.7638 19.2737C76.8432 22.2569 67.8463 27.1508 63.1128 27.1508C62.1393 27.1508 61.8371 26.9162 61.8371 26.9162C60.2593 25.2737 64.8249 13.4748 69.4241 8.84915ZM61.4343 47.5977H3.42421C1.54425 47.5977 0 46.0558 0 44.1787V33.9553C0 30.2011 3.05493 27.1508 6.81484 27.1508H28.4343C26.8901 26.0782 25.5473 25.0391 24.6073 24.1005C19.1017 18.5698 19.1017 9.55306 24.6073 4.02234C29.9786 -1.34078 39.2776 -1.34078 44.649 4.02234C47.6032 7.00558 55.4587 19.0726 54.3844 27.1508H54.8544C53.7802 19.0726 61.6357 7.00558 64.5899 4.02234C67.2756 1.34078 70.9348 0 74.594 0C78.2867 0 81.9459 1.34078 84.6316 4.02234C90.1372 9.55306 90.1372 18.5698 84.6316 24.1005C83.6916 25.0391 82.3488 26.0782 80.8045 27.1508H102.424C106.184 27.1508 109.239 30.2011 109.239 33.9553V44.1787C109.239 46.0558 107.695 47.5977 105.815 47.5977H61.4343ZM29.475 19.2737C26.5879 16.391 26.5879 11.7318 29.475 8.84915C30.8514 7.44133 32.6978 6.67038 34.6449 6.67038C36.592 6.67038 38.4048 7.44133 39.8148 8.84915C44.414 13.4748 48.9796 25.2737 47.4017 26.9162C47.4017 26.9162 47.0996 27.1508 46.1261 27.1508C41.3926 27.1508 32.3957 22.2569 29.475 19.2737ZM6.81484 54.4022H22.4923V68.5474H6.81484V54.4022ZM6.81484 78.5027H22.4923V92.6479H6.81484V78.5027ZM6.81484 102.57H22.4923V116.715H6.81484V102.57Z" /><path fill="#ffffff" d="M205.992 70.9609V106.605C205.341 106.638 204.641 106.768 203.893 106.996C203.144 107.224 202.102 107.566 200.768 108.021C197.48 109.161 194.257 110.072 191.1 110.756C187.975 111.439 184.068 111.781 179.381 111.781C171.959 111.781 165.579 110.251 160.24 107.191C154.902 104.099 150.833 99.737 148.033 94.1055C145.266 88.4414 143.883 81.8171 143.883 74.2324C143.883 65.6387 145.478 58.4772 148.668 52.748C151.891 47.0189 156.285 42.7871 161.852 40.0527C167.418 37.2858 173.782 35.9023 180.943 35.9023C184.719 35.9023 187.747 36.0651 190.025 36.3906C192.304 36.7161 194.794 37.2044 197.496 37.8555C199.156 38.2786 200.637 38.6042 201.939 38.832L201.451 52.1621C198.717 50.86 195.868 49.8835 192.906 49.2324C189.944 48.5488 185.973 48.207 180.992 48.207C176.695 48.207 172.968 49.1999 169.811 51.1855C166.686 53.1387 164.277 55.9707 162.584 59.6816C160.891 63.36 160.045 67.7708 160.045 72.9141C160.045 78.0573 160.729 82.6634 162.096 86.7324C163.463 90.7689 165.546 93.9753 168.346 96.3516C171.145 98.6953 174.628 99.8672 178.795 99.8672C183.775 99.8672 187.926 99.2487 191.246 98.0117V83.1191L179.869 82.5332V70.9609H205.992Z" /><path fill="#ffffff" d="M244.18 65.8828V56.9961L251.748 55.3359V50.0137C251.748 44.903 252.757 40.7689 254.775 37.6113C256.794 34.4538 259.365 32.2077 262.49 30.873C265.648 29.5059 269.001 28.8223 272.549 28.8223C274.469 28.8223 276.406 28.9525 278.359 29.2129C280.345 29.4408 281.696 29.6686 282.412 29.8965V40.7363C280.785 39.9551 278.245 39.5645 274.795 39.5645C272.419 39.5645 270.514 40.4271 269.082 42.1523C267.682 43.8776 266.982 46.3841 266.982 49.6719V55.3359H279.971V65.8828H266.982V111H251.748V65.8828H244.18Z" /><path fill="#ffffff" d="M290.373 65.8828H283.684V57.6309C285.832 57.0124 287.378 56.5404 288.322 56.2148C289.299 55.8568 290.161 55.3848 290.91 54.7988C291.659 54.1803 292.245 53.3665 292.668 52.3574C293.352 50.7298 294.572 47.4909 296.33 42.6406H305.607V55.3359H320.695V65.8828H305.607V88.2461C305.607 91.957 305.803 94.6589 306.193 96.3516C306.584 98.0443 307.202 99.1348 308.049 99.623C308.895 100.079 310.197 100.307 311.955 100.307C313.322 100.307 314.885 100.079 316.643 99.623C318.433 99.1348 319.751 98.5814 320.598 97.9629L322.453 106.508C320.923 107.875 318.628 109.096 315.568 110.17C312.541 111.244 309.27 111.781 305.754 111.781C302.01 111.781 299.016 111.212 296.77 110.072C294.556 108.9 292.928 107.061 291.887 104.555C290.878 102.016 290.373 98.6465 290.373 94.4473V65.8828Z" /><path fill="#ffffff" d="M379.438 55.3359L362.104 112.465C360.15 118.845 357.546 123.858 354.291 127.504C351.036 131.15 347.406 133.559 343.402 134.73C342.556 134.991 341.303 135.219 339.643 135.414C338.015 135.642 336.794 135.756 335.98 135.756C335.134 135.756 333.751 135.642 331.83 135.414C329.91 135.219 328.819 135.023 328.559 134.828V122.475C329.145 122.67 330.072 122.882 331.342 123.109C332.644 123.337 333.555 123.451 334.076 123.451C336.387 123.451 338.373 123.24 340.033 122.816C341.726 122.393 343.386 121.27 345.014 119.447C346.674 117.657 347.992 114.841 348.969 111H342.426L323.529 55.3359H340.033L348.48 85.0723L352.533 101.137L356.293 85.0723L363.08 55.3359H379.438Z" /><path fill="#ffffff" d="M395.26 36.6836C396.301 36.6836 398.385 36.5859 401.51 36.3906C405.872 36.0651 409.794 35.9023 413.277 35.9023C425.484 35.9023 434.599 38.9948 440.621 45.1797C446.676 51.3646 449.703 60.2676 449.703 71.8887C449.703 80.1895 448.189 87.3346 445.162 93.3242C442.135 99.3138 437.822 103.887 432.223 107.045C426.656 110.202 420.097 111.781 412.545 111.781C410.201 111.781 406.718 111.635 402.096 111.342C399.264 111.114 397.034 111 395.406 111H387.887V36.6836H395.26ZM413.521 99.8672C419.706 99.8021 424.54 97.6374 428.023 93.373C431.539 89.0762 433.297 82.4681 433.297 73.5488C433.297 67.1686 432.516 62.0905 430.953 58.3145C429.423 54.5059 427.096 51.7715 423.971 50.1113C420.846 48.4512 416.793 47.6211 411.812 47.6211C410.087 47.6211 407.988 47.7839 405.514 48.1094L403.561 48.3047V98.9883C405.774 99.5742 409.094 99.8672 413.521 99.8672Z" /><path fill="#ffffff" d="M508.836 55.3359V111.781H498.777C497.475 111.781 496.531 111.586 495.945 111.195C495.359 110.837 495.066 110.089 495.066 108.949V106.41C492.951 107.908 490.363 109.177 487.303 110.219C484.275 111.26 481.443 111.781 478.807 111.781C473.729 111.781 469.855 110.821 467.186 108.9C464.516 106.98 462.726 104.327 461.814 100.941C460.936 97.556 460.496 93.194 460.496 87.8555V55.3359H475.73V87.709C475.73 91.1921 476.023 93.8288 476.609 95.6191C477.228 97.377 478.123 98.5651 479.295 99.1836C480.499 99.8021 482.16 100.111 484.275 100.111C485.903 100.111 487.628 99.7695 489.451 99.0859C491.274 98.4023 492.658 97.6862 493.602 96.9375V55.3359H508.836Z" /><path fill="#ffffff" d="M547.754 54.5547C551.042 54.5547 554.02 54.8477 556.689 55.4336C559.359 55.987 561.198 56.638 562.207 57.3867L560.303 69.1543C558.903 68.4056 557.34 67.8685 555.615 67.543C553.923 67.1849 551.823 67.0059 549.316 67.0059C546.973 67.0059 544.743 67.5104 542.627 68.5195C540.511 69.4961 538.753 71.1074 537.354 73.3535C535.954 75.5671 535.205 78.4316 535.107 81.9473C535.01 85.821 535.531 89.0762 536.67 91.7129C537.809 94.3496 539.421 96.319 541.504 97.6211C543.62 98.8906 546.029 99.5254 548.73 99.5254C551.172 99.5254 553.499 99.3138 555.713 98.8906C557.959 98.4349 559.668 97.8815 560.84 97.2305L563.037 106.264C561.312 107.924 558.903 109.258 555.811 110.268C552.718 111.277 549.43 111.781 545.947 111.781C540.348 111.781 535.596 110.593 531.689 108.217C527.783 105.808 524.854 102.504 522.9 98.3047C520.947 94.0729 519.971 89.2552 519.971 83.8516C519.971 78.2526 520.996 73.2396 523.047 68.8125C525.098 64.3854 528.206 60.9023 532.373 58.3633C536.54 55.8242 541.667 54.5547 547.754 54.5547Z" /><path fill="#ffffff" d="M593.703 87.8066L587.746 94.3008L587.941 100.6V111H572.707V29.8965H587.941V63.2949L587.453 77.3086L606.252 55.3359H623.488L603.615 76.9668L625.441 111H608.107L593.703 87.8066Z" /><path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M234.994 111.391C234.356 111.424 233.752 111.424 233.114 111.424C230.865 111.424 228.817 111.089 226.937 110.318C225.124 109.581 223.546 108.508 222.237 107.067C220.928 105.659 219.921 103.95 219.182 101.938C218.477 99.9273 218.108 97.6815 218.108 95.1675V55.1117H234.994V111.391ZM226.769 46.4301C223.916 46.4301 221.566 45.5922 219.719 43.8827C217.906 42.1732 217 40.095 217 37.6145C217 35.067 217.906 33.0223 219.719 31.4134C221.566 29.8045 223.916 29 226.769 29C229.656 29 232.04 29.8045 233.819 31.4134C235.632 33.0223 236.538 35.067 236.538 37.6145C236.538 40.1955 235.632 42.3072 233.819 43.9497C232.04 45.5922 229.656 46.4301 226.769 46.4301Z" /></svg>
+
+                        <h2
+                            class="mt-10 pt-10 border-t border-teal-200 text-white font-medium text-5xl"
+                            style="text-shadow: 0 0 60px black"
+                        >
+                            Social wish list and gift reminders
+                        </h2>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        What is an SPA?
+                    </h1>
+
+                    <h2 class="mt-10 text-6xl font-bold text-indigo-300">
+                        (Single Page Application)
+                    </h2>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        What is an SPA?
+                    </h1>
+
+                    <h2 class="mt-10 text-6xl font-bold text-indigo-300">
+                        (<em>Single Full Page Load</em> Application)
+                    </h2>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Why build an SPA?
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-serif italic">&ldquo;It feels like an app&rdquo;</h1>
+
+                    <div class="mt-5 text-5xl text-gray-500">
+                        &mdash; Everyone
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Code Sharing
+                    </h1>
+                </section>
+
+                <section>
+                    <img class="inline-block" src="assets/shared-api.png">
+                </section>
+
+                <section>
+                    <pre><code class="text-2xl" data-trim xdata-line-numbers="3-15">
+                        <!-- MyComponent.vue -->
+
+                        &lt;template web>
+                            &lt;input v-model="name" />
+                        &lt;/template>
+
+                        &lt;template native>
+                            &lt;TextField v-model="name" />
+                        &lt;/template>
+
+                        &lt;script>
+                            export default {
+                                // shared logic
+                            }
+                        &lt;/script>
+                    </code></pre>
+
+                    <p class="mt-10 text-4xl font-mono text-gray-600">
+                        <a href="https://nativescript-vue.org">
+                           nativescript-vue.org
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Why not build an SPA?
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        We need to re-engineer things<br>that the browser ordinarily give us
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        Easy to harm user experience<br>and accessibility
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        Hard to optimise for search engines
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold leading-relaxed">
+                        More work<br>Slower to build<br>More to maintain
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold leading-none">
+                        SPA<br>Authentication
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold text-indigo-300">
+                        Goals
+                    </h1>
+
+                    <h2 class="mt-1 text-5xl font-medium text-gray-500">
+                        (assumptions)
+
+                    <ul class="mx-auto max-w-4xl list-decimal text-5xl font-medium text-center text-gray-700">
+                        <li class="mt-20"><span class="text-gray-200">The SPA should be completely decoupled from the back-end</span></li>
+                        <li class="mt-20"><span class="text-gray-200">OAuth2 and JWTs are the gold standards for authentication</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-7xl font-bold text-indigo-300">
+                        OAuth
+                    </h2>
+
+                    <p class="mt-8 text-6xl font-medium">
+                        Primarily intended<br>for third-party auth
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-7xl font-bold text-indigo-300">
+                        OAuth
+                    </h2>
+
+                    <p class="mt-8 text-6xl font-medium">
+                        Requires the client to<br>hold tokens or secrets
+                    </p>
+                </section>
+
+                <!-- https://twitter.com/jessarchercodes/status/1076068111642578944?s=20 -->
+                <section data-background-image="assets/tweet-to-alexbilbie.jpg">
+                </section>
+
+                <!-- https://twitter.com/alexbilbie/status/1078289836732284933 -->
+                <section data-background-image="assets/alexbilbie-tweet.jpg">
+                </section>
+
+                <section>
+                    <p class="text-6xl font-medium italic">Short access tokens...</p>
+                    <p class="mt-8 text-6xl font-medium italic">Refresh regularly...</p>
+
+                    <div class="mt-8 fragment">
+                        <p class="text-7xl">😬</p>
+                        <p class="mt-8 text-3xl">(Sorry Alex)</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-medium">
+                        Why short access tokens<br>and refresh regularly?
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-medium">
+                        If JavaScript can access a token<br>it is vulnerable to XSS attacks.
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold tracking-wide">
+                        JWT
+                    </h1>
+
+                    <p class="mt-4 max-w-3xl mx-auto text-5xl font-medium text-indigo-300">
+                        JSON Web Tokens
+                    </p>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold text-indigo-300">
+                        JWT
+                    </h1>
+
+                    <p class="mt-8 text-6xl font-medium">
+                        Really clever way to do decentralised<br>and stateless authentication
+                    </p>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold text-indigo-300">
+                        JWT
+                    </h1>
+
+                    <p class="mt-8 text-6xl font-medium">
+                        JavaScript clients<br>need to hold the token
+                    </p>
+                </section>
+
+                <section
+                    data-background-video="assets/window-crash.mp4"
+                    data-background-video-loopx
+                    data-background-video-muted="true"
+                    data-background-size="contain"
+                >
+                    <div class="stretch relative">
+                        <h1
+                            class="absolute bottom-0 w-full text-white font-bold text-6xl"
+                            style="text-shadow: 0px 0px 10px black;"
+                        >
+                            I felt like I kept<br>hitting walls...
+                        </h1>
+                    </div>
+                </section>
+
+                <!-- https://twitter.com/adamwathan/status/1156752450843500544 -->
+                <section data-background-image="assets/adamwathan-tweet.jpg">
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-medium">The solution?</h1>
+                </section>
+
+                <section>
+                    <div class="text-7xl">🍪</div>
+
+                    <h1 class="mt-10 text-7xl font-bold">Cookies!</h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-medium">
+                        Cookies marked <code class="bg-gray-800 px-5 py-3 rounded-lg">HttpOnly</code> cannot be accessed by JavaScript
+                    </h1>
+                </section>
+
+                <section>
+                    <ul class="inline-block text-left text-5xl font-medium">
+                        <li class="flex">
+                            <div>🙅</div>
+                            <div class="ml-4">
+                                Can't use Laravel's default token-based API middleware
+                            </div>
+                        </li>
+
+                        <li class="fragment mt-20 flex">
+                            <div>🤢</div>
+                            <div class="ml-4">
+                                Could put your API routes in <code class="bg-gray-800 px-5 py-3 rounded-lg">routes/web.php</code> to use the session cookie
+                            </div>
+                        </li>
+
+                        <li class="fragment mt-20 flex">
+                            <div>🤮</div>
+                            <div class="ml-4">
+                                Could change your <code class="bg-gray-800 px-5 py-3 rounded-lg">routes/api.php</code> middleware to use sessions
+                            </div>
+                        </li>
+
+                        <li class="fragment mt-12 text-center">
+                            Or...
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">Laravel Passport</h1>
+                    <h2 class="mt-8 text-6xl font-bold text-indigo-300">It's not just for OAuth!</h2>
+                    <h3 class="mt-8 text-5xl font-medium text-gray-600">(But it also does OAuth!)</h2>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">Passport can authenticate via cookies too!</h1>
+                </section>
+
+                <section>
+                    <pre><code class="php text-3xl" data-trim>
+                        // app/Http/Kernel.php
+
+                        'web' => [
+                            // Other middleware...
+                            \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
+                        ],
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="text-2xl" data-trim data-line-numbers="1-9">
+                        // resources/js/bootstrap.js
+
+                        window.axios.interceptors.response.use(undefined, function (error) {
+                            switch (error.response.status) {
+                                case 401: // Not logged in
+                                case 419: // Session expired
+                                case 503: // Down for maintenance
+                                    // Bounce the user to the login screen with a redirect back
+                                    window.location.reload()
+                                    break;
+
+                                case 500:
+                                    alert('Ooops, something went wrong! The team have been notified.')
+                                    break;
+
+                                default:
+                                    // Allow individual requests to handle other errors
+                                    return Promise.reject(error);
+                            }
+                        });
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="text-5xl" data-trim>
+                        # .env
+
+                        SESSION_LIFETIME=43200 # 30 days
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        State Management
+                    </h1>
+                </section>
+
+                <section>
+                    <pre><code class="text-3xl" data-trim data-line-numbers="2,9">
+                        <template>
+                            <h1>Hi, {{ name }}</h1>
+                        </template>
+
+                        <script>
+                            export default {
+                                data() {
+                                    return {
+                                        name: 'Laracon',
+                                    }
+                                }
+                            }
+                        </script>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="text-3xl" data-trim data-line-numbers="2,11-13">
+                        <template>
+                            <h1>Count: {{ count }}</h1>
+
+                            <button @click="$emit('increment')">
+                                Increment
+                            </button>
+                        </template>
+
+                        <script>
+                            export default {
+                                props: [
+                                    'count'
+                                ],
+                            }
+                        </script>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="text-3xl" data-trim data-line-numbers="4">
+                        <template>
+                            <h1>Count: {{ count }}</h1>
+
+                            <button @click="$emit('increment')">
+                                Increment
+                            </button>
+                        </template>
+
+                        <script>
+                            export default {
+                                props: [
+                                    'count'
+                                ],
+                            }
+                        </script>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="text-5xl font-bold tracking-wide">
+                        One-Way Data Flow
+                    </h1>
+
+                    <img
+                        src="assets/one-way-data-flow.png"
+                        class="mt-10 max-w-2xl inline-block rounded-lg shadow-2xl"
+                    />
+
+                    <p class="mt-10 text-3xl font-mono text-gray-500">
+                        <a href="https://vuejs.org/v2/guide/components-props.html">
+                            https://vuejs.org/v2/guide/components-props.html
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h1 class="text-5xl font-bold tracking-wide">
+                        Store Pattern
+                    </h1>
+
+                    <img
+                        src="assets/shared-state-pattern.png"
+                        class="mt-10 max-w-2xl inline-block rounded-lg shadow-2xl"
+                    />
+
+                    <p class="mt-10 text-3xl font-mono text-gray-500">
+                        <a href="https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow">
+                            https://vuejs.org/v2/guide/state-management.html
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Demo
+                    </h1>
+
+                    <p class="mt-8 text-5xl font-medium text-indigo-300">Don't worry - no live coding on my first talk 😅</p>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-4xl" data-trim>
+                        import Vuex from 'vuex'
+
+                        const store = new Vuex.Store({
+                            state: {},     // data
+
+                            getters: {},   // computed properties
+
+                            mutations: {}, // methods that change state
+
+                            actions: {}    // arbitrary async methods
+                        })
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Freedom can be paralysing in software development
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        Vuex as the interface to my API<br>and single source of truth for my data
+                    </h1>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        I only push data to Vuex when<br>it's ready to be saved to the server.
+                    </h1>
+
+                    <div class="mt-12 inline-block px-10 py-4 rounded-lg shadow-xl bg-gray-800">
+                        <pre><code class="text-2xl" data-trim>
+                            // MyComponent.vue
+
+                            methods: {
+                                save() {
+                                    this.$store.dispatch('luckyDucks/save', this.luckyDuck)
+                                }
+                            }
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        I place my API requests inside<br>Vuex "Actions"
+                    </h1>
+
+                    <div class="mt-12 inline-block px-10 py-4 rounded-lg shadow-xl bg-gray-800">
+                        <pre><code class="text-2xl" data-trim>
+                            // store/modules/lucky-ducks.js
+
+                            actions: {
+                                save(context, luckyDuck) {
+                                    axios.post('/api/lucky-ducks', luckyDuck)
+                                    // ...
+                                }
+                            }
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="text-6xl font-bold">
+                        I store the data returned from the server,<br>not what was passed to the Vuex action.
+                    </h1>
+
+                    <div class="mt-12 inline-block px-10 py-4 rounded-lg shadow-xl bg-gray-800">
+                        <pre><code class="text-2xl" data-trim>
+                            // store/modules/lucky-ducks.js
+
+                            axios.post('/api/lucky-ducks', luckyDuck)
+                                 .then(response => {
+                                    context.commit('save', response.data.data)
+                                 })
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <pre><code class="text-3xl" data-trim data-line-numbers="7-9,11">
+                        import Vuex from 'vuex'
+                        import luckyDucks from 'modules/lucky-ducks.js'
+                        import occasions from 'modules/occasions.js'
+                        ...
+
+                        const store = new Vuex.Store({
+                            modules: {
+                                luckyDucks,
+                                occasions,
+                                ...
+                            }
+                        })
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Structuring your data<br>on the front end
+                    </h1>
+                </section>
+
+                <section>
+                    <pre><code class="php text-3xl" data-trim data-line-numbers="">
+                        class LuckyDuckController
+                        {
+                            public function index()
+                            {
+                                return auth()
+                                    ->user()
+                                    ->luckyDucks
+                                    ->load('occasions');
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="json text-3xl" data-trim data-line-numbers="1-10,12-13,15">
+                        [
+                            {
+                                "id": 1,
+                                "nickname": "Sally",
+                                "occasions": [
+                                    {
+                                        "id": 1,
+                                        "type": "birthday",
+                                        "date": "1989-11-30"
+                                    },
+                                    ...
+                                ]
+                            },
+                            ...
+                        ]
+                    </code></pre>
+                </section>
+
+                <section
+                    data-background-video="assets/pool_jump.mp4"
+                    data-background-video-loopx
+                    data-background-video-muted="true"
+                    data-background-size="contain"
+                >
+                    <div class="stretch relative">
+                        <h1
+                            class="absolute bottom-0 mb-10 w-full text-white font-bold text-5xl"
+                            style="text-shadow: 0px 0px 10px black;"
+                        >
+                            I thought I'd set up everything<br>perfectly for my front-end...
+                        </h1>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="mt-4 text-5xl font-bold">What I wanted...</h1>
+
+                    <pre><code class="mt-10 javascript text-3xl" data-trim data-line-numbers="">
+                        // Occasions belonging to an individual lucky duck
+                        luckyDuck.occasions.forEach(occasion => {
+                            occasion.doSomething()
+                        })
+
+                        // All occasions, regardless of lucky duck
+                        occasions.forEach(occasion => {
+                            occasion.doSomething()
+                        })
+
+                        // Individual occasions by ID
+                        occasion = findById(123)
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="mt-4 text-7xl font-bold">
+                        Flatten your data<br>on the front end
+                    </h1>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="1-7,9-17,19-20">
+                        state: {
+                            luckyDucks: {
+                                1: {
+                                    id: 1,
+                                    nickname: 'Sally',
+                                    occasions: [1, 2, 3]
+                                },
+                                ...
+                            },
+
+                            occasions: {
+                                1: {
+                                    id: 1,
+                                    type: 'birthday',
+                                    date: '1989-11-30'
+                                    lucky_duck_id: 1
+                                },
+                                ...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="2,9,11,19">
+                        state: {
+                            luckyDucks: {
+                                1: {
+                                    id: 1,
+                                    nickname: 'Sally',
+                                    occasions: [1, 2, 3]
+                                },
+                                ...
+                            },
+
+                            occasions: {
+                                1: {
+                                    id: 1,
+                                    type: 'birthday',
+                                    date: '1989-11-30'
+                                    lucky_duck_id: 1
+                                },
+                                ...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="3,12">
+                        state: {
+                            luckyDucks: {
+                                1: {
+                                    id: 1,
+                                    nickname: 'Sally',
+                                    occasions: [1, 2, 3]
+                                },
+                                ...
+                            },
+
+                            occasions: {
+                                1: {
+                                    id: 1,
+                                    type: 'birthday',
+                                    date: '1989-11-30'
+                                    lucky_duck_id: 1
+                                },
+                                ...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="4,13">
+                        state: {
+                            luckyDucks: {
+                                1: {
+                                    id: 1,
+                                    nickname: 'Sally',
+                                    occasions: [1, 2, 3]
+                                },
+                                ...
+                            },
+
+                            occasions: {
+                                1: {
+                                    id: 1,
+                                    type: 'birthday',
+                                    date: '1989-11-30'
+                                    lucky_duck_id: 1
+                                },
+                                ...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="6,16">
+                        state: {
+                            luckyDucks: {
+                                1: {
+                                    id: 1,
+                                    nickname: 'Sally',
+                                    occasions: [1, 2, 3]
+                                },
+                                ...
+                            },
+
+                            occasions: {
+                                1: {
+                                    id: 1,
+                                    type: 'birthday',
+                                    date: '1989-11-30'
+                                    lucky_duck_id: 1
+                                },
+                                ...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Modal Back Router Hack
+                    </h1>
+                </section>
+
+                <section
+                    data-background-image="assets/buffy-what.gif"
+                    data-background-size="contain"
+                >
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Demo
+                    </h1>
+
+                    <p class="mt-8 text-5xl text-indigo-300">
+                        Still no live coding
+                    </p>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim>
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="1,11">
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="2,6">
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="3,14-16">
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="5">
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="2,6">
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="javascript text-2xl" data-trim data-line-numbers="8-10">
+                        created() {
+                            const unregisterRouterGuard = this.$router.beforeEach((to, from, next) => {
+                                this.back()
+
+                                next(false)
+                            })
+
+                            this.$once('hook:destroyed', () => {
+                                unregisterRouterGuard()
+                            })
+                        },
+
+                        methods: {
+                            back() {
+                                //...
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="mt-4 text-7xl font-bold">
+                        Modal Focus Management
+                    </h1>
+
+                    <p class="mt-10 text-3xl font-mono text-gray-500">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role">
+                            https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <pre><code class="mt-20 shell text-4xl" data-trim>
+                        $ npm install vue-focus-lock
+                    </code></pre>
+
+                    <div class="mt-10 inline-block px-20 py-6 bg-gray-800 rounded-lg shadow-xl">
+                        <pre><code class="html text-4xl" data-trim>
+                            &lt;FocusLock>
+                                &lt;MyModal />
+                            &lt;/FocusLock>
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Loading Animations
+                    </h1>
+                </section>
+
+                <section>
+                    <pre><code class="php text-3xl" data-trim data-line-numbers="1,8-10" data-no-escape>
+                        // resources/view/app.blade.php
+
+                        @extends('layouts.html')
+
+                        @section('body')
+
+                            &lt;div id="#app"&gt;
+                                &lt;app&gt;
+                                    @include('partials.loading')
+                                &lt;/app&gt;
+                            &lt;/div&gt;
+
+                        @endsection
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="html text-2xl" data-trim>
+                        // resources/views/partials/loading.blade.php
+
+                        <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+                            &lt;svg
+                                role="img"
+                                style="
+                                    width: 3rem;
+                                    -webkit-animation: loading-bounce 2s infinite;
+                                    animation: loading-bounce 2s infinite;
+                                    fill: currentColor;
+                                    color: #38B2AC;
+                                "
+                                viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5194 46.6111H90.727V58.7306H29.5194V46.6111ZM29.5194 67.2602H90.727V79.3797H29.5194V67.2602ZM29.5194 87.8805H90.727V100H29.5194V87.8805ZM62.4818 7.58185C64.8403 5.19816 68.9822 5.19816 71.3407 7.58185C73.8144 10.0517 73.8144 14.0437 71.3407 16.5135C68.8384 19.0695 61.1299 23.2625 57.0743 23.2625C56.2402 23.2625 55.9813 23.0615 55.9813 23.0615C54.6295 21.6542 58.5412 11.5451 62.4818 7.58185ZM55.6362 40.7812H5.93382C4.3231 40.7812 3 39.4601 3 37.8518V29.0925C3 25.8759 5.61743 23.2625 8.83888 23.2625H27.3622C26.0391 22.3435 24.8886 21.4532 24.0832 20.6491C19.3661 15.9104 19.3661 8.18495 24.0832 3.4463C28.6853 -1.14877 36.6526 -1.14877 41.2547 3.4463C43.7858 6.0023 50.5164 16.3412 49.596 23.2625H49.9986C49.0782 16.3412 55.8088 6.0023 58.3399 3.4463C60.6409 1.14877 63.7761 0 66.9112 0C70.0752 0 73.2103 1.14877 75.5114 3.4463C80.2285 8.18495 80.2285 15.9104 75.5114 20.6491C74.706 21.4532 73.5555 22.3435 72.2324 23.2625H90.7557C93.9772 23.2625 96.5946 25.8759 96.5946 29.0925V37.8518C96.5946 39.4601 95.2715 40.7812 93.6608 40.7812H55.6362ZM28.2539 16.5135C25.7802 14.0437 25.7802 10.0517 28.2539 7.58185C29.4331 6.37565 31.0151 5.71511 32.6834 5.71511C34.3516 5.71511 35.9048 6.37565 37.1128 7.58185C41.0534 11.5451 44.9651 21.6542 43.6133 23.0615C43.6133 23.0615 43.3544 23.2625 42.5203 23.2625C38.4647 23.2625 30.7562 19.0695 28.2539 16.5135ZM8.83888 46.6111H22.2712V58.7306H8.83888V46.6111ZM8.83888 67.2602H22.2712V79.3797H8.83888V67.2602ZM8.83888 87.8805H22.2712V100H8.83888V87.8805Z" />
+                            &lt;/svg>
+                        </div>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="html text-2xl" data-trim data-line-numbers="8-9">
+                        // resources/views/partials/loading.blade.php
+
+                        <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+                            &lt;svg
+                                role="img"
+                                style="
+                                    width: 3rem;
+                                    -webkit-animation: loading-bounce 2s infinite;
+                                    animation: loading-bounce 2s infinite;
+                                    fill: currentColor;
+                                    color: #38B2AC;
+                                "
+                                viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5194 46.6111H90.727V58.7306H29.5194V46.6111ZM29.5194 67.2602H90.727V79.3797H29.5194V67.2602ZM29.5194 87.8805H90.727V100H29.5194V87.8805ZM62.4818 7.58185C64.8403 5.19816 68.9822 5.19816 71.3407 7.58185C73.8144 10.0517 73.8144 14.0437 71.3407 16.5135C68.8384 19.0695 61.1299 23.2625 57.0743 23.2625C56.2402 23.2625 55.9813 23.0615 55.9813 23.0615C54.6295 21.6542 58.5412 11.5451 62.4818 7.58185ZM55.6362 40.7812H5.93382C4.3231 40.7812 3 39.4601 3 37.8518V29.0925C3 25.8759 5.61743 23.2625 8.83888 23.2625H27.3622C26.0391 22.3435 24.8886 21.4532 24.0832 20.6491C19.3661 15.9104 19.3661 8.18495 24.0832 3.4463C28.6853 -1.14877 36.6526 -1.14877 41.2547 3.4463C43.7858 6.0023 50.5164 16.3412 49.596 23.2625H49.9986C49.0782 16.3412 55.8088 6.0023 58.3399 3.4463C60.6409 1.14877 63.7761 0 66.9112 0C70.0752 0 73.2103 1.14877 75.5114 3.4463C80.2285 8.18495 80.2285 15.9104 75.5114 20.6491C74.706 21.4532 73.5555 22.3435 72.2324 23.2625H90.7557C93.9772 23.2625 96.5946 25.8759 96.5946 29.0925V37.8518C96.5946 39.4601 95.2715 40.7812 93.6608 40.7812H55.6362ZM28.2539 16.5135C25.7802 14.0437 25.7802 10.0517 28.2539 7.58185C29.4331 6.37565 31.0151 5.71511 32.6834 5.71511C34.3516 5.71511 35.9048 6.37565 37.1128 7.58185C41.0534 11.5451 44.9651 21.6542 43.6133 23.0615C43.6133 23.0615 43.3544 23.2625 42.5203 23.2625C38.4647 23.2625 30.7562 19.0695 28.2539 16.5135ZM8.83888 46.6111H22.2712V58.7306H8.83888V46.6111ZM8.83888 67.2602H22.2712V79.3797H8.83888V67.2602ZM8.83888 87.8805H22.2712V100H8.83888V87.8805Z" />
+                            &lt;/svg>
+                        </div>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="html text-xl" data-trim data-line-numbers="1,5-20">
+                        // resources/views/layouts/html.blade.php
+
+                        &lt;head>
+                            <style>
+                                @keyframes loading-bounce {
+                                    0%, 25%, 50%, 75%, 100% {
+                                        -webkit-transform: translateY(0);
+                                        transform: translateY(0);
+                                    }
+                                    15% {
+                                        -webkit-transform: translateY(-20px);
+                                        transform: translateY(-20px);
+                                    }
+                                    35% {
+                                        -webkit-transform: translateY(-12px);
+                                        transform: translateY(-12px);
+                                    }
+                                }
+
+                                @-webkit-keyframes loading-bounce {
+                                ...
+                            </style>
+                        &lt;/head>
+                    </code></pre>
+                </section>
+
+                <section>
+                    <svg
+                        style="display: inline-block; width: 12rem; fill: currentColor; color: #38B2AC; -webkit-animation: loading-bounce 2s infinite; animation: loading-bounce 2s infinite;"
+                        viewBox="0 0 100 100"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M29.5194 46.6111H90.727V58.7306H29.5194V46.6111ZM29.5194 67.2602H90.727V79.3797H29.5194V67.2602ZM29.5194 87.8805H90.727V100H29.5194V87.8805ZM62.4818 7.58185C64.8403 5.19816 68.9822 5.19816 71.3407 7.58185C73.8144 10.0517 73.8144 14.0437 71.3407 16.5135C68.8384 19.0695 61.1299 23.2625 57.0743 23.2625C56.2402 23.2625 55.9813 23.0615 55.9813 23.0615C54.6295 21.6542 58.5412 11.5451 62.4818 7.58185ZM55.6362 40.7812H5.93382C4.3231 40.7812 3 39.4601 3 37.8518V29.0925C3 25.8759 5.61743 23.2625 8.83888 23.2625H27.3622C26.0391 22.3435 24.8886 21.4532 24.0832 20.6491C19.3661 15.9104 19.3661 8.18495 24.0832 3.4463C28.6853 -1.14877 36.6526 -1.14877 41.2547 3.4463C43.7858 6.0023 50.5164 16.3412 49.596 23.2625H49.9986C49.0782 16.3412 55.8088 6.0023 58.3399 3.4463C60.6409 1.14877 63.7761 0 66.9112 0C70.0752 0 73.2103 1.14877 75.5114 3.4463C80.2285 8.18495 80.2285 15.9104 75.5114 20.6491C74.706 21.4532 73.5555 22.3435 72.2324 23.2625H90.7557C93.9772 23.2625 96.5946 25.8759 96.5946 29.0925V37.8518C96.5946 39.4601 95.2715 40.7812 93.6608 40.7812H55.6362ZM28.2539 16.5135C25.7802 14.0437 25.7802 10.0517 28.2539 7.58185C29.4331 6.37565 31.0151 5.71511 32.6834 5.71511C34.3516 5.71511 35.9048 6.37565 37.1128 7.58185C41.0534 11.5451 44.9651 21.6542 43.6133 23.0615C43.6133 23.0615 43.3544 23.2625 42.5203 23.2625C38.4647 23.2625 30.7562 19.0695 28.2539 16.5135ZM8.83888 46.6111H22.2712V58.7306H8.83888V46.6111ZM8.83888 67.2602H22.2712V79.3797H8.83888V67.2602ZM8.83888 87.8805H22.2712V100H8.83888V87.8805Z"
+                        />
+                    </svg>
+
+                    <style>
+                        @keyframes loading-bounce {
+                            0%,
+                            25%,
+                            50%,
+                            75%,
+                            100% {
+                                -webkit-transform: translateY(0);
+                                transform: translateY(0);
+                            }
+                            15% {
+                                -webkit-transform: translateY(-2rem);
+                                transform: translateY(-2rem);
+                            }
+                            35% {
+                                -webkit-transform: translateY(-1rem);
+                                transform: translateY(-1rem);
+                            }
+                        }
+
+                        @-webkit-keyframes loading-bounce {
+                            0%,
+                            25%,
+                            50%,
+                            75%,
+                            100% {
+                                -webkit-transform: translateY(0);
+                                transform: translateY(0);
+                            }
+                            15% {
+                                -webkit-transform: translateY(-20px);
+                                transform: translateY(-20px);
+                            }
+                            35% {
+                                -webkit-transform: translateY(-12px);
+                                transform: translateY(-12px);
+                            }
+                        }
+                    </style>
+                </section>
+
+                <section>
+                    <h1 class="text-7xl font-bold">
+                        Keep your bundle small
+                    </h1>
+                </section>
+
+                <section>
+                    <pre><code class="text-2xl" data-trim>
+                        // Before
+
+                        import moment from 'moment'
+
+                        moment.utc(value).fromNow()
+
+                        // After
+
+                        import dayjs from 'dayjs'
+                        import utc from 'dayjs/plugin/utc'
+                        import relativeTime from 'dayjs/plugin/relativeTime'
+
+                        dayjs.extend(utc)
+                        dayjs.extend(relativeTime)
+
+                        dayjs.utc(value).fromNow()
+                    </code></pre>
+                </section>
+
+                <section>
+                    <pre><code class="text-2xl" data-trim data-line-numbers="10-14">
+                        // Before
+
+                        import moment from 'moment'
+
+                        moment.utc(value).fromNow()
+
+                        // After
+
+                        import dayjs from 'dayjs'
+                        import utc from 'dayjs/plugin/utc'
+                        import relativeTime from 'dayjs/plugin/relativeTime'
+
+                        dayjs.extend(utc)
+                        dayjs.extend(relativeTime)
+
+                        dayjs.utc(value).fromNow()
+                    </code></pre>
+                </section>
+
+                <section>
+                    <div class="text-7xl">😨</div>
+
+                    <div class="mt-10 text-5xl">
+                        <code>677 KB</code> (minified) <code>-></code> <code>416 KB</code>
+                    </div>
+
+                    <div class="mt-10 text-5xl text-gray-600">
+                        (<code>261 KB</code>!)
+                    </div>
+                </section>
+
+                <section>
+                    <pre><code class="text-2xl" data-trim>
+                        // Before
+
+                        window._ = require('lodash')
+
+                        _.keyBy(...)
+
+
+                        // After
+
+                        import keyBy from 'lodash/keyBy'
+
+                        keyBy(...)
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1 class="text-5xl font-bold text-indigo-300">
+                        Alternatives
+                    </h1>
+
+                    <ul class="text-5xl font-medium">
+                        <li class="mt-20">Server rendered apps<br>are still awesome!</li>
+
+                        <li class="mt-20">
+                            Inertia.js
+
+                            <div class="mt-2 text-4xl">
+                                <a class="font-mono text-indigo-300" href="https://inertiajs.com/">inertiajs.com</a>
+                            </div>
+                        </li>
+
+                        <li class="mt-20">
+                            Livewire
+
+                            <div class="mt-2 text-4xl">
+                                <a class="font-mono text-indigo-300" href="https://laravel-livewire.com/">laravel-livewire.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section data-background-image="assets/giftyduck-bg.jpg">
+                    <div class="inline-block">
+                        <svg class="h-40 mx-auto" viewBox="0 0 626 136" fill="none" style="-webkit-filter: drop-shadow(0px 0px 60px #000); filter: drop-shadow(0px 0px 60px #000);" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M30.9521 54.4022H102.39V68.5474H30.9521V54.4022ZM30.9521 78.5027H102.39V92.6479H30.9521V78.5027ZM30.9521 102.57H102.39V116.715H30.9521V102.57ZM69.4241 8.84915C72.1769 6.06703 77.011 6.06703 79.7638 8.84915C82.6509 11.7318 82.6509 16.391 79.7638 19.2737C76.8432 22.2569 67.8463 27.1508 63.1128 27.1508C62.1393 27.1508 61.8371 26.9162 61.8371 26.9162C60.2593 25.2737 64.8249 13.4748 69.4241 8.84915ZM61.4343 47.5977H3.42421C1.54425 47.5977 0 46.0558 0 44.1787V33.9553C0 30.2011 3.05493 27.1508 6.81484 27.1508H28.4343C26.8901 26.0782 25.5473 25.0391 24.6073 24.1005C19.1017 18.5698 19.1017 9.55306 24.6073 4.02234C29.9786 -1.34078 39.2776 -1.34078 44.649 4.02234C47.6032 7.00558 55.4587 19.0726 54.3844 27.1508H54.8544C53.7802 19.0726 61.6357 7.00558 64.5899 4.02234C67.2756 1.34078 70.9348 0 74.594 0C78.2867 0 81.9459 1.34078 84.6316 4.02234C90.1372 9.55306 90.1372 18.5698 84.6316 24.1005C83.6916 25.0391 82.3488 26.0782 80.8045 27.1508H102.424C106.184 27.1508 109.239 30.2011 109.239 33.9553V44.1787C109.239 46.0558 107.695 47.5977 105.815 47.5977H61.4343ZM29.475 19.2737C26.5879 16.391 26.5879 11.7318 29.475 8.84915C30.8514 7.44133 32.6978 6.67038 34.6449 6.67038C36.592 6.67038 38.4048 7.44133 39.8148 8.84915C44.414 13.4748 48.9796 25.2737 47.4017 26.9162C47.4017 26.9162 47.0996 27.1508 46.1261 27.1508C41.3926 27.1508 32.3957 22.2569 29.475 19.2737ZM6.81484 54.4022H22.4923V68.5474H6.81484V54.4022ZM6.81484 78.5027H22.4923V92.6479H6.81484V78.5027ZM6.81484 102.57H22.4923V116.715H6.81484V102.57Z" /><path fill="#ffffff" d="M205.992 70.9609V106.605C205.341 106.638 204.641 106.768 203.893 106.996C203.144 107.224 202.102 107.566 200.768 108.021C197.48 109.161 194.257 110.072 191.1 110.756C187.975 111.439 184.068 111.781 179.381 111.781C171.959 111.781 165.579 110.251 160.24 107.191C154.902 104.099 150.833 99.737 148.033 94.1055C145.266 88.4414 143.883 81.8171 143.883 74.2324C143.883 65.6387 145.478 58.4772 148.668 52.748C151.891 47.0189 156.285 42.7871 161.852 40.0527C167.418 37.2858 173.782 35.9023 180.943 35.9023C184.719 35.9023 187.747 36.0651 190.025 36.3906C192.304 36.7161 194.794 37.2044 197.496 37.8555C199.156 38.2786 200.637 38.6042 201.939 38.832L201.451 52.1621C198.717 50.86 195.868 49.8835 192.906 49.2324C189.944 48.5488 185.973 48.207 180.992 48.207C176.695 48.207 172.968 49.1999 169.811 51.1855C166.686 53.1387 164.277 55.9707 162.584 59.6816C160.891 63.36 160.045 67.7708 160.045 72.9141C160.045 78.0573 160.729 82.6634 162.096 86.7324C163.463 90.7689 165.546 93.9753 168.346 96.3516C171.145 98.6953 174.628 99.8672 178.795 99.8672C183.775 99.8672 187.926 99.2487 191.246 98.0117V83.1191L179.869 82.5332V70.9609H205.992Z" /><path fill="#ffffff" d="M244.18 65.8828V56.9961L251.748 55.3359V50.0137C251.748 44.903 252.757 40.7689 254.775 37.6113C256.794 34.4538 259.365 32.2077 262.49 30.873C265.648 29.5059 269.001 28.8223 272.549 28.8223C274.469 28.8223 276.406 28.9525 278.359 29.2129C280.345 29.4408 281.696 29.6686 282.412 29.8965V40.7363C280.785 39.9551 278.245 39.5645 274.795 39.5645C272.419 39.5645 270.514 40.4271 269.082 42.1523C267.682 43.8776 266.982 46.3841 266.982 49.6719V55.3359H279.971V65.8828H266.982V111H251.748V65.8828H244.18Z" /><path fill="#ffffff" d="M290.373 65.8828H283.684V57.6309C285.832 57.0124 287.378 56.5404 288.322 56.2148C289.299 55.8568 290.161 55.3848 290.91 54.7988C291.659 54.1803 292.245 53.3665 292.668 52.3574C293.352 50.7298 294.572 47.4909 296.33 42.6406H305.607V55.3359H320.695V65.8828H305.607V88.2461C305.607 91.957 305.803 94.6589 306.193 96.3516C306.584 98.0443 307.202 99.1348 308.049 99.623C308.895 100.079 310.197 100.307 311.955 100.307C313.322 100.307 314.885 100.079 316.643 99.623C318.433 99.1348 319.751 98.5814 320.598 97.9629L322.453 106.508C320.923 107.875 318.628 109.096 315.568 110.17C312.541 111.244 309.27 111.781 305.754 111.781C302.01 111.781 299.016 111.212 296.77 110.072C294.556 108.9 292.928 107.061 291.887 104.555C290.878 102.016 290.373 98.6465 290.373 94.4473V65.8828Z" /><path fill="#ffffff" d="M379.438 55.3359L362.104 112.465C360.15 118.845 357.546 123.858 354.291 127.504C351.036 131.15 347.406 133.559 343.402 134.73C342.556 134.991 341.303 135.219 339.643 135.414C338.015 135.642 336.794 135.756 335.98 135.756C335.134 135.756 333.751 135.642 331.83 135.414C329.91 135.219 328.819 135.023 328.559 134.828V122.475C329.145 122.67 330.072 122.882 331.342 123.109C332.644 123.337 333.555 123.451 334.076 123.451C336.387 123.451 338.373 123.24 340.033 122.816C341.726 122.393 343.386 121.27 345.014 119.447C346.674 117.657 347.992 114.841 348.969 111H342.426L323.529 55.3359H340.033L348.48 85.0723L352.533 101.137L356.293 85.0723L363.08 55.3359H379.438Z" /><path fill="#ffffff" d="M395.26 36.6836C396.301 36.6836 398.385 36.5859 401.51 36.3906C405.872 36.0651 409.794 35.9023 413.277 35.9023C425.484 35.9023 434.599 38.9948 440.621 45.1797C446.676 51.3646 449.703 60.2676 449.703 71.8887C449.703 80.1895 448.189 87.3346 445.162 93.3242C442.135 99.3138 437.822 103.887 432.223 107.045C426.656 110.202 420.097 111.781 412.545 111.781C410.201 111.781 406.718 111.635 402.096 111.342C399.264 111.114 397.034 111 395.406 111H387.887V36.6836H395.26ZM413.521 99.8672C419.706 99.8021 424.54 97.6374 428.023 93.373C431.539 89.0762 433.297 82.4681 433.297 73.5488C433.297 67.1686 432.516 62.0905 430.953 58.3145C429.423 54.5059 427.096 51.7715 423.971 50.1113C420.846 48.4512 416.793 47.6211 411.812 47.6211C410.087 47.6211 407.988 47.7839 405.514 48.1094L403.561 48.3047V98.9883C405.774 99.5742 409.094 99.8672 413.521 99.8672Z" /><path fill="#ffffff" d="M508.836 55.3359V111.781H498.777C497.475 111.781 496.531 111.586 495.945 111.195C495.359 110.837 495.066 110.089 495.066 108.949V106.41C492.951 107.908 490.363 109.177 487.303 110.219C484.275 111.26 481.443 111.781 478.807 111.781C473.729 111.781 469.855 110.821 467.186 108.9C464.516 106.98 462.726 104.327 461.814 100.941C460.936 97.556 460.496 93.194 460.496 87.8555V55.3359H475.73V87.709C475.73 91.1921 476.023 93.8288 476.609 95.6191C477.228 97.377 478.123 98.5651 479.295 99.1836C480.499 99.8021 482.16 100.111 484.275 100.111C485.903 100.111 487.628 99.7695 489.451 99.0859C491.274 98.4023 492.658 97.6862 493.602 96.9375V55.3359H508.836Z" /><path fill="#ffffff" d="M547.754 54.5547C551.042 54.5547 554.02 54.8477 556.689 55.4336C559.359 55.987 561.198 56.638 562.207 57.3867L560.303 69.1543C558.903 68.4056 557.34 67.8685 555.615 67.543C553.923 67.1849 551.823 67.0059 549.316 67.0059C546.973 67.0059 544.743 67.5104 542.627 68.5195C540.511 69.4961 538.753 71.1074 537.354 73.3535C535.954 75.5671 535.205 78.4316 535.107 81.9473C535.01 85.821 535.531 89.0762 536.67 91.7129C537.809 94.3496 539.421 96.319 541.504 97.6211C543.62 98.8906 546.029 99.5254 548.73 99.5254C551.172 99.5254 553.499 99.3138 555.713 98.8906C557.959 98.4349 559.668 97.8815 560.84 97.2305L563.037 106.264C561.312 107.924 558.903 109.258 555.811 110.268C552.718 111.277 549.43 111.781 545.947 111.781C540.348 111.781 535.596 110.593 531.689 108.217C527.783 105.808 524.854 102.504 522.9 98.3047C520.947 94.0729 519.971 89.2552 519.971 83.8516C519.971 78.2526 520.996 73.2396 523.047 68.8125C525.098 64.3854 528.206 60.9023 532.373 58.3633C536.54 55.8242 541.667 54.5547 547.754 54.5547Z" /><path fill="#ffffff" d="M593.703 87.8066L587.746 94.3008L587.941 100.6V111H572.707V29.8965H587.941V63.2949L587.453 77.3086L606.252 55.3359H623.488L603.615 76.9668L625.441 111H608.107L593.703 87.8066Z" /><path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M234.994 111.391C234.356 111.424 233.752 111.424 233.114 111.424C230.865 111.424 228.817 111.089 226.937 110.318C225.124 109.581 223.546 108.508 222.237 107.067C220.928 105.659 219.921 103.95 219.182 101.938C218.477 99.9273 218.108 97.6815 218.108 95.1675V55.1117H234.994V111.391ZM226.769 46.4301C223.916 46.4301 221.566 45.5922 219.719 43.8827C217.906 42.1732 217 40.095 217 37.6145C217 35.067 217.906 33.0223 219.719 31.4134C221.566 29.8045 223.916 29 226.769 29C229.656 29 232.04 29.8045 233.819 31.4134C235.632 33.0223 236.538 35.067 236.538 37.6145C236.538 40.1955 235.632 42.3072 233.819 43.9497C232.04 45.5922 229.656 46.4301 226.769 46.4301Z" /></svg>
+
+                        <h2 class="mt-10 pt-10 border-t border-teal-200 text-white font-medium text-6xl">giftyduck.com</h2>
+                    </div>
+                </section>
+
+                <section>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 52.916665 35.079674"
+                        class="h-32 mx-auto"
+                    >
+                        <g transform="translate(245.19674,-28.474866)" id="layer1">
+                            <g transform="matrix(2.8329152,0,0,2.8329152,449.42487,-116.49008)" id="g5002">
+                                <g id="g194" transform="matrix(0.35277777,0,0,-0.35277777,-237.98986,51.171687)">
+                                    <path d="m 0,0 18.371,-32.385 c 1.181,-1.426 3.343,-2.716 4.941,-2.716 h 9.208 l -17.782,31.584 -0.11,0.005 C 13.716,-1.812 11.035,0 9.141,0 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path196" />
+                                </g>
+                                <g id="g198" transform="matrix(0.35277777,0,0,-0.35277777,-242.96614,63.554503)">
+                                    <path d="m 0,0 h 4.505 c 9.101,0 16.61,6.984 17.693,16 L 11.363,35.101 V 18.252 c 0,-3.877 -3.072,-7.02 -6.858,-7.02 H -6.323 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path200" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
+                    <p class="mt-10 font-medium text-6xl tracking-wide">@jessarchercodes</p>
+                </section>
+            </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                width: 1280,
+                height: 800,
+                transition: 'fade',
+                transitionSpeed: 'fast',
+                pdfMaxPagesPerSlide: 1,
+                pdfSeparateFragments: false,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true }
+                ]
+            });
+        </script>
+    </body>
+</html>
