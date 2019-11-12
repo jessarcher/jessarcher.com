@@ -10,7 +10,7 @@
             md:px-0
         ">
             <a href="/" class="inline-flex items-center justify-center">
-                <svg class="h-8 fill-current text-gray-700" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.917 35.08"><path d="M20.417 0l18.36 32.365c1.18 1.425 3.34 2.715 4.937 2.715h9.203L35.146 3.515l-.11-.005C34.124 1.811 31.445 0 29.552 0zM6.32 35.08h4.501c9.096 0 16.6-6.98 17.683-15.99L17.675 0v16.839c0 3.874-3.07 7.015-6.854 7.015H0z" /></svg>
+                <svg class="h-8 fill-current text-gray-700" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.917 35.08"><path d="M20.417 0l18.36 32.365c1.18 1.425 3.34 2.715 4.937 2.715h9.203L35.146 3.515l-.11-.005C34.124 1.811 31.445 0 29.552 0zM6.32 35.08h4.501c9.096 0 16.6-6.98 17.683-15.99L17.675 0v16.839c0 3.874-3.07 7.015-6.854 7.015H0z" /></svg>
 
                 <h1 class="ml-3 text-gray-800 text-2xl font-bold uppercase whitespace-no-wrap">
                     Jess Archer
