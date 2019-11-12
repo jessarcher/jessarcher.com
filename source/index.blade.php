@@ -28,7 +28,7 @@
 
                     <p>I've worked on some pretty interesting projects, including a chemical warehouse management system, a POS system, a telephone robot, a crypto trading robot, and even software for the police. I also co-host a podcast, and have spoken at Laracon.</p>
 
-                    <p>I am passionate about open-source software, digital freedom and privacy, best practices, the user experience, and the developer experience. My favourite stack these days is Laravel, Vue, and Tailwind.</p>
+                    <p>I am passionate about open-source software, privacy, best practices, user experience, and developer experience. My favourite stack these days is Laravel, Vue, and Tailwind.</p>
 
                     <p>When I'm not coding (and sometimes when I am) I like to eat spicy food, drink dark beer, ride fast motorcycles, and listen to heavy music. 🤘</p>
 
