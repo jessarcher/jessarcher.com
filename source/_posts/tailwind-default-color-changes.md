@@ -5,7 +5,6 @@ date: 2019-03-18
 description: A quick comparison between the default colors in Tailwind v0.7 and v1.0
 section: content
 author: Jess Archer
-cover_image: /assets/images/undraw_creativity_wqmm.png
 ---
 
 With Tailwind v1.0 [around the

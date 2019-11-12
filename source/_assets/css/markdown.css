@@ -1,0 +1,65 @@
+.markdown {
+    @apply text-gray-700 text-lg leading-relaxed;
+
+    > * + * {
+        @apply mt-6;
+    }
+
+    h1 {
+        @apply text-3xl font-bold text-gray-900 leading-tight;
+    }
+
+    h2 {
+        @apply text-2xl font-bold text-gray-900 leading-tight;
+    }
+
+    h3 {
+        @apply text-xl font-bold text-gray-900 leading-tight;
+    }
+
+    a:not(.unstyled) {
+        @apply text-gray-900 font-semibold border-b border-dotted border-gray-600;
+
+        &:hover,
+        &:focus {
+            @apply text-purple-700;
+        }
+    }
+
+    blockquote {
+        @apply border-gray-300;
+        @apply border-l-4;
+        @apply font-normal;
+        @apply italic;
+        @apply my-8;
+        @apply pl-6;
+        @apply text-gray-600;
+        @apply text-lg;
+    }
+
+    ul {
+        @apply list-disc ml-8;
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+
+    strong {
+        @apply font-semibold;
+    }
+
+    code:not(.hljs) {
+        @apply px-2 py-1 bg-gray-300 text-purple-700 rounded text-sm;
+    }
+
+    code.hljs {
+        @apply p-4 rounded shadow-lg text-sm leading-loose;
+    }
+}
+
+@screen md {
+    .markdown code.hljs {
+        @apply text-base;
+    }
+}

@@ -1,23 +1,25 @@
-<div class="mb-4">
-    <p class="text-grey-darker font-medium my-2">
+<article>
+    <p class="text-gray-600 text-sm font-bold uppercase tracking-wide">
         {{ $post->getDate()->format('F j, Y') }}
     </p>
 
-    <h2 class="text-3xl mt-0">
+    <h2 class="mt-2 text-2xl font-bold text-gray-900">
         <a
             href="{{ $post->getUrl() }}"
             title="Read more - {{ $post->title }}"
-            class="border-0 text-black font-extrabold"
+            class="hover:text-purple-700 focus:text-purple-700"
         >{{ $post->title }}</a>
     </h2>
 
-    <p class="mb-4 mt-0">
+    <p class="mt-2 max-w-2xl text-lg">
         {!! $post->excerpt(200) !!}
     </p>
 
-    <a
-        href="{{ $post->getUrl() }}"
-        title="Read more - {{ $post->title }}"
-        class="uppercase font-semibold tracking-wide mb-2"
-    >Read</a>
-</div>
+    <p class="mt-4">
+        <a
+            href="{{ $post->getUrl() }}"
+            title="Read more - {{ $post->title }}"
+            class="text-base uppercase font-semibold tracking-wide hover:text-purple-700 focus:text-purple-700"
+        >Read</a>
+    </p>
+</article>

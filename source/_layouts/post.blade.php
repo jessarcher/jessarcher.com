@@ -9,12 +9,16 @@
 
 @section('main')
     @if ($page->cover_image)
-        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-8">
     @endif
 
-    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+    <p class="text-gray-600 font-bold uppercase tracking-wide">
+        {{ date('F j, Y', $page->date) }}
+    </p>
 
-    <p class="text-grey-darker text-xl md:mt-0">{{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
+    <h1 class="mt-3 text-3xl font-bold text-gray-900 leading-tight">
+        {{ $page->title }}
+    </h1>
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
@@ -26,7 +30,7 @@
         @endforeach
     @endif
 
-    <div v-pre class="text-lg">
+    <div v-pre class="mt-4 markdown">
         @yield('content')
     </div>
 

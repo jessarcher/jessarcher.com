@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "./fonts.css";
+@import "./components.css";
+@import "./markdown.css";
+@import "highlight.js/styles/atom-one-dark.css";
+
+@import "tailwindcss/utilities";

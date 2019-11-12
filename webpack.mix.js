@@ -1,10 +1,18 @@
-let mix = require('laravel-mix');
-let build = require('./tasks/build.js');
-var tailwindcss = require('tailwindcss');
+const mix = require('laravel-mix');
+const build = require('./tasks/build.js');
+
+require('laravel-mix-tailwind');
 require('laravel-mix-purgecss');
 
+mix.options({
+    postCss: [
+        require('postcss-import'),
+        require('postcss-nested'),
+    ]
+});
+
 mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/build');
+mix.setPublicPath('source');
 mix.webpackConfig({
     plugins: [
         build.jigsaw,
@@ -19,20 +27,14 @@ mix.webpackConfig({
     ]
 });
 
-mix.js('source/_assets/js/main.js', 'js')
-    .sourceMaps()
-    .sass('source/_assets/sass/main.scss', 'css')
-    .sourceMaps()
-    .options({
-        processCssUrls: false,
-        postCss: [ tailwindcss('./tailwind.js') ],
-    })
-    .purgeCss({
-        extensions: ['html', 'md', 'js', 'php', 'vue'],
-        folders: ['source'],
-        whitelistPatterns: [/language/, /hljs/],
-    })
-    .version();
+mix.js('source/_assets/js/main.js', 'assets/build/js')
+   .postCss('source/_assets/css/main.css', 'assets/build/css')
+   .tailwind('tailwind.config.js');
 
-mix.copy('./node_modules/font-proxima-nova-scss/fonts/', 'source/assets/build/fonts/vendor/proxima-nova/')
-    .copy('./node_modules/@fortawesome/fontawesome-free/webfonts/', 'source/assets/build/fonts/vendor/fontawesome/')
+if (mix.inProduction()) {
+  mix
+    .version()
+    .purgeCss({
+      folders: ['source'],
+    });
+}

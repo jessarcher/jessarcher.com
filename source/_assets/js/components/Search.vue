@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-1 justify-end items-center text-right px-4">
         <div
-            class="absolute md:relative w-full justify-end pin-l pin-t z-30 mt-6 md:mt-0 px-4 md:px-0"
+            class="absolute md:relative w-full justify-end left-0 top-0 z-30 mt-6 md:mt-0 px-6 md:px-0 bg-gray-100 md:bg-transparent"
             :class="{'hidden md:flex': ! searching}"
         >
             <label for="search" class="hidden">Search</label>
@@ -16,15 +16,15 @@
                     block
                     h-10
                     w-full
-                    md:w-1/4
-                    md:focus:w-3/4
+                    md:w-1/2
+                    md:focus:w-full
                     border
-                    border-grey-darker
-                    bg-grey-darkest
-                    text-grey
-                    focus:border-grey-lighter
-                    focus:bg-grey-lighter
-                    focus:text-grey-dark
+                    border-gray-300
+                    bg-gray-200
+                    text-gray-300
+                    hover:bg-white
+                    focus:bg-white
+                    focus:text-gray-700
                     outline-none
                     cursor-pointer
                     px-4
@@ -41,16 +41,16 @@
 
             <button
                 v-if="query || searching"
-                class="absolute pin-t pin-r h-10 font-light text-3xl text-grey-darker hover:text-grey-darkest focus:outline-none -mt-px pr-7 md:pr-3"
+                class="absolute top-0 right-0 h-10 font-light text-3xl text-gray-600 hover:text-gray-900 focus:outline-none -mt-px pr-10 md:pr-3"
                 @click="reset"
             >&times;</button>
 
             <transition name="fade">
-                <div v-if="query" class="absolute pin-l pin-r md:pin-none w-full lg:w-3/4 text-left mb-4 md:mt-10">
-                    <div class="flex flex-col bg-grey-lighter rounded-b-lg shadow-lg mx-4 md:mx-0">
+                <div v-if="query" class="absolute left-0 right-0 md:inset-auto w-full text-left mb-4 md:mt-10">
+                    <div class="flex flex-col bg-white rounded-b-lg shadow-lg mx-6 md:mx-0">
                         <a
                             v-for="(result, index) in results"
-                            class="hover:bg-grey-lightest border-t border-grey-light text-xl cursor-pointer p-4 text-grey-darkest"
+                            class="hover:bg-gray-100 border-t border-gray-300 text-xl cursor-pointer p-4 text-gray-800"
                             :class="{ 'rounded-b-lg border-b-0' : (index === results.length - 1) }"
                             :href="result.link"
                             :title="result.title"
@@ -59,12 +59,12 @@
                         >
                             {{ result.title }}
 
-                            <span class="block font-normal text-grey-darker text-sm my-1" v-html="result.snippet"></span>
+                            <span class="block font-normal text-gray-600 text-sm my-1" v-html="result.snippet"></span>
                         </a>
 
                         <div
                             v-if="! results.length"
-                            class="w-full hover:bg-grey-lightest border-t border-grey-light rounded-b-lg shadow cursor-pointer p-4"
+                            class="w-full hover:bg-gray-100 border-t border-gray-300 rounded-b-lg shadow cursor-pointer p-4"
                         >
                             <p class="my-0">No results for <strong>{{ query }}</strong></p>
                         </div>
@@ -80,10 +80,9 @@
                 flex
                 md:hidden
                 border
-                border-grey-darker
-                bg-grey-darkest
-                hover:border-grey-lighter
-                hover:bg-grey-lighter
+                border-gray-300
+                bg-gray-200
+                hover:bg-white
                 justify-center
                 items-center
                 rounded-full
@@ -95,7 +94,6 @@
         >
             <img src="/assets/images/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
         </button>
-
     </div>
 </template>
 

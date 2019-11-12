@@ -19,7 +19,7 @@ pagination:
         @include('_components.post-preview-inline')
 
         @if ($post != $pagination->items->last())
-            <hr class="border-b my-6">
+            <hr class="border-b my-8">
         @endif
     @endforeach
 
