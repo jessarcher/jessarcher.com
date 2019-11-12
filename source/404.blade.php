@@ -1,9 +1,9 @@
 ---
 permalink: 404.html
+title: Not Found
 ---
-@extends('_layouts.app')
 
-@section('title', 'Not Found')
+@extends('_layouts.app')
 
 @section('main')
 

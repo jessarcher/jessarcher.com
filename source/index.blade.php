@@ -24,7 +24,7 @@
 
             <div class="mt-6 max-w-2xl">
                 <div class="markdown">
-                    <p><strong>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from Brisbane, Australia, with over 15 years professional experience.</strong></p>
+                    <p><strong>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from <span class="whitespace-no-wrap">Brisbane, Australia</span>, with over 15 years professional experience.</strong></p>
 
                     <p>I've worked on some pretty interesting projects, including a chemical warehouse management system, a POS system, a telephone robot, a crypto trading robot, and even software for the police. I also co-host a podcast, and have spoken at Laracon.</p>
 

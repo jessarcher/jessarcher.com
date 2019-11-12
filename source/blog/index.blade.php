@@ -1,16 +1,11 @@
 ---
+title: Blog
 pagination:
     collection: posts
     perPage: 4
 ---
-@extends('_layouts.app', ['footer' => false])
 
-@push('meta')
-    <meta property="og:title" content="{{ $page->siteName }} Blog" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list of blog posts for {{ $page->siteName }}" />
-@endpush
+@extends('_layouts.app')
 
 @section('main')
     <h1 class="hidden">Blog</h1>

@@ -1,9 +1,10 @@
+---
+title: Speaking
+---
+
 @extends('_layouts.app')
 
 @push('meta')
-    <meta property="og:title" content="Jess Archer Speaks" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}" />
     <meta property="og:description" content="Jess Archer recently started her speaking career at Laracon" />
 @endpush
 

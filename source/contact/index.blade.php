@@ -1,6 +1,8 @@
-@extends('_layouts.app', ['footer' => false])
+---
+title: Contact
+---
 
-@section('title', 'Contact Jess Archer')
+@extends('_layouts.app')
 
 @section('main')
 

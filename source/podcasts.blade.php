@@ -1,9 +1,10 @@
+---
+title: Podcasts
+---
+
 @extends('_layouts.app')
 
 @push('meta')
-    <meta property="og:title" content="Jess Archer Podcasts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}" />
     <meta property="og:description" content="Jess Archer co-hosts the BaseCode podcast with JMac" />
 @endpush
 

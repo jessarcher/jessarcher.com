@@ -1,4 +1,8 @@
-@extends('_layouts.app', ['footer' => false])
+---
+title: Contact
+---
+
+@extends('_layouts.app')
 
 @section('main')
 

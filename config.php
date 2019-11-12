@@ -2,7 +2,7 @@
 
 return [
     'siteName' => 'Jess Archer',
-    'siteDescription' => 'Web App Developer',
+    'siteDescription' => 'Full-stack web app developer from Brisbane, Australia',
     'baseUrl' => '',
     'production' => false,
 
