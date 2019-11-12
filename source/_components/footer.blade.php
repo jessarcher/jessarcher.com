@@ -63,6 +63,15 @@
                     <p class="mt-2 text-xs">
                         <a href="https://github.com/jessarcher/jessarcher.com" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">View the source</a>.
                     </p>
+
+                    <svg role="img" class="mt-6 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777 480">
+                        <rect fill="#9d61a4" width="777" height="480"/>
+                        <rect fill="#249cd5" width="777" height="400"/>
+                        <rect fill="#70bc53" width="777" height="320"/>
+                        <rect fill="#fdc753" width="777" height="240"/>
+                        <rect fill="#f48d3a" width="777" height="160"/>
+                        <rect fill="#d3555c" width="777" height="80"/>
+                    </svg>
                 </div>
             </div>
         </div>
