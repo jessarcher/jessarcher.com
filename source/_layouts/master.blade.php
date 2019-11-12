@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
+            <link rel="preconnect" href="https://www.google-analytics.com" />
+
             <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151431096-1"></script>
             <script>
