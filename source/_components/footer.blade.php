@@ -13,9 +13,7 @@
 
                 <div class="mt-4 sm:mt-0 sm:flex-grow">
                     <div class="markdown text-base max-w-2xl">
-                        <p><strong>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from <span class="whitespace-no-wrap">Brisbane, Australia</span>, with over 15 years professional experience.</strong></p>
-
-                        <p>You can learn more about me on my <a href="/">home page</a>.</p>
+                        <p><strong>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from <span class="whitespace-no-wrap">Brisbane, Australia</span>, with over 15 years professional experience. You can learn more about me on my <a href="/">home page</a>.</strong></p>
 
                         <p>
                             <a href="/blog" class="mr-2">Blog</a>
@@ -54,24 +52,22 @@
                         </a>
                     </p>
 
-                    <p class="mt-8 text-xs">
+                    <p class="mt-12 text-xs text-gray-600">
+                        <svg role="img" class="inline-block mr-4 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777 480">
+                            <rect fill="#9d61a4" width="777" height="480"/>
+                            <rect fill="#249cd5" width="777" height="400"/>
+                            <rect fill="#70bc53" width="777" height="320"/>
+                            <rect fill="#fdc753" width="777" height="240"/>
+                            <rect fill="#f48d3a" width="777" height="160"/>
+                            <rect fill="#d3555c" width="777" height="80"/>
+                        </svg>
+
+                        <span class="pr-4"><a href="https://github.com/jessarcher/jessarcher.com" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">This website is open source</a></span>
+
                         Proudly built with <a href="http://jigsaw.tighten.co" target="_blank by Tighten" class="font-bold hover:text-purple-700 focus:text-purple-700">Jigsaw</a>
                         and <a href="https://tailwindcss.com" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">Tailwind CSS</a>,
                         and hosted with <a href="https://www.netlify.com/" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">Netlify</a>.
                     </p>
-
-                    <p class="mt-2 text-xs">
-                        <a href="https://github.com/jessarcher/jessarcher.com" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">View the source</a>.
-                    </p>
-
-                    <svg role="img" class="mt-6 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777 480">
-                        <rect fill="#9d61a4" width="777" height="480"/>
-                        <rect fill="#249cd5" width="777" height="400"/>
-                        <rect fill="#70bc53" width="777" height="320"/>
-                        <rect fill="#fdc753" width="777" height="240"/>
-                        <rect fill="#f48d3a" width="777" height="160"/>
-                        <rect fill="#d3555c" width="777" height="80"/>
-                    </svg>
                 </div>
             </div>
         </div>
