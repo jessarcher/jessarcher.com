@@ -136,3 +136,16 @@ channel](https://www.youtube.com/channel/UCYGmktKAAJWnqGGaH9DcTqw) sometime
 before the end of the year, so be sure to subscribe to the channel and [follow
 me on Twitter](https://twitter.com/jessarchercodes) to be notified when it's
 available!
+
+### Update &mdash; December 16, 2019
+
+A reader raised an issue with this approach where the navigation guard doesn't
+get called when there's no previous history entry for the site (e.g. on
+a landing/entry route). I don't currently have any modals opening from my usual
+landing/entry routes, but it can be replicated by opening the URL for one in
+a new tab.
+
+It is a hack after all, and will vary in how much it effects your specific use
+case, but it should be possible to come up with a workaround or alternative
+approach. I'll update here if I find a chance to look further into it, but
+otherwise be sure to let me know if you find your own solution.
