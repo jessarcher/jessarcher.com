@@ -44,35 +44,35 @@ title: CV
         <div class="mt-6">
             <ul class="-my-1 flex flex-wrap">
                 <li class="my-1 w-1/3">
-                    <p class="flex items-center">
+                    <p class="inline-flex items-center">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 0C15.168.01 8.01 7.168 8 16c0 7.02 10 24.05 14.296 31.048A2 2 0 0024 48a1.98 1.98 0 001.704-.954C30 40.052 40 23.028 40 16 39.99 7.168 32.832.01 24 0zm0 23a7 7 0 110-14 7 7 0 010 14z"/></svg>
                         <span class="ml-2 font-semibold">Brisbane, Australia <small class="font-normal print:hidden">(GMT +10)</small></span>
                     </p>
                 </li>
 
                 <li class="my-1 w-1/3">
-                    <a class="group flex items-center" href="https://jessarcher.com/" target="_blank">
+                    <a class="group inline-flex items-center" href="https://jessarcher.com/" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M38 47.5a2 2 0 000-4H25.5a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5H42a6 6 0 006-6V5.678A5.094 5.094 0 0043 .5H5a5.094 5.094 0 00-5 5.178V33.5a6 6 0 006 6h14.5a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H10a2 2 0 000 4h28zM4 5.678A1.102 1.102 0 015 4.5h38a1.102 1.102 0 011 1.178V29.5a1 1 0 01-1 1H5a1 1 0 01-1-1V5.678zM16 12a1.5 1.5 0 00-1.5 1.5v2.7c.002.496-.032.99-.1 1.48a.25.25 0 01-.23.214.253.253 0 01-.258-.18l-.464-1.626a1.499 1.499 0 00-2.884 0l-.464 1.624a.25.25 0 01-.5-.032c-.068-.49-.102-.984-.1-1.48v-2.7a1.5 1.5 0 00-3 0v2.7c0 1.712.328 3.41.964 5L8.6 24.056c.228.604.824.986 1.468.942a1.498 1.498 0 001.366-1.086l.326-1.112a.25.25 0 01.48 0l.318 1.112a1.498 1.498 0 001.366 1.086H14a1.496 1.496 0 001.4-.944l1.136-2.854c.636-1.59.964-3.288.964-5v-2.7A1.5 1.5 0 0016 12zm12 0a1.5 1.5 0 00-1.5 1.5v2.7c0 .498-.036.996-.106 1.49a.25.25 0 01-.23.214.253.253 0 01-.258-.18l-.464-1.626a1.499 1.499 0 00-2.884 0l-.464 1.624a.25.25 0 01-.494-.042c-.068-.49-.102-.984-.1-1.48v-2.7a1.5 1.5 0 00-3 0v2.7c0 1.712.328 3.41.964 5l1.144 2.852c.226.604.824.988 1.468.942a1.498 1.498 0 001.366-1.086l.318-1.112a.25.25 0 01.48 0l.318 1.112a1.498 1.498 0 001.366 1.086H26a1.496 1.496 0 001.4-.944l1.144-2.852A13.45 13.45 0 0029.5 16.2v-2.7A1.5 1.5 0 0028 12zm12 0a1.5 1.5 0 00-1.5 1.5v2.7c0 .498-.036.996-.106 1.49a.25.25 0 01-.23.214.253.253 0 01-.258-.18l-.464-1.626a1.499 1.499 0 00-2.884 0l-.464 1.624a.25.25 0 01-.494-.042c-.068-.49-.102-.984-.1-1.48v-2.7a1.5 1.5 0 00-3 0v2.7c-.002 1.718.326 3.42.964 5.014l1.144 2.852c.226.604.824.988 1.468.942a1.498 1.498 0 001.366-1.086l.318-1.112a.25.25 0 01.48 0l.318 1.112a1.498 1.498 0 001.366 1.086H38a1.496 1.496 0 001.4-.944l1.144-2.852c.636-1.594.96-3.296.956-5.012v-2.7A1.5 1.5 0 0040 12z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">jessarcher.com</span>
                     </a>
                 </li>
 
                 <li class="my-1 w-1/3">
-                    <a class="group flex items-center" href="https://github.com/jessarcher" target="_blank">
+                    <a class="group inline-flex items-center" href="https://github.com/jessarcher" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 .56C10.746.556-.004 11.298-.008 24.552A24 24 0 0016.56 47.38h.58a2 2 0 002.12-2.12v-.42-2.18a1.005 1.005 0 00-.4-.66 1.001 1.001 0 00-.84-.2c-5.36 1.16-6.5-2.2-6.58-2.42A9.287 9.287 0 008 35a2.31 2.31 0 00-.3-.22c.232-.126.498-.174.76-.14a2.94 2.94 0 012.3 1.76 6 6 0 008 2.32c.3-.13.516-.4.58-.72a3.994 3.994 0 011.12-2.46 1.002 1.002 0 00-.54-1.74c-4.74-.54-9.58-2.2-9.58-10.38a7.999 7.999 0 012.1-5.56.996.996 0 00.18-1.06 7.044 7.044 0 01.02-4.8 11.073 11.073 0 015.04 2.3.98.98 0 00.84.14A21.214 21.214 0 0124 13.7a20.94 20.94 0 015.5.74c.28.078.582.026.82-.14a11.176 11.176 0 015.04-2.3 7.146 7.146 0 010 4.76.996.996 0 00.18 1.06 8 8 0 012.1 5.5c0 8.18-4.86 9.82-9.62 10.36a1.001 1.001 0 00-.54 1.76 4.405 4.405 0 011.22 3.48v6.36c-.02.634.244 1.242.72 1.66a2.398 2.398 0 002.12.38c12.57-4.206 19.352-17.804 15.146-30.374A24 24 0 0024 .56z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">github.com/jessarcher</span>
                     </a>
                 </li>
 
                 <li class="my-1 w-1/3">
-                    <a class="group flex items-center" href="https://twitter.com/jessarchercodes" target="_blank">
+                    <a class="group inline-flex items-center" href="https://twitter.com/jessarchercodes" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M46.64 12.88a1.001 1.001 0 00-.4-1.74l-1.58-.4a1 1 0 01-.66-1.4l.88-1.78c.24-.498.03-1.096-.466-1.336a1.002 1.002 0 00-.694-.064l-4 1.12a1.003 1.003 0 01-.88-.16 9.999 9.999 0 00-6-2c-5.522 0-10 4.478-10 10v.72a.5.5 0 01-.44.5c-5.62.66-11-2.2-16.8-8.88-.256-.284-.65-.4-1.02-.3A1 1 0 004 8a15.15 15.15 0 00.92 9.84.5.5 0 01-.52.72l-2.24-.44a1 1 0 00-1.14 1.18 10.3 10.3 0 004.74 7.56.5.5 0 010 .9l-1.06.42a1 1 0 00-.52 1.38 8.718 8.718 0 006.4 4.96.5.5 0 010 .94A21.883 21.883 0 012 37.12a1.02 1.02 0 00-.4 2 40.126 40.126 0 0016.28 3.86 25.158 25.158 0 0014-4A25 25 0 0043 18.12v-1.74a.998.998 0 01.36-.76l3.28-2.74z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">@jessarchercodes</span>
                     </a>
                 </li>
 
                 <li class="my-1 w-1/3">
-                    <a class="group flex items-center" href="https://linkedin.com/in/jessarcher" target="_blank">
+                    <a class="group inline-flex items-center" href="https://linkedin.com/in/jessarcher" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M5 17h8a1 1 0 011 1v26a1 1 0 01-1 1H5a1 1 0 01-1-1V18a1 1 0 011-1zM8.96 3c2.74 0 4.96 2.238 4.96 5s-2.22 5-4.96 5S4 10.762 4 8s2.22-5 4.96-5zM37 45h6a1 1 0 001-1V27.2C44 19.66 39.74 16 33.78 16a8.424 8.424 0 00-6.34 2.54A.82.82 0 0126 18a1 1 0 00-1-1h-6a1 1 0 00-1 1v26a1 1 0 001 1h6a1 1 0 001-1V29c0-2.762 2.238-5 5-5s5 2.238 5 5v15a1 1 0 001 1z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">linkedin.com/in/jessarcher</span>
                     </a>
