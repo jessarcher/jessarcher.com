@@ -12,7 +12,12 @@ title: CV
 
     <div class="max-w-4xl mx-auto p-6 print:p-0 print:max-w-none">
         <header role="banner">
-            <div class="flex justify-between">
+            <img src="/assets/images/jess-archer.jpg"
+                alt="Photo of Jess Archer"
+                class="sm:hidden h-20 w-20 rounded-full bg-contain"
+            >
+
+            <div class="mt-4 sm:mt-0 flex justify-between">
                 <div>
                     <div class="flex items-center">
                         <svg class="flex-shrink-0 h-8 fill-current text-gray-700" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.917 35.08"><path d="M20.417 0l18.36 32.365c1.18 1.425 3.34 2.715 4.937 2.715h9.203L35.146 3.515l-.11-.005C34.124 1.811 31.445 0 29.552 0zM6.32 35.08h4.501c9.096 0 16.6-6.98 17.683-15.99L17.675 0v16.839c0 3.874-3.07 7.015-6.854 7.015H0z" /></svg>
@@ -34,7 +39,7 @@ title: CV
 
                 <img src="/assets/images/jess-archer.jpg"
                     alt="Photo of Jess Archer"
-                    class="ml-4 flex-shrink-0 h-24 w-24 rounded-full bg-contain"
+                    class="hidden sm:block ml-4 flex-shrink-0 h-24 w-24 rounded-full bg-contain"
                 >
             </div>
         </header>
@@ -42,36 +47,36 @@ title: CV
         <hr class="mt-6 border-gray-300" />
 
         <div class="mt-6">
-            <ul class="-my-1 flex flex-wrap">
-                <li class="my-1 w-1/3">
+            <ul class="-my-1 sm:flex sm:flex-wrap">
+                <li class="my-1 sm:w-1/2 md:w-1/3">
                     <p class="inline-flex items-center">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 0C15.168.01 8.01 7.168 8 16c0 7.02 10 24.05 14.296 31.048A2 2 0 0024 48a1.98 1.98 0 001.704-.954C30 40.052 40 23.028 40 16 39.99 7.168 32.832.01 24 0zm0 23a7 7 0 110-14 7 7 0 010 14z"/></svg>
                         <span class="ml-2 font-semibold">Brisbane, Australia <small class="font-normal print:hidden">(GMT +10)</small></span>
                     </p>
                 </li>
 
-                <li class="my-1 w-1/3">
+                <li class="my-1 sm:w-1/2 md:w-1/3">
                     <a class="group inline-flex items-center" href="https://jessarcher.com/" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M38 47.5a2 2 0 000-4H25.5a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5H42a6 6 0 006-6V5.678A5.094 5.094 0 0043 .5H5a5.094 5.094 0 00-5 5.178V33.5a6 6 0 006 6h14.5a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H10a2 2 0 000 4h28zM4 5.678A1.102 1.102 0 015 4.5h38a1.102 1.102 0 011 1.178V29.5a1 1 0 01-1 1H5a1 1 0 01-1-1V5.678zM16 12a1.5 1.5 0 00-1.5 1.5v2.7c.002.496-.032.99-.1 1.48a.25.25 0 01-.23.214.253.253 0 01-.258-.18l-.464-1.626a1.499 1.499 0 00-2.884 0l-.464 1.624a.25.25 0 01-.5-.032c-.068-.49-.102-.984-.1-1.48v-2.7a1.5 1.5 0 00-3 0v2.7c0 1.712.328 3.41.964 5L8.6 24.056c.228.604.824.986 1.468.942a1.498 1.498 0 001.366-1.086l.326-1.112a.25.25 0 01.48 0l.318 1.112a1.498 1.498 0 001.366 1.086H14a1.496 1.496 0 001.4-.944l1.136-2.854c.636-1.59.964-3.288.964-5v-2.7A1.5 1.5 0 0016 12zm12 0a1.5 1.5 0 00-1.5 1.5v2.7c0 .498-.036.996-.106 1.49a.25.25 0 01-.23.214.253.253 0 01-.258-.18l-.464-1.626a1.499 1.499 0 00-2.884 0l-.464 1.624a.25.25 0 01-.494-.042c-.068-.49-.102-.984-.1-1.48v-2.7a1.5 1.5 0 00-3 0v2.7c0 1.712.328 3.41.964 5l1.144 2.852c.226.604.824.988 1.468.942a1.498 1.498 0 001.366-1.086l.318-1.112a.25.25 0 01.48 0l.318 1.112a1.498 1.498 0 001.366 1.086H26a1.496 1.496 0 001.4-.944l1.144-2.852A13.45 13.45 0 0029.5 16.2v-2.7A1.5 1.5 0 0028 12zm12 0a1.5 1.5 0 00-1.5 1.5v2.7c0 .498-.036.996-.106 1.49a.25.25 0 01-.23.214.253.253 0 01-.258-.18l-.464-1.626a1.499 1.499 0 00-2.884 0l-.464 1.624a.25.25 0 01-.494-.042c-.068-.49-.102-.984-.1-1.48v-2.7a1.5 1.5 0 00-3 0v2.7c-.002 1.718.326 3.42.964 5.014l1.144 2.852c.226.604.824.988 1.468.942a1.498 1.498 0 001.366-1.086l.318-1.112a.25.25 0 01.48 0l.318 1.112a1.498 1.498 0 001.366 1.086H38a1.496 1.496 0 001.4-.944l1.144-2.852c.636-1.594.96-3.296.956-5.012v-2.7A1.5 1.5 0 0040 12z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">jessarcher.com</span>
                     </a>
                 </li>
 
-                <li class="my-1 w-1/3">
+                <li class="my-1 sm:w-1/2 md:w-1/3">
                     <a class="group inline-flex items-center" href="https://github.com/jessarcher" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 .56C10.746.556-.004 11.298-.008 24.552A24 24 0 0016.56 47.38h.58a2 2 0 002.12-2.12v-.42-2.18a1.005 1.005 0 00-.4-.66 1.001 1.001 0 00-.84-.2c-5.36 1.16-6.5-2.2-6.58-2.42A9.287 9.287 0 008 35a2.31 2.31 0 00-.3-.22c.232-.126.498-.174.76-.14a2.94 2.94 0 012.3 1.76 6 6 0 008 2.32c.3-.13.516-.4.58-.72a3.994 3.994 0 011.12-2.46 1.002 1.002 0 00-.54-1.74c-4.74-.54-9.58-2.2-9.58-10.38a7.999 7.999 0 012.1-5.56.996.996 0 00.18-1.06 7.044 7.044 0 01.02-4.8 11.073 11.073 0 015.04 2.3.98.98 0 00.84.14A21.214 21.214 0 0124 13.7a20.94 20.94 0 015.5.74c.28.078.582.026.82-.14a11.176 11.176 0 015.04-2.3 7.146 7.146 0 010 4.76.996.996 0 00.18 1.06 8 8 0 012.1 5.5c0 8.18-4.86 9.82-9.62 10.36a1.001 1.001 0 00-.54 1.76 4.405 4.405 0 011.22 3.48v6.36c-.02.634.244 1.242.72 1.66a2.398 2.398 0 002.12.38c12.57-4.206 19.352-17.804 15.146-30.374A24 24 0 0024 .56z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">github.com/jessarcher</span>
                     </a>
                 </li>
 
-                <li class="my-1 w-1/3">
+                <li class="my-1 sm:w-1/2 md:w-1/3">
                     <a class="group inline-flex items-center" href="https://twitter.com/jessarchercodes" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M46.64 12.88a1.001 1.001 0 00-.4-1.74l-1.58-.4a1 1 0 01-.66-1.4l.88-1.78c.24-.498.03-1.096-.466-1.336a1.002 1.002 0 00-.694-.064l-4 1.12a1.003 1.003 0 01-.88-.16 9.999 9.999 0 00-6-2c-5.522 0-10 4.478-10 10v.72a.5.5 0 01-.44.5c-5.62.66-11-2.2-16.8-8.88-.256-.284-.65-.4-1.02-.3A1 1 0 004 8a15.15 15.15 0 00.92 9.84.5.5 0 01-.52.72l-2.24-.44a1 1 0 00-1.14 1.18 10.3 10.3 0 004.74 7.56.5.5 0 010 .9l-1.06.42a1 1 0 00-.52 1.38 8.718 8.718 0 006.4 4.96.5.5 0 010 .94A21.883 21.883 0 012 37.12a1.02 1.02 0 00-.4 2 40.126 40.126 0 0016.28 3.86 25.158 25.158 0 0014-4A25 25 0 0043 18.12v-1.74a.998.998 0 01.36-.76l3.28-2.74z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">@jessarchercodes</span>
                     </a>
                 </li>
 
-                <li class="my-1 w-1/3">
+                <li class="my-1 sm:w-1/2 md:w-1/3">
                     <a class="group inline-flex items-center" href="https://linkedin.com/in/jessarcher" target="_blank">
                         <svg class="h-5 fill-current text-purple-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M5 17h8a1 1 0 011 1v26a1 1 0 01-1 1H5a1 1 0 01-1-1V18a1 1 0 011-1zM8.96 3c2.74 0 4.96 2.238 4.96 5s-2.22 5-4.96 5S4 10.762 4 8s2.22-5 4.96-5zM37 45h6a1 1 0 001-1V27.2C44 19.66 39.74 16 33.78 16a8.424 8.424 0 00-6.34 2.54A.82.82 0 0126 18a1 1 0 00-1-1h-6a1 1 0 00-1 1v26a1 1 0 001 1h6a1 1 0 001-1V29c0-2.762 2.238-5 5-5s5 2.238 5 5v15a1 1 0 001 1z"/></svg>
                         <span class="ml-2 border-b border-dotted border-transparent group-hover:border-purple-500 font-semibold">linkedin.com/in/jessarcher</span>
@@ -85,7 +90,7 @@ title: CV
         <h2 class="mt-6 font-semibold text-xl uppercase tracking-wide">Expertise</h2>
 
         <div class="mt-6">
-            <ul class="-m-1 flex flex-wrap font-semibold">
+            <ul class="-m-1 flex flex-wrap font-semibold text-sm sm:text-base">
                 <li class="m-1 px-3 py-1 inline-flex items-center bg-indigo-200 text-indigo-800 rounded">
                     <svg aria-hidden="true" class="inline h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504.4 115.83a5.72 5.72 0 00-.28-.68 8.52 8.52 0 00-.53-1.25 6 6 0 00-.54-.71 9.36 9.36 0 00-.72-.94c-.23-.22-.52-.4-.77-.6a8.84 8.84 0 00-.9-.68L404.4 55.55a8 8 0 00-8 0L300.12 111a8.07 8.07 0 00-.88.69 7.68 7.68 0 00-.78.6 8.23 8.23 0 00-.72.93c-.17.24-.39.45-.54.71a9.7 9.7 0 00-.52 1.25c-.08.23-.21.44-.28.68a8.08 8.08 0 00-.28 2.08v105.24l-80.22 46.19V63.44a7.8 7.8 0 00-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35 8.35 0 00-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36 9.36 0 00-.72-.94 9.46 9.46 0 00-.78-.6 9.8 9.8 0 00-.88-.68L115.61 1.07a8 8 0 00-8 0L11.34 56.49a6.52 6.52 0 00-.88.69 7.81 7.81 0 00-.79.6 8.15 8.15 0 00-.71.93c-.18.25-.4.46-.55.72a7.88 7.88 0 00-.51 1.24 6.46 6.46 0 00-.29.67 8.18 8.18 0 00-.28 2.1v329.7a8 8 0 004 6.95l192.5 110.84a8.83 8.83 0 001.33.54c.21.08.41.2.63.26a7.92 7.92 0 004.1 0c.2-.05.37-.16.55-.22a8.6 8.6 0 001.4-.58L404.4 400.09a8 8 0 004-6.95V287.88l92.24-53.11a8 8 0 004-7V117.92a8.63 8.63 0 00-.24-2.09zM111.6 17.28l80.19 46.15-80.2 46.18-80.18-46.17zm88.25 60V278.6l-46.53 26.79-33.69 19.4V123.5l46.53-26.79zm0 412.78L23.37 388.5V77.32L57.06 96.7l46.52 26.8v215.18a6.94 6.94 0 00.12.9 8 8 0 00.16 1.18 5.92 5.92 0 00.38.9 6.38 6.38 0 00.42 1 8.54 8.54 0 00.6.78 7.62 7.62 0 00.66.84c.23.22.52.38.77.58a8.93 8.93 0 00.86.66l92.19 52.18zm8-106.17l-80.06-45.32 84.09-48.41 92.26-53.11 80.13 46.13-58.8 33.56zm184.52 4.57L215.88 490.11V397.8l130.72-74.6 45.77-26.15zm0-119.13L358.68 250l-46.53-26.79v-91.42l33.69 19.4L392.37 178zm8-105.28l-80.2-46.17 80.2-46.16 80.18 46.15zm8 105.28V178L455 151.19l33.68-19.4v91.39z"/></svg>
                     <span class="ml-1">Laravel</span>
@@ -189,13 +194,18 @@ title: CV
 
         <h2 class="mt-6 font-semibold text-xl uppercase tracking-wide">Professional Experience</h2>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                Jan<br>
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                Jan<br class="hidden sm:inline">
                 2020
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Mobile App Developer</p>
                 <p><a class="text-purple-700 font-semibold" href="https://liveplatforms.com/" target="_blank">Live Platforms</a></p>
                 <ul class="mt-3 pl-4 list-disc">
@@ -206,54 +216,80 @@ title: CV
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                Dec<br>
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                Dec<br class="hidden sm:inline">
                 2019
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Podcast Guest</p>
                 <p><a class="text-purple-700 font-semibold" href="https://www.happydev.fm/" target="_blank">The Happy Dev Podcast</a></p>
                 <p class="mt-3">Towards the end of 2019 I was invited by <a href="https://twitter.com/jbrooksuk/">James Brooks (Laravel employee #3)</a> to speak on his podcast about mental health in the software development industry.</p>
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                Oct<br>
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                Oct<br class="hidden sm:inline">
                 2019
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Conference Speaker</p>
                 <p><a class="text-purple-700 font-semibold" href="https://laracon.com.au/" target="_blank">Laracon AU</a></p>
                 <p class="mt-3">In 2019 I started my speaking career at Laracon AU where I gave a talk titled <i>“The Laravel Developer's Guide to Vue SPAs”</i>.</p>
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                now<br>
-                |<br>
-                2019
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                <div>
+                    <span class="inline sm:block">now</span>
+                    <span class="hidden sm:inline">|</span>
+                    <span class="sm:hidden">&mdash;</span>
+                    <span class="inline sm:block">2019</span>
+                </div>
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Podcast Co-host</p>
                 <p><a class="text-purple-700 font-semibold" href="https://basecodefieldguide.com/podcast" target="_blank">The BaseCode Podcast</a></p>
                 <p class="mt-3">In 2018 I teamed up with Jason McCreary, aka JMac (of Laracon and Laravel Shift fame) to start the BaseCode Podcast.</p>
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                now<br>
-                |<br>
-                2019
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                <div>
+                    <span class="inline sm:block">now</span>
+                    <span class="hidden sm:inline">|</span>
+                    <span class="sm:hidden">&mdash;</span>
+                    <span class="inline sm:block">2019</span>
+                </div>
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Co-founder and Lead Developer</p>
                 <p><a class="text-purple-700 font-semibold" href="https://giftyduck.com/" target="_blank">GiftyDuck</a></p>
                 <ul class="mt-3 pl-4 list-disc">
@@ -265,14 +301,22 @@ title: CV
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                2019<br>
-                |<br>
-                2015
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                <div>
+                    <span class="inline sm:block">2019</span>
+                    <span class="hidden sm:inline">|</span>
+                    <span class="sm:hidden">&mdash;</span>
+                    <span class="inline sm:block">2015</span>
+                </div>
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Senior Web Application Developer</p>
                 <p><a class="text-purple-700 font-semibold" href="http://infoxchange.org/" target="_blank">Infoxchange</a></p>
                 <ul class="mt-3 pl-4 list-disc">
@@ -285,14 +329,22 @@ title: CV
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                2015<br>
-                |<br>
-                2012
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                <div>
+                    <span class="inline sm:block">2015</span>
+                    <span class="hidden sm:inline">|</span>
+                    <span class="sm:hidden">&mdash;</span>
+                    <span class="inline sm:block">2012</span>
+                </div>
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Senior Web Developer</p>
                 <p class="font-semibold">iiWorks / WebDesignWorks</p>
                 <ul class="mt-3 pl-4 list-disc">
@@ -304,14 +356,22 @@ title: CV
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                2012<br>
-                |<br>
-                2008
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                <div>
+                    <span class="inline sm:block">2012</span>
+                    <span class="hidden sm:inline">|</span>
+                    <span class="sm:hidden">&mdash;</span>
+                    <span class="inline sm:block">2008</span>
+                </div>
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">Web Developer</p>
                 <p class="font-semibold">Mediaglue</p>
                 <ul class="mt-3 pl-4 list-disc">
@@ -324,14 +384,22 @@ title: CV
             </div>
         </div>
 
-        <div class="mt-6 flex">
-            <div class="flex-shrink-0 h-20 w-20 flex items-center justify-center bg-indigo-100 rounded-lg text-lg text-indigo-700 font-bold text-center leading-none tracking-wide">
-                2008<br>
-                |<br>
-                2004
+        <div class="mt-6 sm:flex">
+            <div
+                class="
+                    inline-block p-2 bg-indigo-100 rounded-lg text-indigo-700 font-bold text-center leading-none tracking-wide
+                    sm:h-20 sm:w-20 sm:p-0 sm:flex-shrink-0 sm:flex sm:items-center sm:justify-center sm:text-lg
+                "
+            >
+                <div>
+                    <span class="inline sm:block">2008</span>
+                    <span class="hidden sm:inline">|</span>
+                    <span class="sm:hidden">&mdash;</span>
+                    <span class="inline sm:block">2004</span>
+                </div>
             </div>
 
-            <div class="ml-6">
+            <div class="mt-2 sm:mt-0 sm:ml-6">
                 <p class="text-lg font-bold">IT Consultant</p>
                 <p class="font-semibold">Self-employed</p>
                 <ul class="mt-3 pl-4 list-disc">
@@ -346,21 +414,13 @@ title: CV
             </div>
         </div>
 
-        {{-- <div class="mt-6 markdown"> --}}
-        {{--     <p>In 2019 I started my speaking career at <a href="https://laracon.com.au" target="_blank">Laracon AU</a> where I gave a talk titled <em>&ldquo;The Laravel Developer's Guide to Vue SPAs&rdquo;</em>.</p> --}}
-
-        {{--     <p>The full talk will be posted on the <a href="https://www.youtube.com/channel/UCYGmktKAAJWnqGGaH9DcTqw" target="_blank">Laracon AU YouTube channel</a> soon, so be sure to subscribe to the channel and <a href="https://twitter.com/jessarchercodes" target="_blank">follow me on Twitter</a> to be notified when it's available!</p> --}}
-
-        {{--     <p>In the mean time, you can <a href="/blog/closing-modals-with-the-back-button-in-a-vue-spa/">read a blog post</a> about one of the most popular things I talked about.</p> --}}
-        {{-- </div> --}}
-
         <hr class="mt-6 border-gray-300" />
 
         <h2 class="mt-6 font-semibold text-xl uppercase tracking-wide">Awards</h2>
 
         <div class="mt-6">
             <div class="flex">
-                <svg class="mt-1 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M44 11h-1.368c.33-2.316.518-4.648.568-6.986A3.913 3.913 0 0039.388.002C39.356 0 39.324 0 39.292 0H8.73a3.92 3.92 0 00-3.912 4.01c.05 2.342.238 4.68.564 7H4c-2.21 0-4 1.79-4 4V20a10.037 10.037 0 006.532 9.382 2.002 2.002 0 001.386-3.754A6.026 6.026 0 014 20v-5h2.132c2.754 11.058 10.778 15.348 17.6 15.348 11.218 0 16.444-8.64 18.142-15.348H44v5a6.026 6.026 0 01-3.918 5.628 2.002 2.002 0 001.386 3.754A10.04 10.04 0 0048 20v-5c0-2.21-1.79-4-4-4zM19.366 21.418a1.044 1.044 0 01-1.43-.376 1.049 1.049 0 01-.062-.932L19.66 16a.496.496 0 00-.108-.556l-3.226-3.168a.98.98 0 01.688-1.712h3.68a.501.501 0 00.454-.288l1.924-4.142a1.062 1.062 0 011.884 0l1.922 4.14c.08.176.258.29.452.29h3.682a.98.98 0 01.69 1.712l-3.228 3.174a.505.505 0 00-.108.55l1.788 4.104a1.048 1.048 0 01-1.492 1.308l-4.4-2.476a.498.498 0 00-.49 0l-4.406 2.482zm4.36 11.93c-1.046 0-2.088-.078-3.122-.234a.498.498 0 00-.572.508c.18 6.724-4.648 6.446-5.016 6.484A3.958 3.958 0 0015.4 48h17.218a3.938 3.938 0 003.912-3.964V44A3.897 3.897 0 0033 40.106c-3.034-.298-5.328-1.6-5.142-6.506a.505.505 0 00-.166-.4.495.495 0 00-.4-.124c-1.18.176-2.372.268-3.566.272z"/></svg>
+                <svg class="mt-1 flex-shrink-0 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M44 11h-1.368c.33-2.316.518-4.648.568-6.986A3.913 3.913 0 0039.388.002C39.356 0 39.324 0 39.292 0H8.73a3.92 3.92 0 00-3.912 4.01c.05 2.342.238 4.68.564 7H4c-2.21 0-4 1.79-4 4V20a10.037 10.037 0 006.532 9.382 2.002 2.002 0 001.386-3.754A6.026 6.026 0 014 20v-5h2.132c2.754 11.058 10.778 15.348 17.6 15.348 11.218 0 16.444-8.64 18.142-15.348H44v5a6.026 6.026 0 01-3.918 5.628 2.002 2.002 0 001.386 3.754A10.04 10.04 0 0048 20v-5c0-2.21-1.79-4-4-4zM19.366 21.418a1.044 1.044 0 01-1.43-.376 1.049 1.049 0 01-.062-.932L19.66 16a.496.496 0 00-.108-.556l-3.226-3.168a.98.98 0 01.688-1.712h3.68a.501.501 0 00.454-.288l1.924-4.142a1.062 1.062 0 011.884 0l1.922 4.14c.08.176.258.29.452.29h3.682a.98.98 0 01.69 1.712l-3.228 3.174a.505.505 0 00-.108.55l1.788 4.104a1.048 1.048 0 01-1.492 1.308l-4.4-2.476a.498.498 0 00-.49 0l-4.406 2.482zm4.36 11.93c-1.046 0-2.088-.078-3.122-.234a.498.498 0 00-.572.508c.18 6.724-4.648 6.446-5.016 6.484A3.958 3.958 0 0015.4 48h17.218a3.938 3.938 0 003.912-3.964V44A3.897 3.897 0 0033 40.106c-3.034-.298-5.328-1.6-5.142-6.506a.505.505 0 00-.166-.4.495.495 0 00-.4-.124c-1.18.176-2.372.268-3.566.272z"/></svg>
 
                 <div class="ml-4">
                     <div class="font-bold">Excellence Award</div>
@@ -369,7 +429,7 @@ title: CV
             </div>
 
             <div class="mt-6 flex">
-                <svg class="mt-1 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M13.05 20.27l6.226-.358 2.384 6.046a2.52 2.52 0 002.5 1.6 2.56 2.56 0 002.362-1.894l2-7.154 7.152-2a2.557 2.557 0 001.896-2.36 2.514 2.514 0 00-1.6-2.502l-6.058-2.374.36-6.276A2.52 2.52 0 0028.75.624a2.46 2.46 0 00-2.73.576l-3.772 3.77-6.612-2.628-.06-.024a2.588 2.588 0 00-3.236 3.318l2.626 6.616-3.766 3.77a2.462 2.462 0 00-.58 2.722 2.544 2.544 0 002.4 1.526h.03zm1.518 19.298c-1.656 0-3 1.344-3 3v4a1 1 0 001 1h24a1 1 0 001-1v-4c0-1.656-1.344-3-3-3h-20zm18-3a1 1 0 001-1v-3a3.694 3.694 0 00-2.696-3.454l-6.06-1.516a.953.953 0 00-.486 0l-6.058 1.514a3.698 3.698 0 00-2.7 3.456v3a1 1 0 001 1h16z"/></svg>
+                <svg class="mt-1 flex-shrink-0 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M13.05 20.27l6.226-.358 2.384 6.046a2.52 2.52 0 002.5 1.6 2.56 2.56 0 002.362-1.894l2-7.154 7.152-2a2.557 2.557 0 001.896-2.36 2.514 2.514 0 00-1.6-2.502l-6.058-2.374.36-6.276A2.52 2.52 0 0028.75.624a2.46 2.46 0 00-2.73.576l-3.772 3.77-6.612-2.628-.06-.024a2.588 2.588 0 00-3.236 3.318l2.626 6.616-3.766 3.77a2.462 2.462 0 00-.58 2.722 2.544 2.544 0 002.4 1.526h.03zm1.518 19.298c-1.656 0-3 1.344-3 3v4a1 1 0 001 1h24a1 1 0 001-1v-4c0-1.656-1.344-3-3-3h-20zm18-3a1 1 0 001-1v-3a3.694 3.694 0 00-2.696-3.454l-6.06-1.516a.953.953 0 00-.486 0l-6.058 1.514a3.698 3.698 0 00-2.7 3.456v3a1 1 0 001 1h16z"/></svg>
 
                 <div class="ml-4">
                     <div class="font-bold">"The Laravel Queen" Award</div>
@@ -379,7 +439,7 @@ title: CV
             </div>
 
             <div class="mt-6 flex">
-                <svg class="mt-1 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M13.05 20.27l6.226-.358 2.384 6.046a2.52 2.52 0 002.5 1.6 2.56 2.56 0 002.362-1.894l2-7.154 7.152-2a2.557 2.557 0 001.896-2.36 2.514 2.514 0 00-1.6-2.502l-6.058-2.374.36-6.276A2.52 2.52 0 0028.75.624a2.46 2.46 0 00-2.73.576l-3.772 3.77-6.612-2.628-.06-.024a2.588 2.588 0 00-3.236 3.318l2.626 6.616-3.766 3.77a2.462 2.462 0 00-.58 2.722 2.544 2.544 0 002.4 1.526h.03zm1.518 19.298c-1.656 0-3 1.344-3 3v4a1 1 0 001 1h24a1 1 0 001-1v-4c0-1.656-1.344-3-3-3h-20zm18-3a1 1 0 001-1v-3a3.694 3.694 0 00-2.696-3.454l-6.06-1.516a.953.953 0 00-.486 0l-6.058 1.514a3.698 3.698 0 00-2.7 3.456v3a1 1 0 001 1h16z"/></svg>
+                <svg class="mt-1 flex-shrink-0 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M13.05 20.27l6.226-.358 2.384 6.046a2.52 2.52 0 002.5 1.6 2.56 2.56 0 002.362-1.894l2-7.154 7.152-2a2.557 2.557 0 001.896-2.36 2.514 2.514 0 00-1.6-2.502l-6.058-2.374.36-6.276A2.52 2.52 0 0028.75.624a2.46 2.46 0 00-2.73.576l-3.772 3.77-6.612-2.628-.06-.024a2.588 2.588 0 00-3.236 3.318l2.626 6.616-3.766 3.77a2.462 2.462 0 00-.58 2.722 2.544 2.544 0 002.4 1.526h.03zm1.518 19.298c-1.656 0-3 1.344-3 3v4a1 1 0 001 1h24a1 1 0 001-1v-4c0-1.656-1.344-3-3-3h-20zm18-3a1 1 0 001-1v-3a3.694 3.694 0 00-2.696-3.454l-6.06-1.516a.953.953 0 00-.486 0l-6.058 1.514a3.698 3.698 0 00-2.7 3.456v3a1 1 0 001 1h16z"/></svg>
 
                 <div class="ml-4">
                     <div class="font-bold">"The Honourable Constable" Award</div>
@@ -389,7 +449,7 @@ title: CV
             </div>
 
             <div class="mt-6 flex">
-                <svg class="mt-1 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M46.094 22.75a5.446 5.446 0 00-4.482-2.738 5.486 5.486 0 00-9.22 0A5.49 5.49 0 0027.782 28 5.452 5.452 0 0030 35.288V47a1.002 1.002 0 001.64.77L37 43.3l5.36 4.47A1 1 0 0044 47V35.288A5.45 5.45 0 0046.224 28a5.443 5.443 0 00-.13-5.25zm-15.362 4.31a2.486 2.486 0 012.322-4.02 1.501 1.501 0 001.626-.942 2.487 2.487 0 014.644 0 1.507 1.507 0 001.626.938 2.484 2.484 0 012.322 4.024c-.44.55-.44 1.332 0 1.882a2.484 2.484 0 01-2.322 4.018 1.517 1.517 0 00-1.624.938 2.487 2.487 0 01-4.646 0 1.499 1.499 0 00-1.63-.938 2.488 2.488 0 01-2.324-4.026 1.5 1.5 0 00.006-1.874zM37 24c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm8-24H3C1.344 0 0 1.344 0 3v28c0 1.656 1.344 3 3 3h21a1 1 0 001-1v-4a1 1 0 00-1-1H12.35a.501.501 0 01-.49-.4 7.02 7.02 0 00-5.46-5.46.497.497 0 01-.4-.49v-9.56c0-.092.066-.17.156-.184A7.022 7.022 0 0011.86 6.4a.497.497 0 01.49-.4h23.3c.238 0 .444.166.49.4a7.025 7.025 0 005.46 5.46c.234.046.4.252.4.49V16c0 .378.214.724.552.894l4 2A1 1 0 0048 18V3c0-1.656-1.344-3-3-3z"/></svg>
+                <svg class="mt-1 flex-shrink-0 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M46.094 22.75a5.446 5.446 0 00-4.482-2.738 5.486 5.486 0 00-9.22 0A5.49 5.49 0 0027.782 28 5.452 5.452 0 0030 35.288V47a1.002 1.002 0 001.64.77L37 43.3l5.36 4.47A1 1 0 0044 47V35.288A5.45 5.45 0 0046.224 28a5.443 5.443 0 00-.13-5.25zm-15.362 4.31a2.486 2.486 0 012.322-4.02 1.501 1.501 0 001.626-.942 2.487 2.487 0 014.644 0 1.507 1.507 0 001.626.938 2.484 2.484 0 012.322 4.024c-.44.55-.44 1.332 0 1.882a2.484 2.484 0 01-2.322 4.018 1.517 1.517 0 00-1.624.938 2.487 2.487 0 01-4.646 0 1.499 1.499 0 00-1.63-.938 2.488 2.488 0 01-2.324-4.026 1.5 1.5 0 00.006-1.874zM37 24c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm8-24H3C1.344 0 0 1.344 0 3v28c0 1.656 1.344 3 3 3h21a1 1 0 001-1v-4a1 1 0 00-1-1H12.35a.501.501 0 01-.49-.4 7.02 7.02 0 00-5.46-5.46.497.497 0 01-.4-.49v-9.56c0-.092.066-.17.156-.184A7.022 7.022 0 0011.86 6.4a.497.497 0 01.49-.4h23.3c.238 0 .444.166.49.4a7.025 7.025 0 005.46 5.46c.234.046.4.252.4.49V16c0 .378.214.724.552.894l4 2A1 1 0 0048 18V3c0-1.656-1.344-3-3-3z"/></svg>
 
                 <div class="ml-4">
                     <div class="font-bold">Queensland Police Service Awards for Excellence 2016 - Customer Focus - Gold Award</div>
@@ -397,8 +457,9 @@ title: CV
                     <p class="mt-2">Awarded for my work on the Queensland Police Referral System.</p>
                 </div>
             </div>
-<div class="mt-6 flex">
-                <svg class="mt-1 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M13.05 20.27l6.226-.358 2.384 6.046a2.52 2.52 0 002.5 1.6 2.56 2.56 0 002.362-1.894l2-7.154 7.152-2a2.557 2.557 0 001.896-2.36 2.514 2.514 0 00-1.6-2.502l-6.058-2.374.36-6.276A2.52 2.52 0 0028.75.624a2.46 2.46 0 00-2.73.576l-3.772 3.77-6.612-2.628-.06-.024a2.588 2.588 0 00-3.236 3.318l2.626 6.616-3.766 3.77a2.462 2.462 0 00-.58 2.722 2.544 2.544 0 002.4 1.526h.03zm1.518 19.298c-1.656 0-3 1.344-3 3v4a1 1 0 001 1h24a1 1 0 001-1v-4c0-1.656-1.344-3-3-3h-20zm18-3a1 1 0 001-1v-3a3.694 3.694 0 00-2.696-3.454l-6.06-1.516a.953.953 0 00-.486 0l-6.058 1.514a3.698 3.698 0 00-2.7 3.456v3a1 1 0 001 1h16z"/></svg>
+
+            <div class="mt-6 flex">
+                <svg class="mt-1 flex-shrink-0 h-8 w-8 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M13.05 20.27l6.226-.358 2.384 6.046a2.52 2.52 0 002.5 1.6 2.56 2.56 0 002.362-1.894l2-7.154 7.152-2a2.557 2.557 0 001.896-2.36 2.514 2.514 0 00-1.6-2.502l-6.058-2.374.36-6.276A2.52 2.52 0 0028.75.624a2.46 2.46 0 00-2.73.576l-3.772 3.77-6.612-2.628-.06-.024a2.588 2.588 0 00-3.236 3.318l2.626 6.616-3.766 3.77a2.462 2.462 0 00-.58 2.722 2.544 2.544 0 002.4 1.526h.03zm1.518 19.298c-1.656 0-3 1.344-3 3v4a1 1 0 001 1h24a1 1 0 001-1v-4c0-1.656-1.344-3-3-3h-20zm18-3a1 1 0 001-1v-3a3.694 3.694 0 00-2.696-3.454l-6.06-1.516a.953.953 0 00-.486 0l-6.058 1.514a3.698 3.698 0 00-2.7 3.456v3a1 1 0 001 1h16z"/></svg>
 
                 <div class="ml-4">
                     <div class="font-bold">"Best Newcomer" Award</div>
