@@ -7,12 +7,9 @@ section: content
 author: Jess Archer
 ---
 
-When I built [GiftyDuck](https://giftyduck.com/) I wanted to use something other than Font Awesome for a change, so I settled on the beautiful [Streamline Icons](https://streamlineicons.com/) set which has an awesome variety of icons and variations.
+When I built [GiftyDuck](https://giftyduck.com/) I wanted to use something other than Font Awesome for a change, so I settled on the beautiful [Streamline Icons](https://streamlineicons.com/) set which has an awesome variety of icons and variations. Unfortunately, there was no Vue component version like [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome), so I had to make my own.
 
 When using SVGs icons in an SPA, I believe it's almost essential to place the SVG inline on the page so that they are displayed instantly, rather than requiring a separate network request.
-
-Unfortunately, there was no Vue component version like [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome), so I had to make my own.
-
 
 I have been reflecting on the approach I used and would like to document it as well as some alternative approaches I quite like.
 
