@@ -2,8 +2,9 @@
 
 namespace App\Listeners;
 
-use samdark\sitemap\Sitemap;
 use TightenCo\Jigsaw\Jigsaw;
+use Illuminate\Support\Str;
+use samdark\sitemap\Sitemap;
 
 class GenerateSitemap
 {
@@ -37,6 +38,6 @@ class GenerateSitemap
 
     public function isExcluded($path)
     {
-        return str_is($this->exclude, $path);
+        return Str::is($this->exclude, $path);
     }
 }

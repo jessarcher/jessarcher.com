@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'siteName' => 'Jess Archer',
     'siteDescription' => 'Full-stack web app developer from Brisbane, Australia',
@@ -41,6 +43,6 @@ return [
     },
 
     'isActive' => function ($page, $path) {
-        return ends_with(trimPath($page->getPath()), trimPath($path));
+        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
 ];
