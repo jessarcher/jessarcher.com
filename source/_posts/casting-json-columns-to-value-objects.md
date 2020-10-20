@@ -17,7 +17,7 @@ Most value objects have multiple attributes. That's part of what separates them 
 
 We may not always be so lucky with our value objects though. So we may be tempted to create our own conventions. However, the database won't be able to query the parts easily, and depending on the number of type of attributes, it could get unwieldy.
 
-We could create dedicated columns in the database for each attribute. The Laravel docs has an excellent example of how we can [cast to and from multiple columns into a single value object <small>(scroll down to *Value Object Casting*)</small>](https://laravel.com/docs/8.x/eloquent-mutators#custom-casts).
+We could create dedicated columns in the database for each attribute. The Laravel docs has an excellent example of how we can [cast to and from multiple columns into a single value object](https://laravel.com/docs/8.x/eloquent-mutators#value-object-casting).
 
 But in some cases we may want a nested structure, or maybe we have a lot of optional fields that we don't want cluttering the table structure. Maybe we have a collection of items that aren't deserving of their own table. There are plenty of reasons why you may want to consider a JSON column.
 
