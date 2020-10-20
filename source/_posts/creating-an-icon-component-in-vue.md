@@ -7,6 +7,8 @@ section: content
 author: Jess Archer
 ---
 
+**Note: I have refined this approach even further and talked a bit about it in my [Laracon 2020](https://laracon.net/) talk (at the time of writing you still need a ticket to watch the recording). An example of the approach for Vue 3 can be found on [GitHub](https://github.com/jessarcher/laracon-2020-examples).**
+
 When I built [GiftyDuck](https://giftyduck.com/) I wanted to use something other than Font Awesome for a change, so I settled on the beautiful [Streamline Icons](https://streamlineicons.com/) set which has an awesome variety of icons and variations. Unfortunately, there was no Vue component version like [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome), so I had to make my own.
 
 When using SVGs icons in an SPA, I believe it's almost essential to place the SVG inline on the page so that they are displayed instantly, rather than requiring a separate network request.
