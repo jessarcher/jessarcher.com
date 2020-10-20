@@ -2,7 +2,7 @@
 extends: _layouts.post
 title: Casting JSON Columns to Value Objects with Laravel
 date: 2020-10-19
-description: With the rise of JSON columns, it can be handy to map these to and from value objects.
+description: With the rise of JSON columns, it can be handy to safely cast to and from value objects.
 section: content
 author: Jess Archer
 ---
