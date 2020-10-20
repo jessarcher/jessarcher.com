@@ -1,10 +1,5 @@
 @extends('_layouts.app')
 
-@push('meta')
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="{!! $page->excerpt(200) !!}" />
-@endpush
-
 @section('main')
     @if ($page->cover_image)
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-8">

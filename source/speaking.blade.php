@@ -1,12 +1,9 @@
 ---
 title: Speaking
+description: Jess Archer recently started her speaking career at Laracon
 ---
 
 @extends('_layouts.app')
-
-@push('meta')
-    <meta property="og:description" content="Jess Archer recently started her speaking career at Laracon" />
-@endpush
 
 @section('main')
 

@@ -1,12 +1,9 @@
 ---
 title: Podcasts
+description: Jess Archer co-hosts the BaseCode podcast with JMac
 ---
 
 @extends('_layouts.app')
-
-@push('meta')
-    <meta property="og:description" content="Jess Archer co-hosts the BaseCode podcast with JMac" />
-@endpush
 
 @section('main')
 
