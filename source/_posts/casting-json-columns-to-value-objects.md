@@ -83,8 +83,9 @@ But take that another step and make the value object class castable by implement
 namespace App\Values;
 
 use App\Casts\Address as AddressCast;
+use Illuminate\Contracts\Database\Eloquent\Castable;
 
-class Address
+class Address implements Castable
 {
     // ...
 
