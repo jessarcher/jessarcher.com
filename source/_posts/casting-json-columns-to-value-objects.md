@@ -7,7 +7,7 @@ section: content
 author: Jess Archer
 ---
 
-Have you ever wanted to access an attribute of an Eloquent model as a value object, similar to how Eloquent lets work with dates via Carbon?
+Have you ever wanted to access an attribute of an Eloquent model as a value object, similar to how Eloquent lets us work with dates via Carbon?
 
 ```php
 $user->address->calculateDistance($otherUser->address);
