@@ -5,6 +5,7 @@ date: 2020-10-19
 description: With the rise of JSON columns, it can be handy to safely cast to and from value objects.
 section: content
 author: Jess Archer
+image: casting-json-columns-to-value-objects-with-laravel.png
 ---
 
 Have you ever wanted to access an attribute of an Eloquent model as a value object, similar to how Eloquent lets us work with dates via Carbon?

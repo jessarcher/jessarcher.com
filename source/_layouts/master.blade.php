@@ -9,7 +9,7 @@
         <meta property="og:type" content="{{ $page->extends === '_layouts.post' ? 'article' : 'website' }}" />
         <meta property="og:title" content="{{ $page->title ?  $page->title . ' – ' : '' }}{{ $page->siteName }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}" />
-        <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/jess-archer.jpg" />
+        <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/{{ $page->image ?: 'jess-archer.jpg' }}" />
         <meta property="og:description" content="{{ $page->description ?: $page->siteDescription }}" />
 
         <title>{{ $page->title ? $page->title . ' – ' : '' }}{{ $page->siteName }}</title>
