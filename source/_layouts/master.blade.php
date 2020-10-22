@@ -12,6 +12,14 @@
         <meta property="og:image" content="{{ $page->baseUrl }}/assets/images/{{ $page->image ?: 'jess-archer.jpg' }}" />
         <meta property="og:description" content="{{ $page->description ?: $page->siteDescription }}" />
 
+        @if ($page->image)
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@jessarchercodes" />
+            <meta name="twitter:title" content="{{ $page->title ?  $page->title . ' – ' : '' }}{{ $page->siteName }}" />
+            <meta name="twitter:description" content="{{ $page->description ?: $page->siteDescription }}" />
+            <meta name="twitter:image" content="{{ $page->baseUrl }}/assets/images/{{ $page->image ?: 'jess-archer.jpg' }}" />
+        @endif
+
         <title>{{ $page->title ? $page->title . ' – ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
