@@ -358,3 +358,8 @@ $user->address->getPostageCost($sender);
 
 $user->address->calculateDistance($otherUser->address);
 ```
+
+I have also created a package with the `CastableDataTransferObject` so all you need to bring is your own classes :)
+
+* [Packagist](https://packagist.org/packages/jessarcher/laravel-castable-data-transfer-object)
+* [GitHub](https://github.com/jessarcher/laravel-castable-data-transfer-object)
