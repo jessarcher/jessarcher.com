@@ -32,7 +32,7 @@
 
                     <p>When I'm not coding (and sometimes when I am) I like to eat spicy food, drink dark beer, ride fast motorcycles, and listen to heavy music. 🤘</p>
 
-                    <p>I am available for consulting and I am open to hearing about projects you'd like to collaborate on.</p>
+                    {{-- <p>I am available for consulting and I am open to hearing about projects you'd like to collaborate on.</p> --}}
 
                     <p>
                         <a href="/blog" class="mr-2">Blog</a>
