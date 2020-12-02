@@ -54,7 +54,7 @@
 
                     <p class="mt-12 text-xs">
                         <a href="https://github.com/jessarcher/jessarcher.com" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">This website is open source</a>.
-                        Proudly built with <a href="http://jigsaw.tighten.co" target="_blank by Tighten" class="font-bold hover:text-purple-700 focus:text-purple-700">Jigsaw</a>
+                        Proudly built with <a href="http://jigsaw.tighten.co" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">Jigsaw by Tighten</a>
                         and <a href="https://tailwindcss.com" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">Tailwind CSS</a>,
                         and hosted with <a href="https://www.netlify.com/" target="_blank" class="font-bold hover:text-purple-700 focus:text-purple-700">Netlify</a>.
                     </p>
