@@ -18,7 +18,7 @@
         "font-proxima-nova-scss": "^1.0.1",
         "fuse.js": "^3.6.1",
         "hasbin": "^1.2.3",
-        "highlight.js": "^9.18.5",
+        "highlight.js": "^10.4.1",
         "highlightjs-vue": "^1.0.0",
         "laravel-mix": "^5.0.9",
         "laravel-mix-purgecss": "^4.2.0",
