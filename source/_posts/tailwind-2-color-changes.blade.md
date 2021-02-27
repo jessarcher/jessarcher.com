@@ -356,7 +356,7 @@ $colors = [
         ],
     ],
     'Purple' => [
-        'description' => 'Steve and Adam love their purples! And as with the green pallete, the default purple does map to <code>purple</code>, but instead to <code>violet</code>.',
+        'description' => 'Steve and Adam love their purples! And as with the green pallete, the default purple does not map to <code>purple</code>, but instead to <code>violet</code>.',
         'collections' => [
             'Tailwind 1' => [
                 50  => null,
