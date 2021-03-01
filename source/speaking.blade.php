@@ -9,14 +9,21 @@ description: Jess Archer recently started her speaking career at Laracon
 
     <h1 class="font-bold tracking-wide text-gray-600 uppercase">Speaking</h1>
 
-    <div class="mt-6 markdown">
-        <p>In 2019 I started my speaking career at <a href="https://laracon.com.au" target="_blank">Laracon AU</a> where I gave a talk titled <em>&ldquo;The Laravel Developer's Guide to Vue SPAs&rdquo;</em>.</p>
+    <p class="mt-6">I have spoken at Laracon AU in Sydney and at Laracon US Online, as well as spoken at local meetup groups.</p>
 
-        <img src="/assets/images/jess-archer-speaks.jpg" alt="Jess Archer speaking at Laracon AU 2019" />
+    <h2 class="mt-6 font-bold text-lg">Laracon AU - The Laravel Developer's Guide to Vue SPAs</h2>
+    <div class="mt-6 embed-container">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zv4bUXEwl20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-        <p><a href="https://www.youtube.com/watch?v=Zv4bUXEwl20" target="_blank">Watch the Laravel Developer's Guide to Vue SPAs on YouTube</a></p>
+    <h2 class="mt-12 font-bold text-lg">Laracon US (Online) - The Laravel Developer's Guide to Vue SPAs - Part 2</h2>
+    <div class="mt-6 embed-container" style="padding: 37.5% 0 0 0;">
+        <iframe src="https://player.vimeo.com/video/452362350?title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-        <p><a href="/blog/closing-modals-with-the-back-button-in-a-vue-spa/">Read a blog post about one of the most popular things I talked about</a></p>
+    <h2 class="mt-12 font-bold text-lg">Brisbane Laravel Meetup - Building the Laravel Service Container from Scratch</h2>
+    <div class="mt-6 embed-container">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sMYmZjfqPN0?start=3003" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 @endsection
