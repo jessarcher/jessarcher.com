@@ -1,5 +1,5 @@
 .markdown {
-    @apply text-gray-700 text-lg leading-relaxed;
+    @apply text-gray-600 text-lg leading-relaxed;
 
     > * + * {
         @apply mt-6;
@@ -18,7 +18,7 @@
     }
 
     a:not(.unstyled) {
-        @apply text-gray-900 font-semibold border-b border-dotted border-gray-600;
+        @apply text-gray-900 font-semibold border-b border-dotted border-gray-500;
 
         &:hover,
         &:focus {
@@ -27,13 +27,13 @@
     }
 
     blockquote {
-        @apply border-gray-300;
+        @apply border-gray-200;
         @apply border-l-4;
         @apply font-normal;
         @apply italic;
         @apply my-8;
         @apply pl-6;
-        @apply text-gray-600;
+        @apply text-gray-500;
         @apply text-lg;
     }
 
@@ -50,7 +50,7 @@
     }
 
     code:not(.hljs) {
-        @apply px-2 py-1 bg-gray-300 text-purple-700 rounded text-sm;
+        @apply px-2 py-1 bg-gray-200 text-purple-700 rounded text-sm;
     }
 
     code.hljs {
