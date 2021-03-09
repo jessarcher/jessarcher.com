@@ -28,9 +28,11 @@
         "postcss-nested": "^4.2.3",
         "sass": "^1.32.7",
         "sass-loader": "^8.0.2",
-        "tailwindcss": "^1.9.6",
+        "tailwindcss": "^2.0.3",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12",
-        "yargs": "^15.4.1"
+        "yargs": "^15.4.1",
+        "autoprefixer": "^10.2.4",
+        "postcss": "^8.2.6"
     }
 }
