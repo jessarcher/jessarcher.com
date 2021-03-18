@@ -19,7 +19,7 @@ title: Contact
             </label>
 
             <input
-                class="mt-2 w-full max-w-lg form-input"
+                class="mt-2 w-full max-w-lg"
                 id="name"
                 name="name"
                 type="text"
@@ -33,7 +33,7 @@ title: Contact
             </label>
 
             <input
-                class="mt-2 w-full max-w-lg form-input"
+                class="mt-2 w-full max-w-lg"
                 id="phone"
                 name="phone"
                 type="phone"
@@ -52,7 +52,7 @@ title: Contact
             </label>
 
             <input
-                class="mt-2 w-full max-w-lg form-input"
+                class="mt-2 w-full max-w-lg"
                 id="email"
                 name="email"
                 type="email"
@@ -66,7 +66,7 @@ title: Contact
             </label>
 
             <textarea
-                class="mt-2 w-full max-w-lg form-textarea"
+                class="mt-2 w-full max-w-lg"
                 id="message"
                 name="message"
                 type="message"

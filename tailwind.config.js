@@ -16,7 +16,7 @@ module.exports = {
   },
 
   plugins: [
-    require('@tailwindcss/custom-forms'),
+    require('@tailwindcss/forms'),
 
     function({ addUtilities }) {
       const newUtilities = {
