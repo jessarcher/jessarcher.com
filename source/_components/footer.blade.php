@@ -13,7 +13,7 @@
 
                 <div class="mt-4 sm:mt-0 sm:flex-grow">
                     <div class="markdown max-w-2xl text-base">
-                        <p>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from <span class="whitespace-no-wrap">Brisbane, Australia</span>, with over 15 years professional experience. You can learn more about me on my <a href="/">home page</a>.</p>
+                        <p>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from <span class="whitespace-nowrap">Brisbane, Australia</span>, with over 15 years professional experience. You can learn more about me on my <a href="/">home page</a>.</p>
 
                         <p>
                             <a href="/blog" class="mr-2">Blog</a>
