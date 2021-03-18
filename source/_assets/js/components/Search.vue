@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-1 justify-end items-center text-right px-4">
         <div
-            class="absolute md:relative w-full justify-end left-0 top-0 z-30 mt-6 md:mt-0 px-6 md:px-0 bg-gray-100 md:bg-transparent"
+            class="absolute md:relative w-full justify-end left-0 top-0 z-30 mt-6 md:mt-0 px-6 md:px-0 bg-gray-50 md:bg-transparent"
             :class="{'hidden md:flex': ! searching}"
         >
             <label for="search" class="hidden">Search</label>
@@ -19,12 +19,12 @@
                     md:w-1/2
                     md:focus:w-full
                     border
-                    border-gray-300
-                    bg-gray-200
-                    text-gray-300
+                    border-gray-200
+                    bg-gray-100
+                    text-gray-200
                     hover:bg-white
                     focus:bg-white
-                    focus:text-gray-700
+                    focus:text-gray-600
                     outline-none
                     cursor-pointer
                     px-4
@@ -41,7 +41,7 @@
 
             <button
                 v-if="query || searching"
-                class="absolute top-0 right-0 h-10 font-light text-3xl text-gray-600 hover:text-gray-900 focus:outline-none -mt-px pr-10 md:pr-3"
+                class="absolute top-0 right-0 h-10 font-light text-3xl text-gray-500 hover:text-gray-900 focus:outline-none -mt-px pr-10 md:pr-3"
                 @click="reset"
             >&times;</button>
 
@@ -50,7 +50,7 @@
                     <div class="flex flex-col bg-white rounded-b-lg shadow-lg mx-6 md:mx-0">
                         <a
                             v-for="(result, index) in results"
-                            class="hover:bg-gray-100 border-t border-gray-300 text-xl cursor-pointer p-4 text-gray-800"
+                            class="hover:bg-gray-50 border-t border-gray-200 text-xl cursor-pointer p-4 text-gray-800"
                             :class="{ 'rounded-b-lg border-b-0' : (index === results.length - 1) }"
                             :href="result.link"
                             :title="result.title"
@@ -59,12 +59,12 @@
                         >
                             {{ result.title }}
 
-                            <span class="block font-normal text-gray-600 text-sm my-1" v-html="result.snippet"></span>
+                            <span class="block font-normal text-gray-500 text-sm my-1" v-html="result.snippet"></span>
                         </a>
 
                         <div
                             v-if="! results.length"
-                            class="w-full hover:bg-gray-100 border-t border-gray-300 rounded-b-lg shadow cursor-pointer p-4"
+                            class="w-full hover:bg-gray-50 border-t border-gray-200 rounded-b-lg shadow cursor-pointer p-4"
                         >
                             <p class="my-0">No results for <strong>{{ query }}</strong></p>
                         </div>
@@ -80,8 +80,8 @@
                 flex
                 md:hidden
                 border
-                border-gray-300
-                bg-gray-200
+                border-gray-200
+                bg-gray-100
                 hover:bg-white
                 justify-center
                 items-center

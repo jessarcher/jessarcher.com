@@ -1,5 +1,5 @@
 <article>
-    <p class="text-gray-600 text-sm font-bold uppercase tracking-wide">
+    <p class="text-gray-500 text-sm font-bold uppercase tracking-wide">
         {{ $post->getDate()->format('F j, Y') }}
     </p>
 

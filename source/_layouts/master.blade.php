@@ -45,7 +45,7 @@
         @endif
     </head>
 
-    <body class="font-sans leading-normal text-gray-700 bg-gray-100 print:bg-white min-h-screen">
+    <body class="font-sans leading-normal text-gray-600 bg-gray-50 print:bg-white min-h-screen">
         <div id="app">
             @yield('body')
         </div>

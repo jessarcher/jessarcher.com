@@ -5,7 +5,7 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-8">
     @endif
 
-    <p class="text-gray-600 font-bold uppercase tracking-wide">
+    <p class="text-gray-500 font-bold uppercase tracking-wide">
         {{ date('F j, Y', $page->date) }}
     </p>
 

@@ -7,7 +7,7 @@ description: Jess Archer co-hosts the BaseCode podcast with JMac
 
 @section('main')
 
-    <h1 class="uppercase tracking-wide font-bold text-gray-600">Podcasts</h1>
+    <h1 class="uppercase tracking-wide font-bold text-gray-500">Podcasts</h1>
 
     <p class="mt-6">Find out about the software development podcast I co-host as well as the podcasts I've made a guest appearance on.</p>
 
@@ -42,7 +42,7 @@ description: Jess Archer co-hosts the BaseCode podcast with JMac
         </div>
     </div>
 
-    <h2 class="mt-12 uppercase tracking-wide font-bold text-gray-600">Guest Appearances</h2>
+    <h2 class="mt-12 uppercase tracking-wide font-bold text-gray-500">Guest Appearances</h2>
     <iframe class="mt-6" height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/ed17d721-c726-4013-a944-f65ee4ce6691?dark=false"></iframe>
     <iframe class="mt-6" width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/f46ed63a"></iframe>
     <iframe class="mt-6" width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/769214b5"></iframe>
