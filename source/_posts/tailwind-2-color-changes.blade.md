@@ -456,7 +456,7 @@ $colors = [
         <div class="grid gap-2">
             <div class="font-bold text-gray-800">{{ $colorName }}</div>
             @if ($color['description'])
-                <p class="mb-4 text-gray-600">{!! $color['description'] !!}</p>
+                <p class="mb-4 text-gray-500">{!! $color['description'] !!}</p>
             @endif
             <div class="grid gap-2">
                 @foreach ($color['collections'] as $collectionName => $collection)

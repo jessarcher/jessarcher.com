@@ -14,7 +14,7 @@
 }
 
 .btn-gray {
-    @apply bg-gray-700 text-white;
+    @apply bg-gray-600 text-white;
 
     &:hover {
       @apply bg-gray-900 text-white;
@@ -22,9 +22,9 @@
 }
 
 .btn-outline-gray {
-    @apply bg-white border border-gray-500 text-gray-700;
+    @apply bg-white border border-gray-400 text-gray-600;
 
     &:hover {
-        @apply bg-gray-700 border-transparent text-white;
+        @apply bg-gray-600 border-transparent text-white;
     }
 }

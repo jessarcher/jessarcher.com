@@ -7,7 +7,7 @@ description: Jess Archer recently started her speaking career at Laracon
 
 @section('main')
 
-    <h1 class="font-bold tracking-wide text-gray-600 uppercase">Speaking</h1>
+    <h1 class="font-bold tracking-wide text-gray-500 uppercase">Speaking</h1>
 
     <p class="mt-6">I have spoken at Laracon AU in Sydney and at Laracon US Online, as well as spoken at local meetup groups.</p>
 

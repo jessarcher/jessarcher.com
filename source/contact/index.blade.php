@@ -6,7 +6,7 @@ title: Contact
 
 @section('main')
 
-    <h1 class="uppercase tracking-wide font-bold text-gray-600">Contact</h1>
+    <h1 class="uppercase tracking-wide font-bold text-gray-500">Contact</h1>
 
     <div class="mt-6 markdown">
         <p>I am available for consulting and I am open to hearing about projects you'd like to collaborate on.</p>
