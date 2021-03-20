@@ -80,7 +80,7 @@ $colors = [
                 800 => '#262626',
                 900 => '#171717',
             ],
-            '<code>trueGray</code>' => [
+            '<code>warmGray</code>' => [
                 50  => '#FAFAF9',
                 100 => '#F5F5F4',
                 200 => '#E7E5E4',
