@@ -18,7 +18,7 @@ To make it easier to see what's changed, I have included the Tailwind 1.0 colors
 @php
 $colors = [
     'Gray' => [
-        'description' => 'Tailwind 2.0 now has FOUR different gray palletes to choose from. The default gray being <code>coolGray</code>.',
+        'description' => 'Tailwind 2.0 now has FIVE different grays to choose from. The default gray being <code>coolGray</code>.',
         'collections' => [
             'Tailwind 1' => [
                 50 => null,
