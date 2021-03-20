@@ -36,7 +36,7 @@ title: Contact
                 class="mt-2 w-full max-w-lg form-input"
                 id="phone"
                 name="phone"
-                type="phone"
+                type="tel"
                 placeholder="Phone"
             >
         </div>
