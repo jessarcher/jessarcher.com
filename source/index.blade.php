@@ -24,11 +24,11 @@
 
             <div class="mt-6 max-w-2xl">
                 <div class="markdown">
-                    <p><strong>Hi there, I'm Jess Archer&mdash;a full-stack web application developer from <span class="whitespace-no-wrap">Brisbane, Australia</span>, with over 15 years professional experience.</strong></p>
+                    <p><strong>Hi there, I'm Jess Archer&mdash;a full-stack web application developer and consultant from <span class="whitespace-no-wrap">Brisbane, Australia</span>, with over 15 years professional experience.</strong></p>
 
-                    <p>I've worked on some pretty interesting projects, including a chemical warehouse management system, a POS system, a telephone robot, a crypto trading robot, and even software for the police. I also co-host a <a href="/podcasts">podcast</a>, and have <a href="/speaking">spoken</a> at two Laracons.</p>
+                    <p>I've worked on some pretty interesting projects, including a chemical warehouse management system, a POS system, a telephone robot, a crypto trading robot, clinical data collection and storage, and even software for the police. I also co-host a <a href="/podcasts">podcast</a>, and have <a href="/speaking">spoken</a> at two Laracons.</p>
 
-                    <p>I am passionate about open-source software, privacy, best practices, user experience, and developer experience. My favourite stack these days is Laravel, Vue, and Tailwind.</p>
+                    <p>I am passionate about open-source software, privacy, best practices, standards, idomatic code, user experience, and developer experience. My favourite stack these days is Laravel, Vue, and Tailwind.</p>
 
                     <p>When I'm not coding I like to make things, eat spicy food, drink dark beer, ride fast motorcycles, and listen to heavy music. 🤘</p>
 
