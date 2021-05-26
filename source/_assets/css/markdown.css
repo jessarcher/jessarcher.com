@@ -42,7 +42,7 @@
     }
 
     ol {
-        @apply list-decimal;
+        @apply list-decimal ml-8;
     }
 
     strong {
