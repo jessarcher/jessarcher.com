@@ -23,13 +23,13 @@ public function update(Request $request, Record $record)
 }
 ```
 
-This will throw an instance of `Symfony\Component\HttpKernel\Exception\HttpException` with the status code set to `409` and the message set to `'The record was updated since reading'`.
+This will throw an instance of `Symfony\Component\HttpKernel\Exception\HttpException` with the status code set to `409` and the message set to `'The record was updated since reading.'`.
 
 Laravel's exception handler will then create a nice response with the specified status code and a standardised body of:
 
 ```json
 {
-    "message": "The record was updated since reading"
+    "message": "The record was updated since reading."
 }
 ```
 
@@ -90,7 +90,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 class RecordConflictHttpException extends ConflictHttpException
 {
     public function __construct(
-        ?string $message = 'The record was updated since reading',
+        ?string $message = 'The record was updated since reading.',
         \Throwable $previous = null,
         int $code = 0,
         array $headers = []
@@ -124,7 +124,7 @@ use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
 class RecordConflictException extends Exception implements HttpExceptionInterface
 {
-    protected $message = 'The record was updated since reading';
+    protected $message = 'The record was updated since reading.';
 
     public function getStatusCode()
     {
@@ -151,7 +151,7 @@ But there are still a few loose ends:
 
 ## Introducing `Httpable` Exceptions
 
-We can move the boilerplate code to a trait, which we'll call `Httpable`, where we can also handling reporting:
+We can move the boilerplate code to a trait, which we'll call `Httpable`, where we can also handle reporting:
 
 ```php
 <?php
@@ -196,7 +196,7 @@ class RecordConflictException extends Exception implements HttpExceptionInterfac
 {
     use Httpable;
 
-    protected $message = 'The record was updated since reading';
+    protected $message = 'The record was updated since reading.';
 
     protected $statusCode = Response::HTTP_CONFLICT;
 }
