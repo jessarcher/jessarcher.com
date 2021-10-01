@@ -31,17 +31,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
-            <link rel="preconnect" href="https://www.google-analytics.com" />
-
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151431096-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'UA-151431096-1');
-            </script>
+            <script src="https://dog.jessarcher.com/script.js" data-site="JGZVJFVC" defer></script>
         @endif
     </head>
 
