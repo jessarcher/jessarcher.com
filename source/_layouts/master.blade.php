@@ -31,7 +31,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
-            <script src="https://dog.jessarcher.com/script.js" data-site="JGZVJFVC" defer></script>
+            <script src="https://smile-calm.jessarcher.com/script.js" data-site="JGZVJFVC" defer></script>
         @endif
     </head>
 
