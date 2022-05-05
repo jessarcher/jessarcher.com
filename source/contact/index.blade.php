@@ -8,10 +8,6 @@ title: Contact
 
     <h1 class="uppercase tracking-wide font-bold text-gray-600">Contact</h1>
 
-    <div class="mt-6 markdown">
-        <p>I am available for consulting and I am open to hearing about projects you'd like to collaborate on.</p>
-    </div>
-
     <form method="POST" name="contact" class="mt-6" action="/contact/thanks" netlify netlify-honeypot="mobile">
         <div>
             <label class="block font-bold" for="name">
