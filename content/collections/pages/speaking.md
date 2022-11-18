@@ -7,4 +7,6 @@ updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_at: 1668493709
 template: speaking
 ---
-# I've spoken on a variety of topics at several conferences
+# I've spoken on a variety of topics at several conferences.
+
+There is something magical about sharing a room with hundreds of people all sharing the same passion for something.

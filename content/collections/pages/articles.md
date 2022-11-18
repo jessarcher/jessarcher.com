@@ -7,6 +7,6 @@ template: articles/index
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_at: 1668511805
 ---
-# Things that are too long to tweet
+# Some things that are too long to tweet.
 
-I don't write often, but when I do it's on the technology I'm passionate about. Naturally this means everything is probably out of date and my opinions have likely changed.
+I don't write often, but when I do, it's about technology. Naturally, this means everything is probably already out of date, and my opinions have likely changed.

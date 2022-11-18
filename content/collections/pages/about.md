@@ -5,17 +5,14 @@ title: About
 author: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_at: 1668493306
-template: center
 ---
-<img src="/assets/jess.jpg" class="sm:float-right mx-auto sm:ml-4 md:ml-10 mb-10 w-48 md:w-64 grayscale rounded-md shadow-lg sm:rotate-2 hover:grayscale-0 sm:hover:rotate-3 hover:scale-105 hover:shadow-2xl transition duration-150" />
+<img src="/assets/jess.jpg" class="sm:float-right mx-auto sm:ml-6 mb-10 w-56 sm:w-48 grayscale rounded-md shadow-lg sm:rotate-2 hover:grayscale-0 sm:hover:rotate-3 hover:scale-105 hover:shadow-2xl transition duration-150" />
 
-<!-- # A full-stack developer from Australia, with over 15&nbsp;years experience. -->
+# Hi there, <span class="whitespace-nowrap">I'm Jess Archer.</span>
 
-# Hi there,<br>I'm Jess Archer 👋
+I've been making computers do my bidding for over 15 years. I've done everything from building servers to designing websites. These days my passion is building web applications with Laravel, Vue, and Tailwind.
 
-I've been making computers do my bidding for over 15 years. I've done everything from building servers to designing websites but my focus these days is building web applications with Laravel, Vue, and Tailwind.
-
-I've worked on some pretty interesting projects, including:
+I've worked on exciting projects like:
 
 * A chemical warehouse management
 * A touch screen point-of-sale system
@@ -24,6 +21,6 @@ I've worked on some pretty interesting projects, including:
 * Clinical data collection and storage
 * Software for the police
 
-I'm passionate about open-source software, privacy, best practices, open standards, idiomatic code, and great user and developer experiences.
+I care deeply about open-source software, privacy, best practices, open standards, idiomatic code, and great user and developer experiences.
 
-When I'm not coding I enjoy woodworking, photography, spicy food, dark beer, fast motorcycles, and heavy music 🤘
+When I'm not coding, I enjoy woodworking, photography, cooking, spicy food, dark beer, fast motorcycles, and heavy music 🤘

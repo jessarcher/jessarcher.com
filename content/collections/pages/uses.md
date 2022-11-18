@@ -6,10 +6,11 @@ author: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_at: 1668501176
 ---
-# My tools of the trade
+# My tools of the trade.
+
+It's fun to compare notes on the gear we all use, so consider this my entry in that conversation. It's also a good excuse for some affiliate links, right?
 
 <img class="sm:w-3/4 rounded-md shadow-xl" alt="desk" src="/assets/desk.jpg" />
-
 <small>(This photo is a little out of date and missing a few things, but you get the idea.)</small>
 
 ## Hardware
@@ -61,21 +62,26 @@ This powers my microphone and gets the XLR output into my laptop.
 ### [Samsung Galaxy Buds2 Pro](https://amzn.to/3AbizZR)
 This is my first pair of wireless earbuds and I love them. I won them by coming second place in [Tighten's Laracon 22 puzzle challenge](https://tighten.com/laracon/puzzle-1/).
 
-### [OnePlus 6](https://www.oneplus.com/global/6/specs)
-I'm a bit funny with phones. I prefer open-source software and try to avoid Google and Apple. On this phone it's easy to run [De-Googled Android](https://itsfoss.com/android-distributions-roms/).
-
 ## Software
 
+My dotfiles are on GitHub at [https://github.com/jessarcher/dotfiles](https://github.com/jessarcher/dotfiles).
+
 ### [Fedora Linux with GNOME](https://getfedora.org/)
-I've done my fair share of distro-hopping over the years, including building a custom [Linux From Scratch](https://www.linuxfromscratch.org/) system. Once I lost interest in tinkering around I settled on Fedora with GNOME.
+I've done my fair share of distro-hopping over the years, including building a custom [Linux From Scratch](https://www.linuxfromscratch.org/) system. Once I lost interest in tinkering around, I settled on Fedora with GNOME.
 
-### [Neovim](https://neovim.io/)
-Hands down my favourite and most used piece of software. I got started with Vim in my late teens, so modal editing is fused with my brain now.
-
-Check out my [Neovim episode](https://thingsworthlearning.show/episodes/neovim-with-jess-archer) on the *Things Worth Learning* podcast and then check out my [VimConf 2021 talk](https://youtu.be/434tljD-5C8) to see how I've set it all up!
+### [Kitty](https://sw.kovidgoyal.net/kitty/conf.html)
+A super-fast GPU-based minimalistic terminal with just enough features.
 
 ### [Tmux](https://github.com/tmux/tmux)
 I spend most of my time in a terminal so a terminal multiplexer is a massive productivity boost.
 
+### [Neovim](https://neovim.io/)
+Hands down my favourite and most useful piece of software. I got started with Vim in my late teens, so modal editing is fused with my brain now.
+
+Check out my [Neovim episode](https://thingsworthlearning.show/episodes/neovim-with-jess-archer) on the *Things Worth Learning* podcast to learn why I love it so much, and then check out my [VimConf 2021 talk](https://youtu.be/434tljD-5C8) to see how I've set mine up!
+
 ### [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 I'm a web developer so my web browser is very important to me. That's why I choose Firefox!
+
+### [Laravel](https://laravel.com)
+The ultimate framework for building modern web applications.
