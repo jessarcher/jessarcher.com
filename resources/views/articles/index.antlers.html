@@ -1,7 +1,7 @@
-<div class="max-w-2xl py-12 mx-auto">
-    <div class="prose max-w-none">
+{{ partial:container }}
+    {{ partial:prose }}
         {{ content | widont }}
-    </div>
+    {{ /partial:prose }}
      
     <section class="mt-12 space-y-12 divide-y">
         {{ collection:articles }}
@@ -19,4 +19,4 @@
             </article>
         {{ /collection:articles }}
     </section>
-</div>
+{{ /partial:container }}

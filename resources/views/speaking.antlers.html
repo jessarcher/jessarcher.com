@@ -1,7 +1,7 @@
-<div class="max-w-2xl w-full py-12 mx-auto">
-    <div class="prose">
+{{ partial:container }}
+    {{ partial:prose }}
         {{ content | widont }}
-    </div>
+    {{ /partial:prose }}
 
     <article class="pt-12">
         <p class="text-gray-500 text-sm">
@@ -145,4 +145,4 @@
             <a href="https://youtu.be/Zv4bUXEwl20" class="hover:underline focus:underline">Watch video &rarr;</a>
         </p>
     </article>
-</div>
+{{ /partial:container }}

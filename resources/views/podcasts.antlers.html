@@ -1,9 +1,9 @@
-<div class="max-w-3xl w-full py-12 mx-auto">
-    <div class="prose">
+{{ partial:container }}
+    {{ partial:prose }}
         {{ content | widont }}
-    </div>
+    {{ /partial:prose }}
 
-    <article class="mt-12 flex gap-6">
+    <article class="mt-12 flex flex-col sm:flex-row gap-6">
         <a class="flex-shrink-0" href="https://basecodefieldguide.com/podcast">
             <img class="w-40 h-40 border" src="https://basecodefieldguide.com/podcast/assets/img/logo.png" />
         </a>
@@ -61,4 +61,4 @@
         link="https://www.happydev.fm/s1/4"
         thumbnail="https://images.transistor.fm/file/transistor/images/show/5037/medium_1578472744-artwork.jpg"
     }}
-</div>
+{{ /partial:container }}

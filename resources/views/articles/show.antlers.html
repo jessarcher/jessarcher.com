@@ -1,7 +1,7 @@
-<article class="flex justify-center px-4 py-12">
-    <div class="prose prose-pink md:prose-lg">
+{{ partial:container }}
+    {{ partial:prose }}
         <p class="text-gray-500"><small>{{ date }}</small></p>
         <h1>{{ title }}</h1>
         {{ content | widont }}
-    </div>
-</article>
+    {{ /partial:prose }}
+{{ /partial:container }}
