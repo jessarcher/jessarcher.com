@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './resources/**/*.antlers.html',
@@ -8,6 +10,14 @@ module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
+        invert: {
+          css: {
+            code: {
+              background: theme('colors.gray.900'),
+              borderColor: theme('colors.gray.800'),
+            },
+          },
+        },
         DEFAULT: {
           css: {
             'h1 a, h2 a, h3 a, h4 a, h5 a, h6 a': {
@@ -30,6 +40,9 @@ module.exports = {
           },
         },
       }),
+      colors: {
+        gray: colors.zinc,
+      },
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
