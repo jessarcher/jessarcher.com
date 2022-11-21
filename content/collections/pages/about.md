@@ -23,4 +23,4 @@ I've worked on exciting projects like:
 
 I care deeply about open-source software, privacy, best practices, open standards, idiomatic code, and great user and developer experiences.
 
-When I'm not coding, I enjoy woodworking, photography, cooking, spicy food, dark beer, fast motorcycles, and heavy music 🤘
+When I'm not coding, I enjoy woodworking, photography, cooking, spicy food, dark beer, motorcycles, and heavy music.
