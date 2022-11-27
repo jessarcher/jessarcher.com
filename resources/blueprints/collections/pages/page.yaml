@@ -14,6 +14,7 @@ sections:
         field:
           type: markdown
           localizable: true
+          antlers: true
   sidebar:
     display: Sidebar
     fields:

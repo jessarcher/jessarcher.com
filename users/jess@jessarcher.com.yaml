@@ -7,3 +7,15 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    talks:
+      columns:
+        - title
+        - date
+        - conference
+    podcasts:
+      columns:
+        - podcast
+        - title
+        - date
+        - thumbnail
+        - content

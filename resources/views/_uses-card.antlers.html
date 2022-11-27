@@ -1,0 +1,12 @@
+<div class="not-prose mt-14">
+    <h2 class="mt-3 font-medium text-lg text-gray-800 dark:text-gray-200">
+        {{ if link }}
+            <a href="{{ link }}" class="hover:underline focus:underline">
+                {{ name }}
+            </a>
+        {{ else }}
+            {{ name }}
+        {{ /if }}
+    </h2>
+    <p class="mt-3 text-base text-gray-500 leading-relaxed">{{ description }}</p>
+</div>

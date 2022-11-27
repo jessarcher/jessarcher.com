@@ -1,0 +1,98 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: conference
+        field:
+          input_type: text
+          antlers: false
+          display: Conference
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: link
+        field:
+          display: Link
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          always_save: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: icon
+        field:
+          theme: material
+          mode: htmlmixed
+          mode_selectable: false
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: Icon
+          type: code
+          icon: code
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: upcoming
+        field:
+          default: false
+          display: Upcoming
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: cta
+        field:
+          input_type: text
+          antlers: false
+          display: CTA
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: Talk

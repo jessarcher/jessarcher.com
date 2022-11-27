@@ -10,9 +10,9 @@ updated_at: 1668493306
 
 # Hi there, <span class="whitespace-nowrap">I'm Jess Archer.</span>
 
-I've been making computers do my bidding for over 15 years. I've done everything from building servers to designing websites. These days my passion is building web applications with Laravel, Vue, and Tailwind.
+I've been making computers do my bidding for over 15 years. I'm self-taught and have done everything from designing websites to building the servers they run on. These days my passion is building web applications with Laravel, Vue, and Tailwind.
 
-I've worked on exciting projects like:
+Some interesting projects I've worked on include:
 
 * A chemical warehouse management
 * A touch screen point-of-sale system

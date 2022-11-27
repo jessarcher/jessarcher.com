@@ -1,0 +1,11 @@
+title: Podcasts
+template: podcasts/index
+layout: layout
+revisions: false
+slugs: false
+date: true
+sort_dir: desc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'

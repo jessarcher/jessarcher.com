@@ -1,0 +1,66 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: podcast
+        field:
+          input_type: text
+          antlers: false
+          display: Podcast
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: thumbnail
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Thumbnail
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: link
+        field:
+          display: Link
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+title: Podcast
