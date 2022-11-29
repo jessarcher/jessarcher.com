@@ -1,0 +1,7 @@
+{{ partial:container }}
+    {{ partial:prose }}
+        <p class="text-gray-500"><small>{{ date }}</small></p>
+        <h1>{{ title }}</h1>
+        {{ content | widont }}
+    {{ /partial:prose }}
+{{ /partial:container }}

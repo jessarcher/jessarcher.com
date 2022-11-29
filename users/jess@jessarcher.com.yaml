@@ -1,0 +1,21 @@
+name: 'Jess Archer'
+super: true
+id: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
+# This is just 'password' - you haven't found anything you shouldn't have.
+password_hash: $2y$10$HPsQW6zIMiYWoOsuciGEoeDL1HAIFC4JPO0gzvOc6E7hDmGwMCsn2
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
+    talks:
+      columns:
+        - title
+        - date
+        - conference
+    podcasts:
+      columns:
+        - podcast
+        - title
+        - date
+        - thumbnail
+        - content

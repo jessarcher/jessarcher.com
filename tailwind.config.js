@@ -1,35 +1,56 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
+  content: [
+    './resources/**/*.antlers.html',
+    './resources/**/*.blade.php',
+    './resources/**/*.vue',
+    './content/**/*.md'
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: {
-        'sans': 'Proxima Nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+      typography: (theme) => ({
+        invert: {
+          css: {
+            '--tw-prose-pre-bg': theme('colors.gray.800'),
+            code: {
+              background: theme('colors.gray.900'),
+              borderColor: theme('colors.gray.800'),
+            },
+          },
+        },
+        DEFAULT: {
+          css: {
+            'h1 a, h2 a, h3 a, h4 a, h5 a, h6 a': {
+              fontWeight: 'inherit',
+            },
+            code: {
+              background: theme('colors.gray.100'),
+              borderWidth: '1px',
+              borderColor: theme('colors.gray.200'),
+              fontWeight: 'inherit',
+              padding: theme('spacing.1'),
+              borderRadius: theme('borderRadius.md'),
+            },
+            'code::before': {
+              content: ''
+            },
+            'code::after': {
+              content: ''
+            },
+          },
+        },
+      }),
+      colors: {
+        gray: colors.zinc,
       },
-      screens: {
-        'print': {'raw': 'print'},
-      },
-    }
+    },
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
   },
-
-  variants: {
-    width: ['responsive', 'focus'],
-    borderColor: ['responsive', 'hover', 'focus', 'group-hover'],
-  },
-
   plugins: [
-    require('@tailwindcss/custom-forms'),
-
-    function({ addUtilities }) {
-      const newUtilities = {
-        '.transition-fast': {
-          transition: 'all .2s ease-out',
-        },
-
-        '.transition': {
-          transition: 'all .5s ease-out',
-        },
-      }
-
-      addUtilities(newUtilities)
-    }
-  ]
+    require('@tailwindcss/typography'),
+  ],
 }

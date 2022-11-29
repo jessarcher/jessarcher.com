@@ -1,0 +1,11 @@
+title: Talks
+template: talks/show
+layout: layout
+revisions: false
+slugs: false
+date: true
+sort_dir: desc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'

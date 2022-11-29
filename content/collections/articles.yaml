@@ -1,0 +1,15 @@
+title: Articles
+template: articles/show
+layout: layout
+mount: edb1deb3-1a39-4a09-b7b0-9515d61069c5
+revisions: false
+route: '/articles/{slug}'
+date: true
+sort_dir: desc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
