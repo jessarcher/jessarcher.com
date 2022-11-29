@@ -11,7 +11,7 @@ return [
 
     // Which theme you want to use. You can find all of the themes at
     // https://torchlight.dev/docs/themes.
-    'theme' => env('TORCHLIGHT_THEME', 'material-theme-palenight'),
+    'theme' => env('TORCHLIGHT_THEME', 'olaolu-palenight'),
 
     // If you want to use two separate themes for dark and light modes,
     // you can use an array to define both themes. Torchlight renders

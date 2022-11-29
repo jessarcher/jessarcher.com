@@ -7,11 +7,13 @@ module.exports = {
     './resources/**/*.vue',
     './content/**/*.md'
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       typography: (theme) => ({
         invert: {
           css: {
+            '--tw-prose-pre-bg': theme('colors.gray.800'),
             code: {
               background: theme('colors.gray.900'),
               borderColor: theme('colors.gray.800'),
