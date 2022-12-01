@@ -11,10 +11,10 @@ sections:
           validate:
             - required
       -
-        handle: excerpt
+        handle: description
         field:
           antlers: false
-          display: Excerpt
+          display: Description
           type: textarea
           icon: textarea
           listable: hidden

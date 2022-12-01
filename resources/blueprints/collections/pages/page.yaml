@@ -10,6 +10,17 @@ sections:
           validate:
             - required
       -
+        handle: description
+        field:
+          antlers: false
+          display: Description
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
         handle: content
         field:
           type: markdown

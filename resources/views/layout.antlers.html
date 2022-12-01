@@ -12,14 +12,22 @@
         <meta name="description" content="{{ description ?? 'Full-stack Laravel developer' }}">
 
         <meta property="og:type" content="{{ template === 'articles/show' ? 'article' : 'website' }}" />
-        <meta property="og:title" content="{{ title ?? 'Jess Archer' }}" />
+        {{ if is_homepage }}
+            <meta property="og:title" content="Jess Archer - Full-stack Laravel developer" />
+        {{ else }}
+            <meta property="og:title" content="{{ title }} - Jess Archer" />
+        {{ /if }}
         <meta property="og:url" content="{{ permalink }}" />
         <meta property="og:image" content="{{ image ?? '/assets/images/social.png' }}" />
         <meta property="og:description" content="{{ description ?? 'Full-stack Laravel developer' }}" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@jessarchercodes" />
-        <meta name="twitter:title" content="{{ title ?? 'Jess Archer' }}" />
+        {{ if is_homepage }}
+            <meta name="twitter:title" content="Jess Archer - Full-stack Laravel developer" />
+        {{ else }}
+            <meta name="twitter:title" content="{{ title }} - Jess Archer" />
+        {{ /if }}
         <meta name="twitter:description" content="{{ description ?? 'Full-stack Laravel developer' }}" />
         <meta name="twitter:image" content="{{ image ?? '/assets/images/social.png' }}" />
 

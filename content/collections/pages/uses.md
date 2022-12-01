@@ -4,7 +4,8 @@ blueprint: page
 title: Uses
 author: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
-updated_at: 1668501176
+updated_at: 1669891502
+description: 'My tools of the trade.'
 ---
 # My tools of the trade.
 
