@@ -147,5 +147,5 @@ My dotfiles are on GitHub at [https://github.com/jessarcher/dotfiles](https://gi
     partial:uses-card
     name="Laravel"
     link="https://laravel.com"
-    description="I've been a fan of Laravel long before I worked there and is hands down the tool I reach for when building a web application."
+    description="I've been a fan of Laravel for long before I worked there and it is hands down the tool I reach for when building a web application."
 }}
