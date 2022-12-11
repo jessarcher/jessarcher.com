@@ -1,12 +1,7 @@
 {
-    "name": "statamic/statamic",
-    "description": "Statamic",
-    "keywords": [
-        "statamic",
-        "cms",
-        "flat file",
-        "laravel"
-    ],
+    "name": "jessarcher/jessarcher.com",
+    "description": "Jess Archer's Website",
+    "keywords": [],
     "type": "project",
     "require": {
         "php": "^8.0",
