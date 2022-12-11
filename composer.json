@@ -15,6 +15,7 @@
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
+        "mitydigital/feedamic": "^2.2",
         "statamic/cms": "3.3.*",
         "torchlight/torchlight-commonmark": "^0.5.5"
     },
