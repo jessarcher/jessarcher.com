@@ -1,3 +1,9 @@
+http://jessarcher.com.au/* https://jessarcher.com/:splat 301!
+https://jessarcher.com.au/* https://jessarcher.com/:splat 301!
+
+http://jessarcher.au/* https://jessarcher.com/:splat 301!
+https://jessarcher.au/* https://jessarcher.com/:splat 301!
+
 /blog /articles
 /blog/httpable-exceptions /articles/httpable-exceptions-in-laravel
 /blog/tailwind-2-color-changes /articles/tailwind-2x-color-changes
