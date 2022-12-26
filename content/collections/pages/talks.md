@@ -4,8 +4,8 @@ blueprint: page
 title: Talks
 author: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
-updated_at: 1669891489
+updated_at: 1672034539
 template: talks/index
-description: "I've spoken on a variety of topics at several conferences."
+description: "I've spoken on a variety of topics at conferences and on Laracasts."
 ---
-# I've spoken on a variety of topics at several conferences.
+# I've spoken on a variety of topics at conferences and on Laracasts.
