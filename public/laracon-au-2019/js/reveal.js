@@ -4352,7 +4352,7 @@
 		}
 		else if( currentSlide ) {
 			// If we're configured to push to history OR the history
-			// API is not avaialble.
+			// API is not available.
 			if( config.history || !window.history ) {
 				window.location.hash = locationHash();
 			}
