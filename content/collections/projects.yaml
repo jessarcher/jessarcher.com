@@ -1,0 +1,11 @@
+title: Projects
+template: articles/show
+layout: layout
+mount: d95dcc47-9804-44e1-a5da-a98bbe86d3d3
+revisions: false
+date: true
+sort_dir: desc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
