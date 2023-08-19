@@ -6,6 +6,6 @@ author: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 template: articles/index
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_at: 1669891570
-description: 'Things that are too long to tweet.'
+description: 'Things I was stuck at but eventually found my way around 🙂.'
 ---
-# Things that are too long to tweet.
+# Things I was stuck at but eventually found my way around 🙂.
