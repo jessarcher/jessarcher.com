@@ -10,4 +10,4 @@ description: "Hi there👋! This is Victor Ukam and I love to solve technical pr
 ---
 # Full-stack developer and aspiring entrepreneur.
 
-Hi there👋! This is Victor Ukam from Oron, Nigeria, and I love to solve technical problems with codes. I'm currently building <a href="https://docuhelp.ai" target="_blank">Docuhelp</a> and <a href="https://requstory.com" target="_blank">Requstory</a>, and I work with the <a href="https://abdn.ac.uk" target="_blank">University of Aberdeen's</a> core web applications development team.
+Hi there👋! This is Victor Ukam from Oron, Nigeria, and I love to solve technical problems with codes. I'm currently building <a href="https://docuhelp.ai" target="_blank">Docuhelp</a> and <a href="https://requstory.com" target="_blank">Requstory</a>. I currently work with the <a href="https://abdn.ac.uk" target="_blank">University of Aberdeen's</a> core web applications development team.
