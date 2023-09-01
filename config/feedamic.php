@@ -22,7 +22,7 @@ return [
             /*
             | The title for the feed
             */
-            'title' => 'Jess Archer\'s Blog',
+            'title' => 'Jess Archer',
 
             /*
             | The description (RSS) or subtitle (Atom) for the feed
