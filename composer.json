@@ -5,13 +5,12 @@
     "type": "project",
     "require": {
         "php": "^8.0",
-        "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
         "mitydigital/feedamic": "^2.2",
-        "statamic/cms": "3.3.*",
+        "statamic/cms": "^4.0",
         "torchlight/torchlight-commonmark": "^0.5.5"
     },
     "require-dev": {
@@ -22,7 +21,7 @@
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0",
-        "statamic/ssg": "^1.2"
+        "statamic/ssg": "^2.2"
     },
     "config": {
         "optimize-autoloader": true,
