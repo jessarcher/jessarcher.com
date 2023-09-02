@@ -275,16 +275,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "ea4222fad9d38d8969fc85c9801e4af2171f0f5d"
+                "reference": "ee851d6b6bb4bf2e0fbfb22b22b44727cded6f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/ea4222fad9d38d8969fc85c9801e4af2171f0f5d",
-                "reference": "ea4222fad9d38d8969fc85c9801e4af2171f0f5d",
+                "url": "https://api.github.com/repos/composer/composer/zipball/ee851d6b6bb4bf2e0fbfb22b22b44727cded6f29",
+                "reference": "ee851d6b6bb4bf2e0fbfb22b22b44727cded6f29",
                 "shasum": ""
             },
             "require": {
@@ -369,7 +369,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.6.0"
+                "source": "https://github.com/composer/composer/tree/2.6.1"
             },
             "funding": [
                 {
@@ -385,7 +385,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-01T08:07:50+00:00"
+            "time": "2023-09-01T11:53:08+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -3122,16 +3122,16 @@
         },
         {
             "name": "mitydigital/feedamic",
-            "version": "2.2.6",
+            "version": "2.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mitydigital/statamic-feedamic.git",
-                "reference": "f43c015703ccdf52b77b7d063560ce0b6ea04dbc"
+                "reference": "e917600188af608717c64fdf9ce258d410280e70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mitydigital/statamic-feedamic/zipball/f43c015703ccdf52b77b7d063560ce0b6ea04dbc",
-                "reference": "f43c015703ccdf52b77b7d063560ce0b6ea04dbc",
+                "url": "https://api.github.com/repos/mitydigital/statamic-feedamic/zipball/e917600188af608717c64fdf9ce258d410280e70",
+                "reference": "e917600188af608717c64fdf9ce258d410280e70",
                 "shasum": ""
             },
             "require": {
@@ -3172,9 +3172,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mitydigital/statamic-feedamic/issues",
-                "source": "https://github.com/mitydigital/statamic-feedamic/tree/2.2.6"
+                "source": "https://github.com/mitydigital/statamic-feedamic/tree/2.2.7"
             },
-            "time": "2023-08-10T06:25:56+00:00"
+            "time": "2023-09-02T03:43:15+00:00"
         },
         {
             "name": "monolog/monolog",
