@@ -15,16 +15,23 @@ It's fun to compare notes on the gear we all use, so consider this my entry in t
 
 {{
     partial:uses-card
-    name="Lenovo ThinkPad T460p"
-    link="https://www.lenovo.com/au/en/p/laptops/thinkpad/thinkpadt/thinkpad-t460p/22tp2tt460p"
-    description="This is by no means the latest and greatest, but it's more than enough for web development&mdash;especially after upgrading to a 1TB SSD and 32GB RAM.<br><br>I also have the dock for it so I can easily connect to my screens, camera, microphone, keyboard, and speakers in one go."
+    name="Lenovo ThinkPad X11 Carbon Gen 11 14"
+    link="https://www.lenovo.com/au/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-11-(14-inch-intel)/len101t0049"
+    description="A super-light laptop great for travelling. Looks amazing with the Dbrand \"Swam\" skin."
+}}
+
+{{
+    partial:uses-card
+    name="ThinkPad Universal Thunderbolt 4 Dock"
+    link="https://www.lenovo.com/au/en/p/accessories-and-software/docking/docking_thunderbolt-docks-(universal-cable-docks)/40b00135au"
+    description="With a single Thunderbolt cable my laptop is connected to power, a monitor, camera, keyboard, mouse, speakers, and microphone."
 }}
 
 {{
     partial:uses-card
     name="Lenovo 27-inch FHD Monitor"
     link="https://amzn.to/3O7zHWb"
-    description="The 2560x1440 resolution is crisp at 27\\" without needing to be scaled, and it has enough space to place two windows side by side. I screen share a lot so anything larger or ultrawide doesn't really work for me on Linux because X11 doesn't do fractional scaling, and Wayland can't share the entire screen.<br><br>At 200% scale (which X11 can handle) this is the perfect resolution for recording a Laracasts course!"
+    description="The 2560x1440 resolution is crisp at 27\\" without needing to be scaled, and it has enough space to place two windows side by side. I screen share a lot so anything larger or ultrawide is annoying.<br><br>At 200% scale this is the perfect resolution for recording a Laracasts course!"
 }}
 
 {{
@@ -43,16 +50,16 @@ It's fun to compare notes on the gear we all use, so consider this my entry in t
 
 {{
     partial:uses-card
-    name="Herman Miller Embody Chair"
-    link="https://www.hermanmiller.com/products/seating/office-chairs/embody-chairs/"
-    description="I've owned the black version of this chair for at least 10 years and it's still comfortable and the coolest looking chair around."
+    name="Sigma 30mm f/1.4 lens"
+    link="https://amzn.to/3ty6F8V"
+    description="This is the lens I use at my desk for YouTube, online conferences, and video chat. The f/1.4 aperture is great for shallow depth of field."
 }}
 
 {{
     partial:uses-card
-    name="IKEA TROTTEN Sit/stand desk frame"
-    link="https://www.ikea.com/au/en/p/trotten-underframe-sit-stand-f-table-top-anthracite-80510390/"
-    description="I bought these legs along with a white 120x70 cm table top many years ago. It ended up being a bit small and I wanted some warmer timber colours in my workspace, so I made one a new one at 160x74 cm and stained it walnut."
+    name="Herman Miller Embody Chair"
+    link="https://www.hermanmiller.com/products/seating/office-chairs/embody-chairs/"
+    description="I've owned the black version of this chair for at least 10 years and it's still comfortable and the coolest looking chair around."
 }}
 
 {{
