@@ -5,6 +5,6 @@ title: Podcasts
 updated_by: 8a797ce5-64a8-4ca6-a356-d5382ab15ad3
 updated_at: 1669891587
 template: podcasts/index
-description: 'I co-host a podcast, and have been a guest on several others.'
+description: 'Podcasts I\'ve co-hosted or featured on.'
 ---
-# I co-host a podcast, and have been a guest on several others.
+# Podcasts I've co-hosted or featured on.
