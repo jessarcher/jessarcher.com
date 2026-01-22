@@ -5,9 +5,9 @@
 
     {{ collection:podcasts }}
         <article class="not-prose mt-14 flex flex-col sm:flex-row gap-6">
-            <a class="flex-shrink-0" href="{{ link }}">
+            <a class="shrink-0" href="{{ link }}">
                 {{ thumbnail }}
-                    <img aria-hidden class="w-40 h-40 border" src="{{ url }}" />
+                    <img aria-hidden class="w-40 h-40 border border-gray-200" src="{{ url }}" />
                 {{ /thumbnail }}
             </a>
             <div>

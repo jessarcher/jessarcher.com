@@ -17,6 +17,21 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Authentication
+    |--------------------------------------------------------------------------
+    |
+    | Whether the Control Panel's authentication pages should be enabled,
+    | and where users should be redirected in order to authenticate.
+    |
+    */
+
+    'auth' => [
+        'enabled' => true,
+        'redirect_to' => null,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Start Page
     |--------------------------------------------------------------------------
     |
@@ -63,11 +78,14 @@ return [
     | Pagination
     |--------------------------------------------------------------------------
     |
-    | The numbers of items to show on each paginated page.
+    | Here you may define the default pagination size as well as the options
+    | the user can select on any paginated listing in the Control Panel.
     |
     */
 
     'pagination_size' => 50,
+
+    'pagination_size_options' => [10, 25, 50, 100, 500],
 
     /*
     |--------------------------------------------------------------------------
@@ -119,8 +137,24 @@ return [
 
     'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
 
+    'custom_dark_logo_url' => env('STATAMIC_CUSTOM_DARK_LOGO_URL', null),
+
+    'custom_logo_text' => env('STATAMIC_CUSTOM_LOGO_TEXT', null),
+
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 
     'custom_css_url' => env('STATAMIC_CUSTOM_CSS_URL', null),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Thumbnails
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define additional CP asset thumbnail presets.
+    |
+    */
+
+    'thumbnail_presets' => [
+        // 'medium' => 800,
+    ],
 ];

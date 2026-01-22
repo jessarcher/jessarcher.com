@@ -11,23 +11,21 @@ class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        // Statamic::script('app', 'cp');
-        // Statamic::style('app', 'cp');
+        // Statamic::vite('app', [
+        //     'resources/js/cp.js',
+        //     'resources/css/cp.css',
+        // ]);
 
         Markdown::addExtension(function () {
             return new TorchlightExtension;
