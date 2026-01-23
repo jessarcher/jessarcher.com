@@ -1,0 +1,79 @@
+feeds:
+  -
+    sites: all
+    sites_specific: {  }
+    sites_specific_spacer: null
+    title: 'Jess Archer'
+    handle: articles
+    description: 'Things that are too long to tweet.'
+    routes:
+      atom: /feed/atom
+      atom_view: null
+      rss: /feed
+      rss_view: null
+    collections:
+      - articles
+    taxonomies: {  }
+    show: all
+    show_limit: null
+    advanced: false
+    mappings:
+      title_mode: default
+      title: {  }
+      title_spacer: null
+      summary_mode: default
+      summary: {  }
+      summary_spacer: null
+      content_mode: default
+      content: {  }
+      content_spacer: null
+      image_mode: default
+      image: {  }
+      image_spacer: null
+      image_dimensions_mode: default
+      image_dimensions_spacer: null
+      image_width: null
+      image_height: null
+      author_mode: default
+      author_type: entry
+      author_type_spacer: null
+      author_field: null
+      author_name_spacer_1: null
+      author_name_spacer_2: null
+      author_name: entry
+      author_email: entry
+    copyright_mode: default
+    copyright_spacer: null
+    copyright: null
+    author_fallback_mode: default
+    author_fallback_spacer: null
+    author_fallback_name: null
+    author_fallback_email: null
+    scope: null
+    scope_spacer: null
+    entry_model: MityDigital\Feedamic\Models\FeedamicEntry
+    author_model: MityDigital\Feedamic\Models\FeedamicAuthor
+    alt_url: null
+    bypass_route_checking: false
+    _id: mkp3w7dy
+    type: feed
+    enabled: true
+default_title:
+  - title
+default_summary: {  }
+default_content: {  }
+default_image_enabled: false
+default_image: {  }
+default_image_width: 1280
+default_image_height: 720
+default_author_fallback_name: 'Jess Archer'
+default_author_fallback_email: null
+default_author_enabled: false
+default_author_type: entry
+default_author_type_spacer: null
+default_author_field: null
+default_author_name: null
+default_author_email: null
+default_copyright: null
+default_entry_model: MityDigital\Feedamic\Models\FeedamicEntry
+default_author_model: MityDigital\Feedamic\Models\FeedamicAuthor

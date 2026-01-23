@@ -33,7 +33,7 @@
 
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        {{ vite src="resources/css/site.css" }}
 
         <link rel="home" href="{{ site:url }}">
         <link rel="icon" href="/favicon.ico">
@@ -118,7 +118,7 @@
                     >
                         <button
                             x-cloak
-                            class="p-1 border dark:border-gray-700 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 focus:hover-gray-50 dark:focus:hover-gray-800 hover:border-gray-300 dark:hover:border-gray-600 dark:focus:border-gray-600"
+                            class="p-1 border border-gray-200 dark:border-gray-700 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 focus:hover-gray-50 dark:focus:hover-gray-800 hover:border-gray-300 dark:hover:border-gray-600 dark:focus:border-gray-600"
                             :class="theme ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-600 hover:text-gray-500 focus:text-gray-500 dark:hover:text-gray-500 dark:focus:text-gray-500'"
                             @click="menu = ! menu"
                         >
@@ -208,7 +208,6 @@
                 <a href="https://github.com/jessarcher/jessarcher.com" class="hover:text-gray-700 hover:underline focus:text-gray-700 focus:underline">This website is open source</a>.
             </p>
         </footer>
-
-        <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
+    {{ vite src="resources/js/site.js" }}
 </html>

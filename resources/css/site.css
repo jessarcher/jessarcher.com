@@ -1,1 +1,9 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@source "../views";
+@source "../../content";
+
+@config "../../tailwind.config.js";
+
 [x-cloak] { display: none !important; }

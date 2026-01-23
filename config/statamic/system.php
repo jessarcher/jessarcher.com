@@ -8,13 +8,29 @@ return [
     |--------------------------------------------------------------------------
     |
     | The license key for the corresponding domain from your Statamic account.
-    | Without a key entered, your app will considered to be in Trial Mode.
+    | Without a key entered, your app will be considered to be in Trial Mode.
     |
     | https://statamic.dev/licensing#trial-mode
     |
     */
 
     'license_key' => env('STATAMIC_LICENSE_KEY'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enable Multi-site
+    |--------------------------------------------------------------------------
+    |
+    | Whether Statamic's multi-site functionality should be enabled. It is
+    | assumed Statamic Pro is also enabled. To get started, you can run
+    | the `php please multisite` command to update your content file
+    | structure, after which you can manage your sites in the CP.
+    |
+    | https://statamic.dev/multi-site
+    |
+    */
+
+    'multisite' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -28,6 +44,28 @@ return [
     */
 
     'addons_path' => base_path('addons'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Blueprints Path
+    |--------------------------------------------------------------------------
+    |
+    | Where your blueprint YAML files are stored.
+    |
+    */
+
+    'blueprints_path' => resource_path('blueprints'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Fieldsets Path
+    |--------------------------------------------------------------------------
+    |
+    | Where your fieldset YAML files are stored.
+    |
+    */
+
+    'fieldsets_path' => resource_path('fieldsets'),
 
     /*
     |--------------------------------------------------------------------------
@@ -108,8 +146,98 @@ return [
     */
 
     'php_memory_limit' => '-1',
-    'php_max_execution_time' => '-1',
+    'php_max_execution_time' => '0',
     'ajax_timeout' => '600000',
     'pcre_backtrack_limit' => '-1',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Debugbar Integration
+    |--------------------------------------------------------------------------
+    |
+    | Statamic integrates with Laravel Debugbar to bring more detail to your
+    | debugging experience. Here you may adjust various default options.
+    |
+    */
+
+    'debugbar' => [
+        'pretty_print_variables' => true,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | ASCII
+    |--------------------------------------------------------------------------
+    |
+    | During various string manipulations (e.g. slugification), Statamic will
+    | need to make ASCII character conversions. Here you may define whether
+    | or not extra characters get converted. e.g. "%" becomes "percent".
+    |
+    */
+
+    'ascii_replace_extra_symbols' => false,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Update References on Change
+    |--------------------------------------------------------------------------
+    |
+    | With this enabled, Statamic will attempt to update references to assets
+    | and terms when moving, renaming, replacing, deleting, etc. This will
+    | be queued, but it can disabled as needed for performance reasons.
+    |
+    */
+
+    'update_references' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Always Augment to Query
+    |--------------------------------------------------------------------------
+    |
+    | By default, Statamic will augment relationship fields with max_items: 1
+    | to the result of a query, for example an Entry instance. Setting this
+    | to true will augment to the query builder instead of the result.
+    |
+    */
+
+    'always_augment_to_query' => false,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Row ID handle
+    |--------------------------------------------------------------------------
+    |
+    | Rows in Grid, Replicator, and Bard fields will be given a unique ID using
+    | the "id" field. You may need your own field named "id", in which case
+    | you may customize the handle of the field that Statamic will use.
+    |
+    */
+
+    'row_id_handle' => 'id',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Fake SQL Queries
+    |--------------------------------------------------------------------------
+    |
+    | Enable while using the flat-file Stache driver to show fake "SQL" query
+    | approximations in your database debugging tools — including Debugbar,
+    | Laravel Telescope, and Ray with the ray()->showQueries() helper.
+    |
+    */
+
+    'fake_sql_queries' => config('app.debug'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Layout
+    |--------------------------------------------------------------------------
+    |
+    | Define the default layout that will be used by views.
+    |
+    */
+
+    'layout' => env('STATAMIC_LAYOUT', 'layout'),
 
 ];
